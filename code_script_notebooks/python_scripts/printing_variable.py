@@ -24,7 +24,7 @@ print('mixing strings and numbers')
 
 print('X is =', x, 'Y is =', y, sep =',')
 
-print(There are 2 other ways to mix string with other variable types)
+print('There are 2 other ways to mix string with other variable types')
 
 print('Using Format')
 
