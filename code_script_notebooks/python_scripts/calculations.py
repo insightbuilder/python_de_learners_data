@@ -10,3 +10,6 @@ def mean_num(*a):
     length = len(a)
     print(sum(a)/length)
     return sum(a)/length
+
+def sub_num(a,b):
+    return a - b
