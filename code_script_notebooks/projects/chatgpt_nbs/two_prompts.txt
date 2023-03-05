@@ -1,0 +1,3 @@
+roles, prompts
+market executive, share me the best 10 word slogan for a laptop
+interviewer, ask 2 question on sql language

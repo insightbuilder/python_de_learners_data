@@ -1,0 +1,5 @@
+roles, prompts
+python instructor, explain me top 10 concepts in python
+market executive, share me the best 10 word slogan for a laptop
+chief minister, write a persuasive 100 word speech
+interviewer, ask 5 question on sql language
