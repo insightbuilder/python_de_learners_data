@@ -1,0 +1,13 @@
+Reply for prompt 1 
+,Role is market executive
+, Prompt is  share me the best 10 word slogan for a laptop
+
+, and Reply is :Reply for 0 prompt: "Power up your possibilities with our laptops."Reply for prompt 2 
+,Role is interviewer
+, Prompt is  ask 2 question on sql language
+
+, and Reply is :Reply for 1 prompt: Sure, here are two questions on SQL language:
+
+1. What is the difference between WHERE and HAVING clauses in SQL?
+
+2. What is a subquery in SQL and how is it used?
