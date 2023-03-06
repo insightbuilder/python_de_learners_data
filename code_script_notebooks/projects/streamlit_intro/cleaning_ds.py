@@ -5,7 +5,6 @@ import streamlit as st
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
-import os
 import datetime
 #reading in the raws file and cleaning it, also discarding the raw file 
 def clean_hackdata(raw_csv_file):
@@ -39,8 +38,6 @@ def clean_hackdata(raw_csv_file):
     null_filled_data.drop(['datetime','Unnamed: 15'],inplace=True,axis=1)
     #removing the rows that have any null values
     null_filled_data.dropna(axis=0,inplace=True)
-    #removing the raw file 
-    os.remove(raw_csv_file)
     #return the dataframe
     return null_filled_data
 
@@ -55,5 +52,4 @@ def group_two_col(datafrm,col1, col2):
     grp_df.reset_index(inplace=True)
     grp_df.sort_values(by='src',ascending=False,inplace=True)
     return grp_df[[col1,col2,'src']]
-
 

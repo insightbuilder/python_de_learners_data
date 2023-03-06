@@ -1,0 +1,25 @@
+/* Move block container higher */
+div.block-container.css-18e3th9.egzxvld2 {
+  margin-top: -5em;
+}
+
+/* Adjustments for the logo image*/
+
+img {
+  display: block;
+  margin-top: 1.5em;
+}
+
+span.css-10trblm.e16nr0p30 {
+  text-align: center;
+  background-color: #43a576;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+/* Row 2 */
+div.css-12w0qpk.e1tzin5v2 {
+    padding: 3% 3% 3% 3%;
+    border-radius: 5px;
+    text-align: center;
+}
