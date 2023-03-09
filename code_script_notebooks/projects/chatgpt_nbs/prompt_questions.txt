@@ -1,0 +1,73 @@
+
+1. What was the total number of attendees at the Healthcare rally at Bowie State University?
+2. What was the total number of articles published about the Executive protest against the 45th president in Washington, DC?
+3. How many people attended the Civil Rights march in Johnson City, TN?
+4. What was the total number of attendees at the Environment protest in Indianapolis, IN?
+5. How many people attended the Martin Luther King Jr. rally in Cincinnati, OH?
+6. What was the total number of attendees at the Healthcare protest for Planned Parenthood in Hartford, CT?
+7. How many people attended the Executive protest against the 45th president in Westlake Park, Seattle, WA?
+8. What was the total number of attendees at the Civil Rights protest against the invited speaker in Isla Vista, CA?
+9. How many people attended the Executive protest against the 45th president in Traditions Plaza, University of Missouri, MO?
+10. What was the total number of attendees at the Civil Rights protest for greater inclusion in Carlisle, PA?
+11. What was the total number of attendees at the Civil Rights Women's March in Washington, DC?
+12. How many people attended the Civil Rights Women's March in Los Angeles, CA?
+13. What was the total number of attendees at the Civil Rights Women's March in New York, NY?
+14. How many people attended the Civil Rights Women's March in Chicago
+1. What is the total number of events in the dataset?
+2. What is the total number of attendees across all events?
+3. What is the total number of articles sourced from each event?
+4. What is the total number of curated events?
+5. What is the total number of events related to healthcare?
+6. What is the total number of events related to civil rights?
+7. What is the total number of events related to the environment?
+8. What is the total number of events related to executive issues?
+9. What is the total number of events related to racial injustice?
+10. What is the total number of events related to women's rights?
+11. What is the total number of events related to greater inclusion?
+12. What is the total number of events related to the 45th president?
+13. What is the total number of events related to counter protests?
+14. What is the total number of events related to wilderness preservation?
+15. What is the total number of events related to Planned Parenthood?
+
+1. What was the date of the Women's March events?
+2. What locations hosted the Women's March events?
+3. How many attendees were present at each Women's March event?
+4. What was the event type for each Women's March event?
+5. What tags were associated with each Women's March event?
+6. Were the Women's March events curated?
+7. What was the source of information for each Women's March event?
+8. How many articles were written about each Women's March event?
+9. What was the attendance at the Women's March event in Charlotte, NC?
+10. What was the attendance at the Women's March event in Phoenix, AZ?
+11. What was the attendance at the Women's March event in Santa Ana, CA?
+12. What was the attendance at the Women's March event in Raleigh, NC?
+13. What was the attendance at the Women's March event in Lansing, MI?
+14. What was the attendance at the Women's March event in Montpelier, VT?
+15. What was the attendance at the Women's March event in Nashville, TN?
+16. What was the attendance at the Women's March event in Miami, FL?
+17. What was the attendance at the Women's March event in Houston, TX?
+18. What was the attendance at the Women's March event in Ashland, OR?
+19. What was the attendance at the Women's March event in Santa Cruz, CA?
+20. What was the attendance at the Women's March event in Ann Arbor, MI?
+21. What was the attendance at the Women's March event in New Orleans, LA?
+22. What was the attendance at the Women's March event in Hartford, CT?
+23. What was the attendance at the Women's March event in Helena, MT?
+24. What was the attendance at the Women's March event in Olympia, WA?
+25. What was the attendance at the Women's March event in Asheville, NC?
+26. What was the attendance at the Women's March event in Eugene, OR?
+27. What was the attendance at the Women's March event in San Luis Obispo, CA?
+28. What was the attendance at the Women's March event in Cincinnati, OH?
+29. What was the attendance at the Women's March event in Albany, NY?
+30. What was the attendance at the Women's March event in Spokane, WA?
+31. What was the attendance at the Women's March event in Augusta, ME?
+32. What was the attendance at the Women's March event in Birmingham, AL?
+33. What was the attendance at the Women's March event in Kansas City, MO?
+34. What was the attendance at the Women's March event in Lexington, KY?
+35. What was the attendance at the Women's March event in Colorado Springs, CO?
+36. What was the attendance at the Women's March event in Little Rock, AR?
+37. What was the attendance at the Women's March event in Trenton, NJ?
+38. What was the attendance at the Women's March event in Indianapolis, IN?
+39. What was the attendance at the Women's March event in Dallas, TX?
+40. What was the attendance at the Women's March event in Eureka, CA?
+41. What was the attendance at the Women's March event in Park City, UT?
+42. What was the attendance at the Women's March event in Santa Ana, CA?
