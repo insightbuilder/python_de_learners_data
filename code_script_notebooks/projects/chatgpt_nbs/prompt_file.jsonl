@@ -51,3 +51,8 @@
 {"prompt": "Refer to [dataset_2] and answer How many passengers below 25 years of age had a Cabin type F/0/P? ", "completion": "There were a total of 17 passengers below 25 years of age with cabin type F/0/P."}
 {"prompt": "Refer to [dataset_2] and answer How many passengers between 0 and 10 years of age had a Cabin type F/0/P? ", "completion": "There were 15 passengers between the ages of 0 and 10 who had a Cabin type of F/0/P."}
 {"prompt": "Refer to [dataset_2] and answer How many passengers over 55 years of age had a Cabin type G/0/S? ", "completion": "There were no passengers over 55 years of age with a Cabin type G/0/S in dataset_2."}
+{"prompt": "Refer to dataset_3 and answer How many passengers traveled to Destination 55 Cancri e?", "completion": "According to the dataset_3, there were 18 passengers who traveled to Destination 55 Cancri e."}
+{"prompt": "Refer to dataset_3 and answer How many passengers traveled to Destination 55 Cancri e?", "completion": "There were 11 passengers that traveled to Destination 55 Cancri e."}
+{"prompt": "Refer to [dataset_3] and answer How many passengers traveled to Destination 55 Cancri e?", "completion": "There are no passengers listed in the dataset for Destination 55 Cancri e."}
+{"prompt": "Refer to dataset_3 and answer What is the average Home Planet for passengers traveling with CryoSleep?", "completion": "The average Home Planet for passengers traveling with CryoSleep is not specified in the dataset."}
+{"prompt": "Refer to [dataset_3] and answer What is the average Home Planet for passengers traveling with CryoSleep?", "completion": "None-CryoSleep passengers do not have a Home Planet."}
