@@ -1169,3 +1169,23 @@ Python libraries used:
 - Axios for making API requests from the frontend
 
 Example code is provided for each step, but additional code would be needed to fully implement the system.*****Completion ends****** 
+Completion for 
+ Code ==> temperatures = []
+for i in range(7):
+    temp = float(input("Enter temperature for day " + str(i+1) + ": "))
+    temperatures.append(temp)
+average_temp = sum(temperatures) / len(temperatures)
+print("The average temperature for the week is:", round(average_temp, 2))
+Please provide me the alternate way to implement the [Code]******Completion starts****** 
+An alternate way to implement the code would be to use a list comprehension to get the temperatures and then calculate the average using the built-in `mean()` function from the `statistics` module. Here's the code:
+
+```
+import statistics
+
+temperatures = [float(input(f"Enter temperature for day {i+1}: ")) for i in range(7)]
+average_temp = statistics.mean(temperatures)
+
+print("The average temperature for the week is:", round(average_temp, 2))
+```
+
+This code does the same thing as the original code, but uses a list comprehension to get the temperatures and the `mean()` function from the `statistics` module to calculate the average.*****Completion ends****** 
