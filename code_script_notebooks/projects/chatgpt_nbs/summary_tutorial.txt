@@ -1,0 +1,40 @@
+Completion for 
+ 
+dataset=PassengerId,HomePlanet,CryoSleep,Cabin,Destination,Age,VIP,RoomService,FoodCourt,ShoppingMall,Spa,VRDeck,Name,Transported
++['0001_01,Europa,False,B/0/P,TRAPPIST-1e,39.0,False,0.0,0.0,0.0,0.0,0.0,Maham Ofracculy,False\n', '0002_01,Earth,False,F/0/S,TRAPPIST-1e,24.0,False,109.0,9.0,25.0,549.0,44.0,Juanna Vines,True\n', '0003_01,Europa,False,A/0/S,TRAPPIST-1e,58.0,True,43.0,3576.0,0.0,6715.0,49.0,Altark Susent,False\n', '0003_02,Europa,False,A/0/S,TRAPPIST-1e,33.0,False,0.0,1283.0,371.0,3329.0,193.0,Solam Susent,False\n', '0004_01,Earth,False,F/1/S,TRAPPIST-1e,16.0,False,303.0,70.0,151.0,565.0,2.0,Willy Santantines,True\n']
+
+Prompt:Refer to the [dataset] and list 5 statistical, factual and inferential questions    
+Answer:
+******Completion starts****** 
+Statistical Questions:
+1. What is the average age of passengers on this trip?
+2. What is the standard deviation of the shopping mall expenses for the passengers?
+3. What is the correlation between VIP status and room service expenses among passengers? 
+4. What is the mean food court expense of passengers transported from Europa? 
+5. What is the proportion of passengers who used the VRDeck facility?
+
+Factual Questions:
+1. What is the name of the passenger transported on ship 0001_01? 
+2. Which passenger had the highest spa expenses?
+3. What is the cabin type of the passenger named Juanna Vines? 
+4. What was the destination of the passenger transported on ship 0003_02? 
+5. What is the home planet of the passenger with the lowest room service expenses? 
+
+Inferential Questions:
+1. Can we infer that younger passengers on this trip spent less on room service and spa facilities?
+2. Is there evidence to suggest that passengers with VIP status spent more on shopping mall and food court expenses?
+3. Can we infer that passengers transported from Earth spent more on VRDeck usage than those from Europa?
+4. Is there a significant difference in cabin types between passengers with and without VIP status?
+5. Can we infer that the amount spent on spa, VRDeck, and shopping mall facilities are predictors of a passenger's home planet?*****Completion ends****** 
+Completion for 
+ 
+dataset=PassengerId,HomePlanet,CryoSleep,Cabin,Destination,Age,VIP,RoomService,FoodCourt,ShoppingMall,Spa,VRDeck,Name,Transported
++['0001_01,Europa,False,B/0/P,TRAPPIST-1e,39.0,False,0.0,0.0,0.0,0.0,0.0,Maham Ofracculy,False\n', '0002_01,Earth,False,F/0/S,TRAPPIST-1e,24.0,False,109.0,9.0,25.0,549.0,44.0,Juanna Vines,True\n', '0003_01,Europa,False,A/0/S,TRAPPIST-1e,58.0,True,43.0,3576.0,0.0,6715.0,49.0,Altark Susent,False\n', '0003_02,Europa,False,A/0/S,TRAPPIST-1e,33.0,False,0.0,1283.0,371.0,3329.0,193.0,Solam Susent,False\n', '0004_01,Earth,False,F/1/S,TRAPPIST-1e,16.0,False,303.0,70.0,151.0,565.0,2.0,Willy Santantines,True\n']
+
+Prompt:Refer to the [dataset] and answer succinctly to the following questions. 
+ What is the name of the passenger transported on ship 0001_01?  Which passenger had the highest spa expenses? What is the cabin type of the passenger named Juanna Vines?  What was the destination of the passenger transported on ship 0003_02?  What is the home planet of the passenger with the lowest room service expenses? 
+At the end print COMPLETED designed INFERENCE
+
+Answer:
+******Completion starts****** 
+The name of the passenger transported on ship 0001_01 is Maham Ofracculy. The passenger with the highest spa expenses is Altark Susent. The cabin type of the passenger named Juanna Vines is F/0/S. The destination of the passenger transported on ship 0003_02 is TRAPPIST-1e. The home planet of the passenger with the lowest room service expenses is Europa. COMPLETED designed INFERENCE.*****Completion ends****** 
