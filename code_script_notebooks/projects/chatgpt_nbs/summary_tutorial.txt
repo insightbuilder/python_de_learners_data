@@ -38,3 +38,80 @@ At the end print COMPLETED designed INFERENCE
 Answer:
 ******Completion starts****** 
 The name of the passenger transported on ship 0001_01 is Maham Ofracculy. The passenger with the highest spa expenses is Altark Susent. The cabin type of the passenger named Juanna Vines is F/0/S. The destination of the passenger transported on ship 0003_02 is TRAPPIST-1e. The home planet of the passenger with the lowest room service expenses is Europa. COMPLETED designed INFERENCE.*****Completion ends****** 
+Completion for 
+ 
+dataset=PassengerId,HomePlanet,CryoSleep,Cabin,Destination,Age,VIP,RoomService,FoodCourt,ShoppingMall,Spa,VRDeck,Name,Transported
++['0005_01,Earth,False,F/0/P,PSO J318.5-22,44.0,False,0.0,483.0,0.0,291.0,0.0,Sandie Hinetthews,True\n', '0006_01,Earth,False,F/2/S,TRAPPIST-1e,26.0,False,42.0,1539.0,3.0,0.0,0.0,Billex Jacostaffey,True\n', '0006_02,Earth,True,G/0/S,TRAPPIST-1e,28.0,False,0.0,0.0,0.0,0.0,,Candra Jacostaffey,True\n', '0007_01,Earth,False,F/3/S,TRAPPIST-1e,35.0,False,0.0,785.0,17.0,216.0,0.0,Andona Beston,True\n', '0008_01,Europa,True,B/1/P,55 Cancri e,14.0,False,0.0,0.0,0.0,0.0,0.0,Erraiam Flatic,True\n']
+
+Prompt:Refer to the [dataset] and list 5 statistical, factual and inferential questions    
+Answer:
+******Completion starts****** 
+Statistical Questions:
+1. What is the mean age of the passengers in the dataset?
+2. What is the median number of days the passengers spent in cryosleep?
+3. What is the standard deviation of the VIP status of the passengers?
+4. What is the correlation between the age of the passengers and the amount spent on shopping mall services?
+5. What is the mode of the cabin types used by the passengers?
+
+Factual Questions:
+1. How many passengers were transported in total?
+2. What was the most commonly visited destination by the passengers?
+3. How many passengers used the Room Service during their trip?
+4. What was the average age of the passengers who visited the Spa?
+5. How many passengers came from Earth?
+
+Inferential Questions:
+1. Can we infer that the passengers who used VRDeck were more likely to use Spa as well?
+2. Can we infer that there is a relationship between age and VIP status based on the data?
+3. Can we infer that passengers who had higher expenditures on Shopping Mall services were also more likely to use Room Service?
+4. Can we infer that passengers who had a Cabin type of "B/1/P" were more likely to have used the Spa services?
+5. Can we infer that there is a significant difference in the number of days spent in cryosleep by passengers from Earth compared to those from other planets?*****Completion ends****** 
+Completion for 
+ 
+    dataset=PassengerId,HomePlanet,CryoSleep,Cabin,Destination,Age,VIP,RoomService,FoodCourt,ShoppingMall,Spa,VRDeck,Name,Transported
++['0052_01,Earth,False,G/6/S,TRAPPIST-1e,,False,4.0,0.0,2.0,4683.0,0.0,Elaney Hubbarton,False\n', '0053_01,Earth,False,F/11/S,TRAPPIST-1e,25.0,False,0.0,0.0,1938.0,0.0,1.0,Elson Hickerson,True\n', '0056_01,Europa,False,A/1/S,TRAPPIST-1e,2.0,False,0.0,0.0,0.0,0.0,0.0,Okulas Tractive,True\n', '0056_02,Europa,True,A/1/S,TRAPPIST-1e,38.0,False,0.0,0.0,0.0,0.0,0.0,Instab Tractive,True\n', '0056_03,Europa,False,A/1/S,TRAPPIST-1e,27.0,False,279.0,605.0,3374.0,286.0,3.0,Zinoces Tractive,True\n', '0058_01,Earth,True,G/7/S,PSO J318.5-22,36.0,False,0.0,0.0,0.0,0.0,0.0,Warry Ayalazquez,False\n', '0061_01,Earth,False,F/12/S,TRAPPIST-1e,22.0,False,45.0,1096.0,148.0,1377.0,1.0,Shanya Salez,False\n', '0062_01,Earth,False,F/13/S,TRAPPIST-1e,62.0,False,0.0,592.0,0.0,17.0,25.0,Sterry Greeves,False\n', '0064_01,Mars,True,F/14/S,TRAPPIST-1e,15.0,False,0.0,0.0,0.0,0.0,0.0,,True\n', '0064_02,,True,E/3/S,TRAPPIST-1e,33.0,False,0.0,0.0,,0.0,0.0,Colatz Keen,True\n', '0066_01,Earth,False,G/6/P,TRAPPIST-1e,62.0,False,1.0,153.0,197.0,0.0,460.0,Diandy Pecketton,False\n', '0067_01,Earth,True,G/10/S,PSO J318.5-22,0.0,False,0.0,0.0,0.0,0.0,0.0,Ninaha Leeves,True\n', '0067_02,Earth,False,G/10/S,TRAPPIST-1e,18.0,False,1.0,258.0,446.0,0.0,0.0,Celine Leeves,True\n', '0067_03,Earth,False,F/15/S,55 Cancri e,21.0,False,1946.0,37.0,0.0,0.0,24.0,Velyne Leeves,False\n', '0068_01,Mars,False,E/4/S,TRAPPIST-1e,,False,793.0,0.0,2.0,253.0,0.0,Cinst Binie,False\n', '0069_01,Earth,False,F/16/S,TRAPPIST-1e,42.0,False,887.0,0.0,9.0,6.0,0.0,,True\n', '0070_01,Earth,False,F/13/P,TRAPPIST-1e,19.0,False,190.0,0.0,5.0,1.0,726.0,Meremy Brighttt,False\n', '0071_01,Earth,False,F/14/P,TRAPPIST-1e,17.0,False,16.0,2165.0,0.0,0.0,52.0,Nelly Dillines,False\n', '0072_01,Earth,False,F/17/S,TRAPPIST-1e,14.0,False,0.0,1.0,0.0,0.0,1063.0,Thell Brantuarez,False\n', '0073_01,Mars,False,D/3/P,PSO J318.5-22,37.0,False,46.0,83.0,738.0,0.0,12.0,Gorn Make,False\n', '0074_01,Europa,False,C/3/S,TRAPPIST-1e,42.0,False,1.0,8397.0,0.0,0.0,506.0,Aldibah Mostedry,True\n', '0076_01,Mars,False,F/18/S,TRAPPIST-1e,27.0,False,147.0,0.0,1018.0,0.0,0.0,Conk Dal,True\n', '0077_01,Mars,False,F/15/P,TRAPPIST-1e,28.0,False,14.0,0.0,1295.0,0.0,0.0,Pon Blité,True\n', '0078_01,Europa,False,C/4/S,TRAPPIST-1e,38.0,False,0.0,5840.0,0.0,321.0,9654.0,Spuri Pokerheed,False\n', '0081_01,Earth,True,G/13/S,TRAPPIST-1e,13.0,False,0.0,0.0,0.0,0.0,0.0,Dellie Vinozarks,False\n']
+
+    Prompt:Refer to the [dataset] and in 300 words answer the following questions.
+    Do not print the questions. 
+     What is the name of the passenger transported on ship 0001_01?  Which passenger had the highest spa expenses? What is the cabin type of the passenger named Juanna Vines?  What was the destination of the passenger transported on ship 0003_02?  What is the home planet of the passenger with the lowest room service expenses? 
+    At the end print COMPLETED INFERENCE
+
+    Answer:
+    ******Completion starts****** 
+The name of the passenger transported on ship 0001_01 is not provided in the given dataset. Hence, it cannot be determined.
+    To find out which passenger had the highest spa expenses, we need to compare the spa expenses of all passengers. The passenger with the highest spa expenses is Zinoces Tractive, with a total spa expense of 286.
+    The cabin type of the passenger named Juanna Vines is not provided in the given dataset. Hence, it cannot be determined.
+    The destination of the passenger transported on ship 0003_02 is also not provided in the given dataset. Hence, it cannot be determined.
+    To find out the home planet of the passenger with the lowest room service expenses, we need to compare the room service expenses of all passengers. The passenger with the lowest room service expenses is Okulas Tractive, who is from Europa.
+
+    COMPLETED INFERENCE*****Completion ends****** 
+Completion for 
+ 
+    dataset=PassengerId,HomePlanet,CryoSleep,Cabin,Destination,Age,VIP,RoomService,FoodCourt,ShoppingMall,Spa,VRDeck,Name,Transported
++['0082_01,Mars,False,F/16/P,TRAPPIST-1e,42.0,False,7406.0,0.0,0.0,0.0,0.0,Totse Datte,False\n', '0082_02,Mars,True,F/16/P,TRAPPIST-1e,2.0,False,0.0,0.0,0.0,0.0,0.0,Eaturs Datte,True\n', '0082_03,Mars,False,F/16/P,TRAPPIST-1e,8.0,False,0.0,0.0,0.0,0.0,0.0,,True\n', '0084_01,Earth,False,G/14/S,TRAPPIST-1e,24.0,False,688.0,0.0,0.0,0.0,17.0,Coren Coopezmaney,True\n', '0085_01,Europa,True,C/5/S,TRAPPIST-1e,40.0,False,0.0,0.0,0.0,0.0,0.0,Furudah Ellcefulve,True\n', '0086_01,Earth,False,F/17/P,TRAPPIST-1e,43.0,False,211.0,0.0,0.0,638.0,513.0,Jodye Kinson,False\n', '0088_01,Mars,True,E/5/S,PSO J318.5-22,45.0,False,0.0,0.0,0.0,0.0,0.0,Stmeal Sacre,True\n', '0090_01,Earth,True,G/15/S,TRAPPIST-1e,35.0,False,0.0,0.0,0.0,0.0,0.0,Heremy Santry,True\n', '0091_01,Earth,True,G/16/S,TRAPPIST-1e,26.0,False,,0.0,0.0,0.0,0.0,Deanne Yorkland,True\n', '0091_02,Earth,False,F/20/S,TRAPPIST-1e,27.0,False,1.0,697.0,31.0,188.0,0.0,Tinez Yorkland,False\n', '0092_01,Earth,False,G/9/P,TRAPPIST-1e,19.0,False,0.0,0.0,670.0,1.0,34.0,Gracy Dunnisey,False\n', '0092_02,Earth,True,G/9/P,TRAPPIST-1e,0.0,False,0.0,0.0,,0.0,0.0,Stald Hewson,True\n', '0092_03,Earth,True,G/9/P,TRAPPIST-1e,3.0,False,0.0,0.0,0.0,0.0,0.0,Tiney Hewson,True\n', '0097_01,Europa,False,A/2/S,TRAPPIST-1e,54.0,False,0.0,1208.0,0.0,3.0,637.0,Alchium Fictful,False\n', '0098_01,Earth,False,G/11/P,TRAPPIST-1e,26.0,False,0.0,856.0,5.0,32.0,0.0,Doria Carezquez,False\n', '0098_02,Earth,False,G/11/P,TRAPPIST-1e,26.0,False,0.0,2811.0,957.0,0.0,87.0,Leence Carezquez,True\n', '0099_01,Earth,False,F/19/P,PSO J318.5-22,23.0,False,311.0,427.0,526.0,37.0,0.0,Aliey Leetersoney,False\n', '0099_02,Earth,,G/12/P,TRAPPIST-1e,2.0,False,0.0,0.0,0.0,0.0,0.0,Thewis Connelson,True\n', '0101_01,Mars,True,,TRAPPIST-1e,31.0,False,0.0,0.0,0.0,0.0,0.0,Book Trad,True\n', '0102_01,Earth,False,F/23/S,TRAPPIST-1e,18.0,False,0.0,0.0,0.0,830.0,91.0,Ritany Holson,False\n', '0103_01,Earth,False,F/24/S,TRAPPIST-1e,24.0,False,0.0,,0.0,0.0,17.0,Arlen Mclainez,True\n', '0103_02,Earth,True,G/18/S,55 Cancri e,9.0,False,0.0,0.0,0.0,0.0,0.0,Shaele Mclainez,True\n', '0103_03,Earth,True,G/18/S,TRAPPIST-1e,6.0,False,0.0,0.0,0.0,0.0,0.0,Fanne Mclainez,False\n', '0105_01,Earth,,F/21/P,TRAPPIST-1e,27.0,False,0.0,0.0,570.0,2.0,131.0,Carry Cleachrand,False\n', '0107_01,Mars,False,D/2/S,TRAPPIST-1e,21.0,False,1743.0,5.0,17.0,0.0,0.0,Coobix Hart,False\n']
+
+    Prompt:Refer to the [dataset] and in 300 words answer the following questions.
+    Do not print the questions. 
+     What is the name of the passenger transported on ship 0001_01?  Which passenger had the highest spa expenses? What is the cabin type of the passenger named Juanna Vines?  What was the destination of the passenger transported on ship 0003_02?  What is the home planet of the passenger with the lowest room service expenses? 
+    At the end print COMPLETED INFERENCE
+
+    Answer:
+    ******Completion starts****** 
+After analyzing the provided dataset, we can answer the following questions:
+
+1. What is the name of the passenger transported on ship 0001_01?
+Unfortunately, we cannot answer this question because the dataset does not include ship 0001_01.
+
+2. Which passenger had the highest spa expenses?
+The passenger with the highest spa expenses is Jodye Kinson, transported to TRAPPIST-1e from Earth on ship 0086_01. Their spa expenses were $513.
+
+3. What is the cabin type of the passenger named Juanna Vines?
+We cannot answer this question because the dataset does not include information about the cabin type of a passenger named Juanna Vines.
+
+4. What was the destination of the passenger transported on ship 0003_02?
+We cannot answer this question because the dataset does not include information about the destination of a passenger transported on ship 0003_02.
+
+5. What is the home planet of the passenger with the lowest room service expenses?
+The passenger with the lowest room service expenses is Totse Datte, transported from Mars on ship 0082_01 to TRAPPIST-1e, and their home planet is Mars.
+
+In conclusion, we were able to answer some of the questions, while we were unable to answer others due to missing information in the provided dataset. Therefore, the analysis of the data is limited, and more information would be required to provide more accurate and comprehensive answers. COMPLETED INFERENCE.*****Completion ends****** 
