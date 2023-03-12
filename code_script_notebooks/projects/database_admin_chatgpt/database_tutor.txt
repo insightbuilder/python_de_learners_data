@@ -371,3 +371,63 @@ GROUP BY h.hostname
 ORDER BY total_connections DESC
 LIMIT 5;
 ```*****Completion ends****** 
+Completion for 
+ COPY dataset FROM '/path/to/dataset.csv' DELIMITER ',' CSV HEADER;
+Where to use the above command in database. Show me the steps******Completion starts****** 
+The command you provided is used to copy data from a CSV file into a PostgreSQL database. Here are the steps to use this command:
+
+1. Open a terminal or command prompt and log in to your PostgreSQL database using the psql command.
+
+2. Create a table in the database to hold the data from the CSV file. You can use the CREATE TABLE command to do this. For example:
+
+   ```
+   CREATE TABLE mytable (
+       column1 datatype,
+       column2 datatype,
+       column3 datatype
+   );
+   ```
+
+   Replace `mytable` with the name you want to give to your table, and `column1`, `column2`, and `column3` with the names of the columns you want to create. Replace `datatype` with the appropriate data type for each column.
+
+3. Exit the psql command line interface by typing `\q` and pressing Enter.
+
+4. Navigate to the directory where your CSV file is located using the `cd` command.
+
+5. Use the following command to copy the data from the CSV file into the table you created:
+
+   ```
+   COPY mytable FROM '/path/to/dataset.csv' DELIMITER ',' CSV HEADER;
+   ```
+
+   Replace `mytable` with the name of the table you created in step 2, and `/path/to/dataset.csv` with the path to your CSV file. If your CSV file uses a delimiter other than a comma, replace `,` with the appropriate delimiter.
+
+6. Once the data has been copied, you can use the SELECT command to view the data in the table. For example:
+
+   ```
+   SELECT * FROM mytable;
+   ```
+
+   This will display all the data in the `mytable` table.*****Completion ends****** 
+Completion for 
+ Explain me the Normal form in Database Engineering. Also share me how many type of 
+normal forms are there. Provide me examples of each normal form******Completion starts****** 
+In database engineering, normal form refers to a set of rules that are used to ensure that a database is well-organized and free from data redundancy. Normalization is the process of applying these rules to a database to eliminate data redundancy and improve data integrity.
+
+There are several types of normal forms, including:
+
+1. First Normal Form (1NF): This is the most basic form of normalization, and it requires that each column in a table contains only atomic values (i.e., values that cannot be further subdivided). For example, a table that contains a column for "address" would not be in 1NF if the address column contained multiple values (e.g., "123 Main St., Anytown, USA").
+
+2. Second Normal Form (2NF): This form requires that a table be in 1NF and that each non-key column in the table is dependent on the table's primary key. In other words, each non-key column should be related to the primary key in some way. For example, a table that contains information about customers and their orders would not be in 2NF if the order date was stored in a separate table from the customer information.
+
+3. Third Normal Form (3NF): This form requires that a table be in 2NF and that each non-key column in the table is not dependent on any other non-key column. In other words, each non-key column should be independent of all other non-key columns. For example, a table that contains information about employees and their departments would not be in 3NF if the department manager's name was stored in the same table as the employee's name.
+
+There are also higher normal forms, such as Boyce-Codd Normal Form (BCNF) and Fourth Normal Form (4NF), which are used in more complex database designs.
+
+Examples of each normal form:
+
+1. First Normal Form (1NF): A table that contains a column for "address" would be in 1NF if each row in the table contained only one address value (e.g., "123 Main St., Anytown, USA").
+
+2. Second Normal Form (2NF): A table that contains information about customers and their orders would be in 2NF if the order date was stored in a separate table from the customer information, and each order was linked to a specific customer by a unique identifier (e.g., customer ID).
+
+3. Third Normal Form (3NF): A table that contains information about employees and their departments would be in 3NF if the department manager's name was stored in a separate table from the employee information, and each employee was linked to a specific department by a unique identifier (e.g., department ID).*****Completion ends****** 
