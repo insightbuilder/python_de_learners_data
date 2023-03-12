@@ -1,0 +1,353 @@
+Completion for 
+ I have a data_in_excel.xlsx file having data
+inside Database worksheet. Tell me how to 
+1) Import excel file data into Python pandas library
+2) List top 5 Pandas commands I can use to Analyse the data
+3) Import excel file data into Python openpyxl library
+4) List the commands to create charts using the data in openpyxl******Completion starts****** 
+Sure, I can help you with that.
+
+1) Import excel file data into Python pandas library:
+
+To import excel file data into Python pandas library, you can use the `read_excel()` function from pandas. Here's an example:
+
+```python
+import pandas as pd
+
+# read excel file
+df = pd.read_excel('data_in_excel.xlsx', sheet_name='Database')
+
+# print first 5 rows of the dataframe
+print(df.head())
+```
+
+2) List top 5 Pandas commands I can use to Analyse the data:
+
+Here are the top 5 Pandas commands you can use to analyze the data:
+
+- `df.head()`: This command returns the first n rows of the dataframe. By default, n is 5.
+- `df.describe()`: This command returns the summary statistics of the numerical columns in the dataframe.
+- `df.info()`: This command returns the information about the dataframe, such as the number of rows, columns, data types, and memory usage.
+- `df.groupby()`: This command groups the dataframe by one or more columns and applies a function to each group.
+- `df.pivot_table()`: This command creates a pivot table from the dataframe.
+
+3) Import excel file data into Python openpyxl library:
+
+To import excel file data into Python openpyxl library, you can use the `load_workbook()` function from openpyxl. Here's an example:
+
+```python
+from openpyxl import load_workbook
+
+# load excel file
+wb = load_workbook('data_in_excel.xlsx')
+
+# select worksheet
+ws = wb['Database']
+
+# print cell value
+print(ws['A1'].value)
+```
+
+4) List the commands to create charts using the data in openpyxl:
+
+Here are the commands to create charts using the data in openpyxl:
+
+- `openpyxl.chart`: This module contains classes for creating charts in openpyxl.
+- `openpyxl.chart.Reference()`: This class creates a reference to a range of cells in the worksheet.
+- `openpyxl.chart.Series()`: This class creates a series for the chart.
+- `openpyxl.chart.Chart()`: This class creates a chart object.
+- `openpyxl.chart.LineChart()`: This class creates a line chart object.
+- `openpyxl.chart.BarChart()`: This class creates a bar chart object.
+- `openpyxl.chart.PieChart()`: This class creates a pie chart object.
+- `openpyxl.chart.Legend()`: This class creates a legend for the chart.
+- `openpyxl.chart.Title()`: This class creates a title for the chart.
+
+Here's an example of how to create a line chart using openpyxl:
+
+```python
+from openpyxl import load_workbook
+from openpyxl.chart import Reference, Series, LineChart
+
+# load excel file
+wb = load_workbook('data_in_excel.xlsx')
+
+# select worksheet
+ws = wb['Database']
+
+# create chart object
+chart = LineChart()
+
+# create data series
+xvalues = Reference(ws, min_col=1, min_row=2, max_row=11)
+yvalues = Reference(ws, min_col=2, min_row=2, max_row=11)
+series = Series(values=yvalues, xvalues=xvalues, title='Data')
+
+# add data series to chart
+chart.append(series)
+
+# add chart to worksheet
+ws.add_chart(chart, 'D1')
+
+# save excel file
+wb.save('data_in_excel.xlsx')
+```
+
+This code creates a line chart from the data in columns A and B of the worksheet 'Database' and adds it to cell D1 of the same worksheet.*****Completion ends****** 
+Completion for 
+ The data is having Date, Customers, Gender, 
+Sales Reps, Drinks/Products and Categories columns that are not 
+numbers. Provide me 3 examples of df.groupby() and df.pivot_table()
+methods using these column******Completion starts****** 
+Sure, here are three examples of `df.groupby()` and `df.pivot_table()` methods using the given columns:
+
+Example 1: Using `df.groupby()` to group the data by Gender and calculate the total sales made by each gender.
+
+```python
+import pandas as pd
+
+# Read the dataset
+df = pd.read_csv('sales_data.csv')
+
+# Group the data by Gender and calculate the total sales made by each gender
+gender_sales = df.groupby('Gender')['Sales'].sum()
+
+print(gender_sales)
+```
+
+Output:
+```
+Gender
+Female    12000
+Male      15000
+Name: Sales, dtype: int64
+```
+
+Example 2: Using `df.pivot_table()` to create a pivot table that shows the average sales made by each Sales Rep for each Category.
+
+```python
+import pandas as pd
+
+# Read the dataset
+df = pd.read_csv('sales_data.csv')
+
+# Create a pivot table that shows the average sales made by each Sales Rep for each Category
+sales_pivot = pd.pivot_table(df, values='Sales', index='Sales Reps', columns='Categories', aggfunc='mean')
+
+print(sales_pivot)
+```
+
+Output:
+```
+Categories   Coffee  Juice  Smoothie
+Sales Reps                           
+John          100.0  150.0     200.0
+Mary          150.0  200.0     250.0
+```
+
+Example 3: Using `df.groupby()` to group the data by Date and calculate the total number of Customers who made a purchase on each date.
+
+```python
+import pandas as pd
+
+# Read the dataset
+df = pd.read_csv('sales_data.csv')
+
+# Convert the Date column to datetime format
+df['Date'] = pd.to_datetime(df['Date'])
+
+# Group the data by Date and calculate the total number of Customers who made a purchase on each date
+customer_count = df.groupby('Date')['Customers'].count()
+
+print(customer_count)
+```
+
+Output:
+```
+Date
+2021-01-01    3
+2021-01-02    2
+2021-01-03    2
+Name: Customers, dtype: int64
+```*****Completion ends****** 
+Completion for 
+ The data is having Sales Reps, Drinks/Products and 
+Categories columns that are categories. There are Sals Price, Cost
+and Profit columns that are numbers. Provide me 5 examples of df.groupby()
+methods using these column******Completion starts****** 
+Sure, here are 5 examples of `df.groupby()` methods using the given columns:
+
+1. Group by Sales Reps and calculate the total sales price, cost, and profit for each Sales Rep:
+
+```python
+df.groupby('Sales Reps')['Sales Price', 'Cost', 'Profit'].sum()
+```
+
+2. Group by Categories and calculate the average sales price, cost, and profit for each Category:
+
+```python
+df.groupby('Categories')['Sales Price', 'Cost', 'Profit'].mean()
+```
+
+3. Group by Drinks/Products and calculate the maximum sales price, cost, and profit for each Drink/Product:
+
+```python
+df.groupby('Drinks/Products')['Sales Price', 'Cost', 'Profit'].max()
+```
+
+4. Group by Sales Reps and Categories and calculate the total sales price, cost, and profit for each combination of Sales Rep and Category:
+
+```python
+df.groupby(['Sales Reps', 'Categories'])['Sales Price', 'Cost', 'Profit'].sum()
+```
+
+5. Group by Categories and calculate the number of unique Sales Reps selling each Category:
+
+```python
+df.groupby('Categories')['Sales Reps'].nunique()
+```*****Completion ends****** 
+Completion for 
+ The data is having Sales Reps, Drinks/Products and 
+Categories columns that are categories. There are Sals Price, Cost
+and Profit columns that are numbers. Provide me 5 examples of 
+df.pivot_table() methods using these column******Completion starts****** 
+Sure, here are 5 examples of `df.pivot_table()` methods using the given columns:
+
+1. Pivot table to calculate the average sales price, cost, and profit for each sales rep:
+
+```python
+df.pivot_table(values=['Sales Price', 'Cost', 'Profit'], index='Sales Rep', aggfunc='mean')
+```
+
+2. Pivot table to calculate the total sales price, cost, and profit for each product:
+
+```python
+df.pivot_table(values=['Sales Price', 'Cost', 'Profit'], index='Drinks/Products', aggfunc='sum')
+```
+
+3. Pivot table to calculate the maximum sales price, cost, and profit for each category:
+
+```python
+df.pivot_table(values=['Sales Price', 'Cost', 'Profit'], index='Categories', aggfunc='max')
+```
+
+4. Pivot table to calculate the minimum sales price, cost, and profit for each sales rep and category:
+
+```python
+df.pivot_table(values=['Sales Price', 'Cost', 'Profit'], index=['Sales Rep', 'Categories'], aggfunc='min')
+```
+
+5. Pivot table to calculate the median sales price, cost, and profit for each sales rep and product:
+
+```python
+df.pivot_table(values=['Sales Price', 'Cost', 'Profit'], index=['Sales Rep', 'Drinks/Products'], aggfunc='median')
+```*****Completion ends****** 
+Completion for 
+ The data is having Sales Reps, Drinks/Products and 
+Categories columns that are categories. There are Sals Price, Cost
+and Qty columns that are numbers. Tell me how I can get Profit for 
+each sale in this dataset. Then Provide me 5 examples of 
+df.groupby() methods using these column. Include the Profit column
+also.******Completion starts****** 
+To get the profit for each sale in the dataset, we can create a new column called "Profit" which is the difference between the Sales Price and Cost columns. We can do this using the following code:
+
+```python
+import pandas as pd
+
+# read in the dataset
+df = pd.read_csv('sales_data.csv')
+
+# create a new column for profit
+df['Profit'] = df['Sales Price'] - df['Cost']
+
+# view the updated dataframe
+print(df.head())
+```
+
+This will add a new column called "Profit" to the dataframe, which is the difference between the Sales Price and Cost columns.
+
+Now, here are 5 examples of `df.groupby()` methods using the Profit column:
+
+1. Group by Sales Rep and calculate the total profit for each rep:
+
+```python
+rep_profit = df.groupby('Sales Rep')['Profit'].sum()
+print(rep_profit)
+```
+
+2. Group by Category and calculate the average profit for each category:
+
+```python
+cat_profit = df.groupby('Category')['Profit'].mean()
+print(cat_profit)
+```
+
+3. Group by Product and calculate the maximum profit for each product:
+
+```python
+prod_profit = df.groupby('Product')['Profit'].max()
+print(prod_profit)
+```
+
+4. Group by Sales Rep and Category and calculate the total profit for each combination:
+
+```python
+rep_cat_profit = df.groupby(['Sales Rep', 'Category'])['Profit'].sum()
+print(rep_cat_profit)
+```
+
+5. Group by Sales Rep and Product and calculate the average profit for each combination:
+
+```python
+rep_prod_profit = df.groupby(['Sales Rep', 'Product'])['Profit'].mean()
+print(rep_prod_profit)
+```
+
+In each of these examples, we are grouping the dataframe by one or more columns and then performing an operation on the Profit column. The resulting output shows the calculated value for each group.*****Completion ends****** 
+Completion for 
+ I have 10 excel sheets with data in Database worksheet.
+Data is having Sales Reps, Drinks/Products and Categories columns that are 
+categories. There are Sals Price, Cost and Profit columns that are numbers. 
+Provide me a python script that loads the data from excel in pandas, 
+analysis it using 
+
+1) 5 pandas groupby method
+2) 5 pivot_table method
+
+and then writes the result to excel file called 'results_excel.xlsx'******Completion starts****** 
+Sure, here's a Python script that should do what you're asking for:
+
+```python
+import pandas as pd
+
+# Load the data from the 10 Excel sheets into a single DataFrame
+df = pd.concat(pd.read_excel('data.xlsx', sheet_name=None), ignore_index=True)
+
+# Perform 5 groupby analyses
+groupby1 = df.groupby('Sales Rep')['Sales Price'].sum()
+groupby2 = df.groupby('Drinks/Products')['Sales Price'].sum()
+groupby3 = df.groupby('Categories')['Sales Price'].sum()
+groupby4 = df.groupby(['Sales Rep', 'Categories'])['Sales Price'].sum()
+groupby5 = df.groupby(['Drinks/Products', 'Categories'])['Sales Price'].sum()
+
+# Perform 5 pivot table analyses
+pivot1 = pd.pivot_table(df, values='Sales Price', index='Sales Rep', columns='Categories', aggfunc='sum')
+pivot2 = pd.pivot_table(df, values='Sales Price', index='Drinks/Products', columns='Categories', aggfunc='sum')
+pivot3 = pd.pivot_table(df, values='Sales Price', index='Sales Rep', columns='Drinks/Products', aggfunc='sum')
+pivot4 = pd.pivot_table(df, values='Sales Price', index='Categories', columns='Sales Rep', aggfunc='sum')
+pivot5 = pd.pivot_table(df, values='Sales Price', index='Categories', columns='Drinks/Products', aggfunc='sum')
+
+# Write the results to an Excel file
+with pd.ExcelWriter('results_excel.xlsx') as writer:
+    groupby1.to_excel(writer, sheet_name='Groupby 1')
+    groupby2.to_excel(writer, sheet_name='Groupby 2')
+    groupby3.to_excel(writer, sheet_name='Groupby 3')
+    groupby4.to_excel(writer, sheet_name='Groupby 4')
+    groupby5.to_excel(writer, sheet_name='Groupby 5')
+    pivot1.to_excel(writer, sheet_name='Pivot 1')
+    pivot2.to_excel(writer, sheet_name='Pivot 2')
+    pivot3.to_excel(writer, sheet_name='Pivot 3')
+    pivot4.to_excel(writer, sheet_name='Pivot 4')
+    pivot5.to_excel(writer, sheet_name='Pivot 5')
+```
+
+This script assumes that your Excel file is named 'data.xlsx' and that the 10 sheets containing the data are all named 'Database'. If your file and sheet names are different, you'll need to adjust the script accordingly.*****Completion ends****** 
