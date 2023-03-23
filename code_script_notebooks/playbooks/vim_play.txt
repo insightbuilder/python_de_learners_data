@@ -1,0 +1,62 @@
+Vim Play book inside the SpaceVim flavor
+
+The document will list the various activities at the beginning. The same
+has to be practiced on the file of your choice. If there is doubt on
+the activities the command can be referred below
+
+The exercise is best done on the Docker created specifically as playground. If anything
+goes bad, all it is required is to kill the docker container, and the files are
+restored. DO NOT BIND THE DOCKER WORK DIR TO LOCAL DIRECTORY.
+
+1) Split the working Vim window into multiple window by splitting vertically / horizontally.
+2) Insert the output of your any of the config files in to the current document. Ensure
+you try out this insert in differnt locations
+3) Replace the pattern that is occuring with a different pattern, jj
+4) Do the above for a specific range
+5) Do the above for entire document, for the current line
+6) Execute the command on last line of the file, current line to last line
+7) use the .,.+5 command and see what happens
+8) execute the line deletes with a particular pattern with global command
+9) execute the line that deletes liness WITHOUT the patter
+10) try putting a new line before everyline
+11) now remove every empty line
+12) copy the lines with particular pattern to end of the file 
+13) move them to end of file
+14) reverse the file
+
+The following are related to the activities on splits 
+
+1) make a vs with a particular space, 
+2) Max out one of the windows on both direction using = & | then make the windows equal
+3) swap the splits (r)
+4) Play with ctrl w movements and s v and s g
+5) Open terminal in the vim 
+6) Try opening the space vim key binding file
+following activities are done in normal mode
+7) play with x, r and c for delete letter, replace it and change something
+8) Play with using G and V along with numbers
+9) Play with f, F, c and w 
+10) try inserting start of line, end of line and use S 
+11) yy , y$, d$, % for finding ')'
+12) ? and / for finding the words
+13) ctrl + i and ctrl + o after using / 
+14) work on using terminal commands in normal mode 
+15) open a super user permission file and directly write it using normal mode
+Command reference:
+
+1) :split , :vs
+2) :num read !command or  :read !command
+3) :s/old/new/g, :num s/old/new/g
+4) :11,15s/old/new/g 
+5) :. and :%
+6) .,$write 
+7) Works on the current line + 5 lines, did it
+8) :g/patern/d
+9) g!  or v
+10) :g/^/pu =\"\n\"
+11) :g/^\s*$/d
+12) :g/import/t$ or /m$
+13) :g/^/m0
+14) :vs | :terminal (The pipe is important)
+15) ~/.config/nvim/inti.vim
+16) :w !sudo tee%

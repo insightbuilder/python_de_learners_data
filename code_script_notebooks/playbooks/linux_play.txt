@@ -1,0 +1,277 @@
+BEGIN;
+Linux Playbook
+
+The command and scenarios has to be executed inside the
+Kali Docker image. The docker image is called linux_playg.
+The docker will be contain the
+set of set of files, prepared for this plabook and
+uploaded on to dockerhub.
+
+The fish will be already installed
+There will be a text file for
+  a) grep commands
+    - find "text" in files
+    - print line numbers where the text is found
+    - go to the line number in the file and edit it using vim
+    - counting matches
+    - search recursively in a folder
+    - print some lines above and below selection using -B and -A options
+    - count the number of occurence of the pattern
+    - list the files in the directory with the pattern
+    - list the files along with count of occurrences
+    - find the lines without the pattern
+  b) sed commands
+    The following needs to practiced based on the SED15Command_guide.pdf
+    using the license file text document, and existing python scripts
+    - Replacing the year / copyright at the top
+    - adding the octothorp to the starting
+    - clear the lines that contain some pattern ^.*----,*$/
+    - Snip only the part of the document that contains a pharse
+    - Do not print the remaining part of the document, using the -n
+    - directly apply the changes to file using -i flag
+    - Then convert that document into upper case
+    - insert one file into another
+
+c) csv files for awk / cut command
+    The below commands to be executed on the copy of the data_file.csv(that file is base)
+    - Recollect what is RS, NR, FS/OFS, and NF variables
+    - print out all the lines of the file
+    - Recollect the pattern { action } format in awk commands
+    - Remove the file header
+    - Print a range of lines
+    - Print 3rd or 5th line
+    - lose the empty line. There are two ways for this.
+    - print some columns from the file
+    - print some columns and lose the empty lines
+      - remember $0 is entire record
+    - Use the Begin Block
+    - Do math operation using sum = sum + $1 and +=
+      - Do it without includin the header
+    - Count the lines, all and only data lines
+    - Recollect that +$1 will force the awk interpreter to consider field as numerical
+    - Try understand below code
+     awk '+$1 { CREDITS[$3] += $1 }
+       END { for (NAME in CREDITS) print NAME, CREDITS[NAME] }' FS=, data_file.csv
+    - identify duplicate records
+    - remove the duplicate record
+    - trick awk to break record and reassemble using new seperator
+    - remove the additional spaces
+    - join the lines, with different field separators
+
+Awk inherits C programs printf. Wild cards are represented using %.
+The most common being %s (for string formatting), %d (for integer numbers formatting) and %f (for floating
+point number formatting)
+    - print data in tabular format
+    - get the average and print it in floating point type
+
+  String Manipulation using printf
+    - make the upper case
+    - Split a particular column and print the values
+
+  Perform replace on particular field
+   - replace using the gsub
+External commands can be invoked using the system('command')
+instruction to invoke a program and letting it intermixing its output in the AWK output
+stream. Or using a pipe so AWK can capture the output of the external program for
+finer control of the result.
+
+
+  d) jq action on json file
+  e) xargs commands
+    - create multiple directories using xargs
+    - remove multiple directories using xargs
+    - cat the command out put using -I flag and then execute
+    - play with your newer understanding
+  f) Tools like vim,git, Python, node.js, npm will be pre-installed
+  g) Rsync, sshd, tmux, fish shell and bash shell will be available
+Creating new user and providing permission
+  - Create Users
+    - Add the users to sudoers
+    - Change password
+    - delete users
+  - Create Group
+    - Add the above user to this group
+    - Add the group to the sudoers file
+    - Delete users
+  - Provide Permission
+    - Give permission for the user
+    - Give permission for the group
+    - Remove Permission
+Creating files and playing on file permission
+    - Create a shell script
+    - Give it execution permission
+    - Work with a single file and do the activities learnt from Tim
+Play with Processes
+  - using ps command the existing config file needs to have them
+  - using the htop command
+Creating fish config file
+  - create environment variables by export
+    - atleast two folders
+  - mkdir in the home folder, and include that in config
+  - create aliase for files inside the folders
+
+Configuring Tmux file
+  - tmux configuration needs to be fixed
+
+Configure the ssh
+  - create ssh-keys
+  - add ssh-keys for sharing it with servers
+  - copy ssh keys to remote server
+  - connecting to remote ssh server
+  - executing basic 5 commands to learn about the
+  - If the machine has no authorised_keys then first
+    chmod a+rwx,g-rwx,o-rwx .ssh
+    inside the ssh folder
+    chmod a+rws,u-x,g-rwx,o-rwx authorised_keys
+  server
+  - Start a local SSH server
+  - Get a remote server to connect to this server
+
+configure git
+  - configure the git username
+  - install the pat after creating it on Github
+  - ensure the git pull and push works by using
+  real git repo
+
+configure uncomplicate firewall(Doesn't make sense in Docker)
+  - write default outgoing deny and incoming allow
+  - write policies to allow 80, 443 and 22 ports
+  - check the denial
+
+User manipulation:
+  - add a user and give him super privs
+  - add a folder , a file and give it execution privs
+  - test each privs are working by editing and saving
+  - remove the file privs
+  - remove the user
+
+Configure SpaceVim:
+  - Install Spacevim
+  - Install the plugins for Python / JS dev
+  - Add the aesthetics
+
+configure netcat :
+  - Server mode
+  - listening mode
+
+
+Answer key:
+- xargs command :
+  # making directories ==> echo "one tow three" | xargs mkdir
+  # removing directories ==> echo "one tow three" | xargs rmdir
+  # cat numbers.txt | xargs -I % sh -c 'echo %; mkdir %'
+
+- xclip commands:
+  # xclip class_h.py
+  # echo cat numbers.txt | xargs -I % sh -c 'echo %; mkdir %' | xclip
+  # xclip -o
+  # There are three clipboard provided by the kernel, Primary, Secondary & clipboard
+  # xsel -po / -bo are similar
+  # xsel -so is having a different data
+  # xsel -ab provides a way to append items in one selection...
+
+- grep commands:
+  # grep 'patter' fileName.ext
+  # grep 'patter' -n fileName.ext
+  # vim +lnum fileName.py
+  # grep -B 2 -A 2 'File' logger_instance.py | grep -C 2 'patter' filename.py
+  # grep -c 'patter' filename.axt
+  # grep -R 'pattern' /dir/name
+  # grep -Rc 'pattern' /dir/name
+  # grep -v 'pattern' fileName
+  # grep -e 'import' -e 'logging'  logging_config.py
+  # grep -H 'patter' file/ folder
+
+- sed commands:
+  # sed -e 's/<COPYRIGHT HOLDER>/solverbot/' -e 's/<YEAR>/2022/' MIT.LICENSE | head
+  Note the second line place below
+  # sed -e 's/<COPYRIGHT HOLDER>/solverbot/
+          s/<YEAR>/2022/' MIT.LICENSE
+  # sed -e 's/^/#/' MIT.LICENSE
+  # sed -Ee 's/Copyright <(.*)> <(.*)>/Copyright \ 2024 \solverbot/' logger_instance.py | head
+  # sed -e '/Cop/,$p' file
+  # sed -i -e reg_exp file to directly modify file
+  # sed -e '1r input_file' output_file (to copy onefile into another)
+
+- awk commands:
+  # RS ==> Record Separator, NR ==> Record Number, FS/OFS ==> Field Separator, NF ==> Num of Fields
+  # awk '1 { print }' file
+  # pattern { action } ==> "pattern"  has to eval to non-zero for the "action" to be performed
+  # awk 'NR>1' file
+  # awk 'NR>5 && NR<7' file
+  # awk 'NR==2 || NR==5' file
+  the below will remove the whitespace only lines, no NFs
+  # awk 'NF' file (or) awk '1' RS='' file
+  # awk '{ print $1 $3 }' FS=, OFS=: file
+  # awk '{ print $1 $3 }' FS=, OFS=: file
+  # awk '{ print $0  $1, $3 }' FS=, OFS='==>>'  file
+  # awk 'BEGIN { FS=OFS=, } NF { print $1, $2}'  data_file.csv
+  # awk '{ a = a + $1 } END { print a }' FS=, OFS=, data_file.csv
+  # awk 'NR > 2 { a = a + $1 } END { print a }' FS=, OFS=, data_file.csv
+  # awk '+$1 { count+=1 } END { print count }' data_file.csv
+  # awk 'a[$0]++' file
+  removes the duplicate lines
+  # awk '!a[$0]++' file
+  following trick forces awk to break record an reassemble
+  # awk '$1=$1' { print }FS=, OFS=';' file
+  Below command will keep the blank lines too, can you think why?
+  # awk '($1=$1) || 1 { print }' FS=, OFS=';' file
+  Remove spaces
+  # awk '$1=$1' file
+  Note there is ORS below, Output Record Separator
+  # awk '{ print $3 }' FS=, ORS=' ' file; echo
+  Think what is different
+  awk '/[^[:space:]]/ { print SEP $3; SEP="+" }' FS=, ORS='' file; echo
+  awk '/[^[:space:]]/ { print $3 }' FS=, ORS=' ' play_exercise/data_file.csv
+  The below command uses printf from c
+  awk '+$1 { printf("%s ", $3 )}' FS=, data_file.csv
+  printf can be used for tabular data output
+   awk '+$1 { printf("%10s | %4d\n", $3, $1) }' FS=, data_file.csv
+   awk '+$1 { printf("%-10s | %4d\n", $3, $1) }' FS=, data_file.csv
+  getting the average
+awk '+$1 { SUM+=$1; NUM+=1 } END { printf("AVG=%f",SUM/NUM); }' FS=, file
+
+  making upper case and working with substring
+awk '{ $3 = toupper(substr($3,1,3)) substr($3,3) } $3' FS=, OFS=, data_file.csv
+awk '$3 { print toupper($0); }' data_file.csv
+
+below is the date split
+awk '+$1 { split($2, DATE," "); print $1, $3, DATE[2], DATE[3] }' FS=, data_file.csv
+awk '+$1 { split($4, GRP, /:+/); print $3, GRP[1], GRP[2] }' FS=, file
+
+Performing replacement using gsub
+awk '+$1 { gsub(/ +/, "-", $2); print }' FS=, file
+
+invoking the extenal command
+awk 'BEGIN { printf("UPDATED: "); system("date") } /^UPDATED:/ { next } $1' data_file.csv
+Following is a bit more complicated version using the getline and CMD variable
+awk '+$1 { CMD | getline $5; close(CMD); print }' CMD="uuidgen" FS=, OFS=, data_file.csv
+
+-jq commands:
+ # make the variable to hold the contents of a file
+ # make the json file / variable pretty print on terminal
+ # use the type, length option
+ # use the above with , filter
+ # use the type, length and ',' filter with '.'
+ # find the keys
+ # use keys with uniq and sort 
+ # check the values under each key 
+ # Find a array, and try to probe couple of vals in that 
+ # Work on selecting multiple items
+ # Work with selecting array and filter using grep
+ # find the index of a string
+ # Use the index and select the object
+
+ # set variab $(shell commmand file_name)
+ # echo $variab | jq
+ # echo $variab | jq 'type,length' 
+ # echo $variab | jq '.|type, length' 
+ # echo $variab | jq '.|keys'
+ # echo $variab | jq '.keyval|type' 
+ # echo $variab | jq '.keyval| .[]| select(.key==value)'
+ # echo $variab | jq '.rows | .[] | .project' | grep -l 'asyn' 
+ # echo '"ther"'| jq 'index(th)'
+ # echo '["fee","sls","ksra"]' | jq 'index("yoat")'
+ # echo $json | jq '.rows | .[] | .project| select(index("boto"))'
+
+
