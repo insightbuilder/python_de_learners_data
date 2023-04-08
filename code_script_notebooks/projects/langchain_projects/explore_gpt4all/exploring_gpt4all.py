@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1MQSpApD-yzV7kMo_Wv84bmjdI04pU3f3
 """
 
-!pip install langchain sentence-transformers transformers huggingface huggingface_hub llama-cpp-python
-
 from huggingface_hub import hf_hub_download
 
 #Download the model
@@ -29,12 +27,17 @@ llm = LlamaCpp(model_path="/content/ggjt-model.bin")
 
 question = "What NFL team won the Super Bowl in the year Justin Bieber was born?"
 
+print(f"""Querying the llamaCpp llm directly. Without any support function.\n
+      The question is :\n
+      {question}""")
+
 llm(question)
 
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
 llm_chain.run(question)
 
+print("Working out the Pandas Dataframe Agent with LLamaCpp...\n")
 #Two areas to check.
 from langchain.chains import LLMRequestsChain
 from langchain.agents import create_pandas_dataframe_agent
@@ -46,8 +49,16 @@ df = pd.read_csv('/content/space_shortened.csv')
 gpt4llagent = create_pandas_dataframe_agent(llm,
                                       df, 
                                       verbose=True)
+print("Agent setting done. Now querying it... ")
 
-gpt4llagent.run("How many travellers are in the dataset?")
+try:
+    gpt4llagent.run("How many travellers are in the dataset?")
+
+except Exception as e:
+
+    print(e)
+
+print("Starting to setup LLM Requests Chain...")
 
 req_template = """Between >>> and <<< are the raw search result text from google.
 Extract the answer to the question '{query}' or say "not found" if the information is not contained.
@@ -71,14 +82,19 @@ inputs = {
     "url": "https://www.google.com/search?q=" + question.replace(" ", "+")
 }
 
-netchain(inputs)
+print("Done setting up requests chain. Executing it")
+try:
+    netchain(inputs)
+
+except Exception as e:
+    print(e)
 
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
-from langchain.agents import AgentType
 
 import os
-os.environ['SERPER_API_KEY']='afe3bf4e0ffaba00be5a8bb06eecea7d30d45e4404872d76117f0d96da083e86'
+import sys
+os.environ['SERPER_API_KEY']= sys.argv[1]
 
 tools = load_tools(["google-serper"], llm=llm)
 
@@ -87,7 +103,13 @@ agent = initialize_agent(tools,
                          agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
                          verbose=True)
 
-agent.run("What is the weather in Delhi?")
+print("Executing the agent with tools...")
+try:
+    agent.run("What is the weather in Delhi?")
+
+except Exception as e:
+
+    print(e)
 
 
 
