@@ -10,8 +10,8 @@ Original file is located at
 from huggingface_hub import hf_hub_download
 
 #Download the model
-#hf_hub_download(repo_id="LLukas22/gpt4all-lora-quantized-ggjt", 
-#                filename="ggjt-model.bin", 
+#hf_hub_download(repo_id="LLukas22/gpt4all-lora-quantized-ggjt",
+#                filename="ggjt-model.bin",
 #                local_dir=".")
 
 from langchain.llms import LlamaCpp
@@ -31,11 +31,14 @@ print(f"""Querying the llamaCpp llm directly. Without any support function.\n
       The question is :\n
       {question}""")
 
-llm(question)
+reply1 = llm(question)
+print(f"Reply for plain llm is :\n {reply1}")
 
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
-llm_chain.run(question)
+reply2 = llm_chain.run(question)
+
+print(f"Reply for llm chain run is \n {reply2}")
 
 print("Working out the Pandas Dataframe Agent with LLamaCpp...\n")
 #Two areas to check.
@@ -47,16 +50,18 @@ import pandas as pd
 df = pd.read_csv('space_shortened.csv')
 
 gpt4llagent = create_pandas_dataframe_agent(llm,
-                                      df, 
+                                      df,
                                       verbose=True)
 print("Agent setting done. Now querying it... ")
 
 try:
-    gpt4llagent.run("How many travellers are in the dataset?")
+    reply3 = gpt4llagent.run("How many travellers are in the dataset?")
 
 except Exception as e:
 
     print(e)
+
+print(f"Reply for pandas agent \n {reply3}")
 
 print("Starting to setup LLM Requests Chain...")
 
@@ -72,7 +77,7 @@ req_prompt = PromptTemplate(
     template=req_template,
 )
 
-netchain = LLMRequestsChain(llm_chain = LLMChain(llm=llm, 
+netchain = LLMRequestsChain(llm_chain = LLMChain(llm=llm,
                                               prompt=req_prompt))
 
 question = "What are the Three biggest states in India and its population?"
@@ -84,10 +89,11 @@ inputs = {
 
 print("Done setting up requests chain. Executing it")
 try:
-    netchain(inputs)
+    reply5 = netchain(inputs)
 
 except Exception as e:
     print(e)
+print(f"Reply for LLMRequests chain \n {reply5}")
 
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
@@ -98,28 +104,19 @@ os.environ['SERPER_API_KEY']= sys.argv[1]
 
 tools = load_tools(["google-serper"], llm=llm)
 
-agent = initialize_agent(tools, 
-                         llm, 
-                         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
+agent = initialize_agent(tools,
+                         llm,
+                         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
                          verbose=True)
 
 print("Executing the agent with tools...")
 try:
-    agent.run("What is the weather in Delhi?")
+    reply6 = agent.run("What is the weather in Delhi?")
 
 except Exception as e:
 
     print(e)
 
+print(f"Final Reply from tools setup with google search \n {reply6}")
 
-
-
-
-from langchain.embeddings import LlamaCppEmbeddings
-
-llama = LlamaCppEmbeddings(model_path="/content/ggjt-model.bin")
-
-text = "This is a test document."
-
-llama.embed_query(text)
-
+print("End of Script")
