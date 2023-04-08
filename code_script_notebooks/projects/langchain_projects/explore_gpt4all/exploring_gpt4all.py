@@ -31,8 +31,8 @@ print(f"""Querying the llamaCpp llm directly. Without any support function.\n
       The question is :\n
       {question}""")
 
-reply1 = llm(question)
-print(f"Reply for plain llm is :\n {reply1}")
+#reply1 = llm(question)
+#print(f"Reply for plain llm is :\n {reply1}")
 
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
@@ -55,13 +55,11 @@ gpt4llagent = create_pandas_dataframe_agent(llm,
 print("Agent setting done. Now querying it... ")
 
 try:
-    reply3 = gpt4llagent.run("How many travellers are in the dataset?")
+    pass#reply3 = gpt4llagent.run("How many travellers are in the dataset?")
 
+    #print(f"Reply for pandas agent \n {reply3}")
 except Exception as e:
-
     print(e)
-
-print(f"Reply for pandas agent \n {reply3}")
 
 print("Starting to setup LLM Requests Chain...")
 
@@ -89,14 +87,15 @@ inputs = {
 
 print("Done setting up requests chain. Executing it")
 try:
-    reply5 = netchain(inputs)
+    pass #reply5 = netchain(inputs)
 
+    #print(f"Reply for LLMRequests chain \n {reply5}")
 except Exception as e:
     print(e)
-print(f"Reply for LLMRequests chain \n {reply5}")
 
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
+from langchain.agents import AgentType
 
 import os
 import sys
@@ -113,10 +112,9 @@ print("Executing the agent with tools...")
 try:
     reply6 = agent.run("What is the weather in Delhi?")
 
+    print(f"Final Reply from tools setup with google search \n {reply6}")
 except Exception as e:
 
     print(e)
-
-print(f"Final Reply from tools setup with google search \n {reply6}")
 
 print("End of Script")
