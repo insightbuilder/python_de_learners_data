@@ -10,9 +10,9 @@ Original file is located at
 from huggingface_hub import hf_hub_download
 
 #Download the model
-hf_hub_download(repo_id="LLukas22/gpt4all-lora-quantized-ggjt", 
-                filename="ggjt-model.bin", 
-                local_dir=".")
+#hf_hub_download(repo_id="LLukas22/gpt4all-lora-quantized-ggjt", 
+#                filename="ggjt-model.bin", 
+#                local_dir=".")
 
 from langchain.llms import LlamaCpp
 from langchain import PromptTemplate, LLMChain
@@ -23,7 +23,7 @@ Answer: Let's think step by step."""
 
 prompt = PromptTemplate(template=template, input_variables=["question"])
 
-llm = LlamaCpp(model_path="/content/ggjt-model.bin")
+llm = LlamaCpp(model_path="ggjt-model.bin")
 
 question = "What NFL team won the Super Bowl in the year Justin Bieber was born?"
 
@@ -44,7 +44,7 @@ from langchain.agents import create_pandas_dataframe_agent
 
 import pandas as pd
 
-df = pd.read_csv('/content/space_shortened.csv')
+df = pd.read_csv('space_shortened.csv')
 
 gpt4llagent = create_pandas_dataframe_agent(llm,
                                       df, 
