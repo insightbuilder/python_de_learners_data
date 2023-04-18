@@ -1,7 +1,8 @@
+import os
+os.environ["LANGCHAIN_HANDLER"] = "langchain"
 ##This file will be used for questioning the documents that is already 
 ##stored inside the chromadb
 
-import os
 from langchain.chains import RetrievalQA
 from langchain.vectorstores import FAISS
 from langchain import PromptTemplate, LLMChain
@@ -30,11 +31,3 @@ while True:
     print(f"The answer to your question : {query}",end='\n')
 
     print(output)
-
-    keepgoing = input("Do you want to continue yes or no: ")
-
-    if (keepgoing == 'N') or (keepgoing == 'no') or (keepgoing == 'n') or (keepgoing == 'NO'):
-        print("Have a great day. See you!!!")
-        break
-    
-    print("Lets continue....")
