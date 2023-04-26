@@ -1,0 +1,9 @@
+[TWITTER]
+api_key = ********
+api_secret = ********
+access_token = ********
+access_secret = ********
+bearer_token = ********
+clientId = ********
+clientSecret = ********
+openai_api_key = sk-xxxxxx
