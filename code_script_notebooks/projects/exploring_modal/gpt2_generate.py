@@ -17,7 +17,6 @@ def download_model():
         .pip_install("torch","transformers")
         .run_function(download_model)
         )
-
 def generate_text(prompt: str):
     from transformers import pipeline
 
