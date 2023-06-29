@@ -44,11 +44,11 @@ def make_graph(dict_convert):
         org = data[3]
 
         if name not in execs:
-            nodes.append(Node(id=name,label=name,symbolType='diamond',color='#FDD00F'))
+            nodes.append(Node(id=name,symbolType='diamond',color='#FDD00F'))
             execs.append(name)
 
         if org not in orgs:
-            nodes.append(Node(id=org,color="#07A7A6"))
+            nodes.append(Node(id=org,label=org,color="#07A7A6"))
             orgs.append(org)
         
         position = f"{data[2]} of"
