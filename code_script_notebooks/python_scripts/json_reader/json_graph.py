@@ -25,8 +25,8 @@ if your_file is not None:
 else:
     st.write("Example api file can be located here")
 
-    st.write("""https://raw.githubusercontent.com/Kamalabot/streamlit_deploys/main/json_reader/toplevel_comment_zGAkhN1YZXM.json""")
-    json_data = get_json("""https://raw.githubusercontent.com/Kamalabot/streamlit_deploys/main/json_reader/toplevel_comment_zGAkhN1YZXM.json""")
+    st.write("""https://raw.githubusercontent.com/insightbuilder/python_de_learners_data/main/code_script_notebooks/python_scripts/json_reader/toplevel_comment_zGAkhN1YZXM.json""")
+    json_data = get_json("https://raw.githubusercontent.com/insightbuilder/python_de_learners_data/main/code_script_notebooks/python_scripts/json_reader/toplevel_comment_zGAkhN1YZXM.json")
 try:
         length = len(json_data)
         if length < 15:
