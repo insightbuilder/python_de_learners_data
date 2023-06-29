@@ -1,0 +1,534 @@
+[
+    {
+        "kind": "youtube#commentThread",
+        "etag": "PYCt2h_KPoCpzMmbusOP0fADCX0",
+        "id": "UgwsTEVskhHG8NQ-JwR4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "yUsIOxKdTzPQB4PWAhZMGazOk2U",
+                "id": "UgwsTEVskhHG8NQ-JwR4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "weaviate",
+                    "textOriginal": "weaviate",
+                    "authorDisplayName": "Geraldo Francisco",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqMhhpbLylSB2Ab9xJdS_136R2eVd-m5m4Xm-A=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCIDi_6e3BMDYT9K0DXNtp9Q",
+                    "authorChannelId": {
+                        "value": "UCIDi_6e3BMDYT9K0DXNtp9Q"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 0,
+                    "publishedAt": "2023-06-16T20:05:57Z",
+                    "updatedAt": "2023-06-16T20:05:57Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 1,
+            "isPublic": true
+        },
+        "replies": {
+            "comments": [
+                {
+                    "kind": "youtube#comment",
+                    "etag": "VP6fvd175Ohhji0Nd_BkPLRCqfs",
+                    "id": "UgwsTEVskhHG8NQ-JwR4AaABAg.9r1bARjL6Kt9r29IcgJ_FA",
+                    "snippet": {
+                        "videoId": "zGAkhN1YZXM",
+                        "textDisplay": "Weaviate has got its own 2 videos, going deep in the concepts and capabilities. Take a look in the playlists",
+                        "textOriginal": "Weaviate has got its own 2 videos, going deep in the concepts and capabilities. Take a look in the playlists",
+                        "parentId": "UgwsTEVskhHG8NQ-JwR4AaABAg",
+                        "authorDisplayName": "Kamalraj M M",
+                        "authorProfileImageUrl": "https://yt3.ggpht.com/BSRmeWvZEuHXYKZxK0BK0u8uLqrtyRlfdFjejf-QChnNc2eSXQyt8_WNKbJ3lZonSg6yMhuA=s48-c-k-c0x00ffffff-no-rj",
+                        "authorChannelUrl": "http://www.youtube.com/channel/UCRkoxQy1AuX8dT8WYnw0w-w",
+                        "authorChannelId": {
+                            "value": "UCRkoxQy1AuX8dT8WYnw0w-w"
+                        },
+                        "canRate": true,
+                        "viewerRating": "none",
+                        "likeCount": 0,
+                        "publishedAt": "2023-06-17T01:12:54Z",
+                        "updatedAt": "2023-06-17T01:12:54Z"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "f_TAX1FQ16yDmGTuqOW6WNtNuEM",
+        "id": "Ugxm2WjSpu4xANIPWpR4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "QeLr7y8fFTLd2DSsyRev_sXzxTo",
+                "id": "Ugxm2WjSpu4xANIPWpR4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Awesome video! Were you able to figure out how to use open source HF embeddings with Pgvector?? Any updates?",
+                    "textOriginal": "Awesome video! Were you able to figure out how to use open source HF embeddings with Pgvector?? Any updates?",
+                    "authorDisplayName": "Bobby Singh",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/bL1xQ_58wHFjdPJrnVNsKgmJIrNuwq9A3W_OFggf6a9F8YT-PAAiKr5Cp1Q6rEvL42TueR9irw=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC4uxetSz7bxBKxK9vwW92zQ",
+                    "authorChannelId": {
+                        "value": "UC4uxetSz7bxBKxK9vwW92zQ"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 0,
+                    "publishedAt": "2023-06-06T01:31:26Z",
+                    "updatedAt": "2023-06-06T01:31:55Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 3,
+            "isPublic": true
+        },
+        "replies": {
+            "comments": [
+                {
+                    "kind": "youtube#comment",
+                    "etag": "KdyaBi7BvIbn4OsAG8EQp_61tao",
+                    "id": "Ugxm2WjSpu4xANIPWpR4AaABAg.9qarfiLzoP99qeH6zrc2jw",
+                    "snippet": {
+                        "videoId": "zGAkhN1YZXM",
+                        "textDisplay": "@Bobby Singh I call the classes and functions that are written in langchain as primitives.\nWe can make pg_vector to be compatible with other embedding functions by changing the vector dimensions that we use to create the table with vector datatype like below examples. (https://github.com/pgvector/pgvector)\nOpenAI:\nCREATE TABLE items (id bigserial PRIMARY KEY, embedding vector(1536));\nPalmAPI:\nCREATE TABLE items (id bigserial PRIMARY KEY, embedding vector(768));",
+                        "textOriginal": "@Bobby Singh I call the classes and functions that are written in langchain as primitives.\nWe can make pg_vector to be compatible with other embedding functions by changing the vector dimensions that we use to create the table with vector datatype like below examples. (https://github.com/pgvector/pgvector)\nOpenAI:\nCREATE TABLE items (id bigserial PRIMARY KEY, embedding vector(1536));\nPalmAPI:\nCREATE TABLE items (id bigserial PRIMARY KEY, embedding vector(768));",
+                        "parentId": "Ugxm2WjSpu4xANIPWpR4AaABAg",
+                        "authorDisplayName": "Kamalraj M M",
+                        "authorProfileImageUrl": "https://yt3.ggpht.com/BSRmeWvZEuHXYKZxK0BK0u8uLqrtyRlfdFjejf-QChnNc2eSXQyt8_WNKbJ3lZonSg6yMhuA=s48-c-k-c0x00ffffff-no-rj",
+                        "authorChannelUrl": "http://www.youtube.com/channel/UCRkoxQy1AuX8dT8WYnw0w-w",
+                        "authorChannelId": {
+                            "value": "UCRkoxQy1AuX8dT8WYnw0w-w"
+                        },
+                        "canRate": true,
+                        "viewerRating": "none",
+                        "likeCount": 0,
+                        "publishedAt": "2023-06-07T09:20:12Z",
+                        "updatedAt": "2023-06-07T09:20:12Z"
+                    }
+                },
+                {
+                    "kind": "youtube#comment",
+                    "etag": "tMtgHxyr9vM8x7pekg-u9gSIV6U",
+                    "id": "Ugxm2WjSpu4xANIPWpR4AaABAg.9qarfiLzoP99qdRyCi6YBi",
+                    "snippet": {
+                        "videoId": "zGAkhN1YZXM",
+                        "textDisplay": "@Kamalraj M M May I know what you mean by \u201cprimitive in LC.\u201d And how many dimension should the vector model be? Seems like from your video only open ai dimensions # was compatible out of box for pgvector?",
+                        "textOriginal": "@Kamalraj M M May I know what you mean by \u201cprimitive in LC.\u201d And how many dimension should the vector model be? Seems like from your video only open ai dimensions # was compatible out of box for pgvector?",
+                        "parentId": "Ugxm2WjSpu4xANIPWpR4AaABAg",
+                        "authorDisplayName": "Bobby Singh",
+                        "authorProfileImageUrl": "https://yt3.ggpht.com/bL1xQ_58wHFjdPJrnVNsKgmJIrNuwq9A3W_OFggf6a9F8YT-PAAiKr5Cp1Q6rEvL42TueR9irw=s48-c-k-c0x00ffffff-no-rj",
+                        "authorChannelUrl": "http://www.youtube.com/channel/UC4uxetSz7bxBKxK9vwW92zQ",
+                        "authorChannelId": {
+                            "value": "UC4uxetSz7bxBKxK9vwW92zQ"
+                        },
+                        "canRate": true,
+                        "viewerRating": "none",
+                        "likeCount": 0,
+                        "publishedAt": "2023-06-07T01:35:45Z",
+                        "updatedAt": "2023-06-07T01:35:45Z"
+                    }
+                },
+                {
+                    "kind": "youtube#comment",
+                    "etag": "o4yuzoVK7LtJAjz5n_pdMuaBgSI",
+                    "id": "Ugxm2WjSpu4xANIPWpR4AaABAg.9qarfiLzoP99qb5WzqruUL",
+                    "snippet": {
+                        "videoId": "zGAkhN1YZXM",
+                        "textDisplay": "We can use the HFembedding primitive in LC for that, and load the vectors into PGVector. The more modular approach is to use Weaviate\nWeaviate vector store is both database and embeding storage in one",
+                        "textOriginal": "We can use the HFembedding primitive in LC for that, and load the vectors into PGVector. The more modular approach is to use Weaviate\nWeaviate vector store is both database and embeding storage in one",
+                        "parentId": "Ugxm2WjSpu4xANIPWpR4AaABAg",
+                        "authorDisplayName": "Kamalraj M M",
+                        "authorProfileImageUrl": "https://yt3.ggpht.com/BSRmeWvZEuHXYKZxK0BK0u8uLqrtyRlfdFjejf-QChnNc2eSXQyt8_WNKbJ3lZonSg6yMhuA=s48-c-k-c0x00ffffff-no-rj",
+                        "authorChannelUrl": "http://www.youtube.com/channel/UCRkoxQy1AuX8dT8WYnw0w-w",
+                        "authorChannelId": {
+                            "value": "UCRkoxQy1AuX8dT8WYnw0w-w"
+                        },
+                        "canRate": true,
+                        "viewerRating": "none",
+                        "likeCount": 1,
+                        "publishedAt": "2023-06-06T03:41:10Z",
+                        "updatedAt": "2023-06-06T03:41:10Z"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "5gr6ZCQTQ2aAGuvWT4YI-t7DoSo",
+        "id": "UgyCl0qLyiXFAcADoJF4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "u8YRim1bXLbjqd2y8RCK-Qz9Jh0",
+                "id": "UgyCl0qLyiXFAcADoJF4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Awesome video, thanks! I admire your attitude towards 'stuff you don't know yet'. It seems you share what you found out so far and are fully aware that there is plenty of knowledge in this field yet to be learned. Big thumbs up!\ud83d\udc4d\ud83d\udc4f",
+                    "textOriginal": "Awesome video, thanks! I admire your attitude towards 'stuff you don't know yet'. It seems you share what you found out so far and are fully aware that there is plenty of knowledge in this field yet to be learned. Big thumbs up!\ud83d\udc4d\ud83d\udc4f",
+                    "authorDisplayName": "Jelle de Rijke",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqO8nsbuMeqmVSLAhP-Dr2Qn_-aYdSCyklqYHJCKyJo=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC6_FVUf1LCqFHi1Kd6bxPmw",
+                    "authorChannelId": {
+                        "value": "UC6_FVUf1LCqFHi1Kd6bxPmw"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 0,
+                    "publishedAt": "2023-05-23T06:12:45Z",
+                    "updatedAt": "2023-05-23T06:12:45Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "-T5aGZ_M8Qoa_0IpYm4MCQ-SG-I",
+        "id": "UgyL5hKPycmzurD15SB4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "VpQMAe0OwfU_fwKst0fmFXgbp50",
+                "id": "UgyL5hKPycmzurD15SB4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "What is the difference between a vectorstore and a retriever?",
+                    "textOriginal": "What is the difference between a vectorstore and a retriever?",
+                    "authorDisplayName": "Daniel Weikert",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqO8LUOdtRDy-MpGtjINYEpg7wu5jwu5dK3gnbv4Vg=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCfKuWWfdQ5Cq0J3EOw3Vcyw",
+                    "authorChannelId": {
+                        "value": "UCfKuWWfdQ5Cq0J3EOw3Vcyw"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 0,
+                    "publishedAt": "2023-05-13T15:18:51Z",
+                    "updatedAt": "2023-05-13T15:18:51Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 1,
+            "isPublic": true
+        },
+        "replies": {
+            "comments": [
+                {
+                    "kind": "youtube#comment",
+                    "etag": "WR4io2niCD8x_dykbUimUoE416I",
+                    "id": "UgyL5hKPycmzurD15SB4AaABAg.9peYHuu2H3t9peZMyaL7P4",
+                    "snippet": {
+                        "videoId": "zGAkhN1YZXM",
+                        "textDisplay": "Vector store is like database, while retriever is the function that retrieves data from the vectorstore, and hands it to llm for answering question",
+                        "textOriginal": "Vector store is like database, while retriever is the function that retrieves data from the vectorstore, and hands it to llm for answering question",
+                        "parentId": "UgyL5hKPycmzurD15SB4AaABAg",
+                        "authorDisplayName": "Kamalraj M M",
+                        "authorProfileImageUrl": "https://yt3.ggpht.com/BSRmeWvZEuHXYKZxK0BK0u8uLqrtyRlfdFjejf-QChnNc2eSXQyt8_WNKbJ3lZonSg6yMhuA=s48-c-k-c0x00ffffff-no-rj",
+                        "authorChannelUrl": "http://www.youtube.com/channel/UCRkoxQy1AuX8dT8WYnw0w-w",
+                        "authorChannelId": {
+                            "value": "UCRkoxQy1AuX8dT8WYnw0w-w"
+                        },
+                        "canRate": true,
+                        "viewerRating": "none",
+                        "likeCount": 0,
+                        "publishedAt": "2023-05-13T15:28:17Z",
+                        "updatedAt": "2023-05-13T15:28:17Z"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "FuRlEp4A946qR80C2L4rCW3bxEw",
+        "id": "UgyIAOYyqxF3wlMWGcd4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "17Dc_k9VR49DDJtqDh6quxAYunM",
+                "id": "UgyIAOYyqxF3wlMWGcd4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Thank you, first video to take prod into account. Come to think about it, I think you\u2019re the first to even mention the word lol. Well done sir Ji.",
+                    "textOriginal": "Thank you, first video to take prod into account. Come to think about it, I think you\u2019re the first to even mention the word lol. Well done sir Ji.",
+                    "authorDisplayName": "Zac Boyles",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqPstUQrqqF4P9_ihitOMo_3VQUZHhQBa5KNab-YLxw=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC5fWZ-3rZnpKf6zy5-dQOmQ",
+                    "authorChannelId": {
+                        "value": "UC5fWZ-3rZnpKf6zy5-dQOmQ"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 1,
+                    "publishedAt": "2023-05-11T10:42:52Z",
+                    "updatedAt": "2023-05-11T10:42:52Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "-IWXlxUMW3l8jaeDu7GOsIQ91nc",
+        "id": "Ugxr0-8Z3V1TLvfmrs14AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "mGukWpT6M6_IPmGLu1jJ7dR6Ccs",
+                "id": "Ugxr0-8Z3V1TLvfmrs14AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Not sure why Milvus and Weaviate are not being considered here. The Pgvector seems like a workaround, but I think we need something new and purpose-built for a vector store.",
+                    "textOriginal": "Not sure why Milvus and Weaviate are not being considered here. The Pgvector seems like a workaround, but I think we need something new and purpose-built for a vector store.",
+                    "authorDisplayName": "Shaun Prince",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqNaTW6YEa4wYr_8T9ZxlEbwljyzFNg0uPYPeFYjQw=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC1v-XOVVtp7GN_6qm-NGHyg",
+                    "authorChannelId": {
+                        "value": "UC1v-XOVVtp7GN_6qm-NGHyg"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 3,
+                    "publishedAt": "2023-04-28T22:09:49Z",
+                    "updatedAt": "2023-04-28T22:09:49Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "sa6ycjAe7_mFUDLzGifrjuQQKjE",
+        "id": "UgydAQdpKysWW_mJQLF4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "DmC8SR7MRreMpRWTC6uIlNHKAjE",
+                "id": "UgydAQdpKysWW_mJQLF4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Amazing !! We can easily make out from ur voice that u hav a lot of practical experience, unlike other youtubers who just copy paste content !!",
+                    "textOriginal": "Amazing !! We can easily make out from ur voice that u hav a lot of practical experience, unlike other youtubers who just copy paste content !!",
+                    "authorDisplayName": "Subin Nair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqPi4d-M_NaIBL9rZul1CP63FZQTKME4jIRhzU7v=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UComJoUOCv3CukdS1uNfTxPw",
+                    "authorChannelId": {
+                        "value": "UComJoUOCv3CukdS1uNfTxPw"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 2,
+                    "publishedAt": "2023-04-22T05:07:21Z",
+                    "updatedAt": "2023-04-22T05:07:21Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "G7fzb3jm1ZVtmVdlRXf02SvEVRQ",
+        "id": "Ugww_ei9g0VORWDRMRx4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "GOA6nhZx7syDKwTdkLMEWIYQCbY",
+                "id": "Ugww_ei9g0VORWDRMRx4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "GREAT JOB! Thanks!!! PS Pinecone as of this weekend requires ne waccounts to pay! no more free!",
+                    "textOriginal": "GREAT JOB! Thanks!!! PS Pinecone as of this weekend requires ne waccounts to pay! no more free!",
+                    "authorDisplayName": "bingolio",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/RSAX_ZZYG76xmgEJlhqxutSI9-hwk_-oyFhL9E2-I1bgCvKm9uONyz3OGy_bT6Cszt7RsA15A60=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCM-54CE7zDkBcycbCmA7orw",
+                    "authorChannelId": {
+                        "value": "UCM-54CE7zDkBcycbCmA7orw"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 1,
+                    "publishedAt": "2023-04-17T18:55:31Z",
+                    "updatedAt": "2023-04-17T19:00:14Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "RVlA0wOo1fIcQl1kdItGI8ZO8ms",
+        "id": "UgwJB1yVBGuR8GtOORh4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "YPBUyZ6lvM6wFNZFpSOTILXN05w",
+                "id": "UgwJB1yVBGuR8GtOORh4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Your videos are amazing :)",
+                    "textOriginal": "Your videos are amazing :)",
+                    "authorDisplayName": "Venkat",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqOhRe30h4J38O_PidvoM9RQ9kthqWUf_ELYF2N5UwETlkg9CWjNYy4cVylNWBrA=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCD38HrzU9tKC-IWAMdz0K7A",
+                    "authorChannelId": {
+                        "value": "UCD38HrzU9tKC-IWAMdz0K7A"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 1,
+                    "publishedAt": "2023-04-08T18:31:57Z",
+                    "updatedAt": "2023-04-08T18:31:57Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "UbRBQHmY0BC-__yCKdigvYH90Bo",
+        "id": "UgyesiVgf7aDNxxuiZV4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "w3pQmaUjgBRZnp63CU9h6di88Ck",
+                "id": "UgyesiVgf7aDNxxuiZV4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Well done! Keep going!\ud83e\uddbe",
+                    "textOriginal": "Well done! Keep going!\ud83e\uddbe",
+                    "authorDisplayName": "klammer75",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqMtCQzCdFc9hldX6IRB_xoJgaflWfbABbKUXA=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCu98Sl8IcPkodczmPD-U4Uw",
+                    "authorChannelId": {
+                        "value": "UCu98Sl8IcPkodczmPD-U4Uw"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 1,
+                    "publishedAt": "2023-04-05T00:49:00Z",
+                    "updatedAt": "2023-04-05T00:49:00Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "jk-chByJ0dvWzK_nUSBta_CnLPY",
+        "id": "UgybPYgKVBTbhGuGmj14AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "Ffsw4p47ri_u5-y14LaUnVMx0Eo",
+                "id": "UgybPYgKVBTbhGuGmj14AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "I am following the videos that you upload related to langchain.\nThey are very relevant to what I am planning to develop for my job.\n\nAnd personally also planning to be actively participating in langchain related developments.",
+                    "textOriginal": "I am following the videos that you upload related to langchain.\nThey are very relevant to what I am planning to develop for my job.\n\nAnd personally also planning to be actively participating in langchain related developments.",
+                    "authorDisplayName": "Navneet Kumar Chaudhary",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqMiVuYBH085RDVJC_onQ-7jGOgLMvwi2t4Nnaa51Nc=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCqYFnAxAQgy3j-Qa6dqhD7Q",
+                    "authorChannelId": {
+                        "value": "UCqYFnAxAQgy3j-Qa6dqhD7Q"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 1,
+                    "publishedAt": "2023-04-04T09:29:15Z",
+                    "updatedAt": "2023-04-04T09:29:15Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 0,
+            "isPublic": true
+        }
+    },
+    {
+        "kind": "youtube#commentThread",
+        "etag": "YiutLMWmCFQUETii4ErJ2JAUS7Q",
+        "id": "UgytgF-GvBH5rTTVjmR4AaABAg",
+        "snippet": {
+            "videoId": "zGAkhN1YZXM",
+            "topLevelComment": {
+                "kind": "youtube#comment",
+                "etag": "vztjjmPcv8cVL9SWC4Ia-xHvAls",
+                "id": "UgytgF-GvBH5rTTVjmR4AaABAg",
+                "snippet": {
+                    "videoId": "zGAkhN1YZXM",
+                    "textDisplay": "Your audio is better now \ud83e\udd73\ud83c\udf89",
+                    "textOriginal": "Your audio is better now \ud83e\udd73\ud83c\udf89",
+                    "authorDisplayName": "Austin Daniels",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AGIKgqMxRVGpEl2DwoF7U-7PA_n4o0AhhDbj_33ZQ1Qp=s48-c-k-c0x00ffffff-no-rj",
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC0Bl8luB2GZRDLM2RoCRvgg",
+                    "authorChannelId": {
+                        "value": "UC0Bl8luB2GZRDLM2RoCRvgg"
+                    },
+                    "canRate": true,
+                    "viewerRating": "none",
+                    "likeCount": 1,
+                    "publishedAt": "2023-04-04T09:04:29Z",
+                    "updatedAt": "2023-04-04T09:04:29Z"
+                }
+            },
+            "canReply": true,
+            "totalReplyCount": 1,
+            "isPublic": true
+        },
+        "replies": {
+            "comments": [
+                {
+                    "kind": "youtube#comment",
+                    "etag": "OvFKDjjHp0frDNu6jEIb0ekutJs",
+                    "id": "UgytgF-GvBH5rTTVjmR4AaABAg.9o4SRnBYC_I9o4aN8QPLmI",
+                    "snippet": {
+                        "videoId": "zGAkhN1YZXM",
+                        "textDisplay": "Thanks for feedback. Switched to Blue Nano...",
+                        "textOriginal": "Thanks for feedback. Switched to Blue Nano...",
+                        "parentId": "UgytgF-GvBH5rTTVjmR4AaABAg",
+                        "authorDisplayName": "Kamalraj M M",
+                        "authorProfileImageUrl": "https://yt3.ggpht.com/BSRmeWvZEuHXYKZxK0BK0u8uLqrtyRlfdFjejf-QChnNc2eSXQyt8_WNKbJ3lZonSg6yMhuA=s48-c-k-c0x00ffffff-no-rj",
+                        "authorChannelUrl": "http://www.youtube.com/channel/UCRkoxQy1AuX8dT8WYnw0w-w",
+                        "authorChannelId": {
+                            "value": "UCRkoxQy1AuX8dT8WYnw0w-w"
+                        },
+                        "canRate": true,
+                        "viewerRating": "none",
+                        "likeCount": 1,
+                        "publishedAt": "2023-04-04T10:22:29Z",
+                        "updatedAt": "2023-04-04T10:22:29Z"
+                    }
+                }
+            ]
+        }
+    }
+]
