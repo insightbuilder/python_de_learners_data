@@ -53,7 +53,7 @@ def make_graph(dict_convert):
         
         position = f"{data[2]} of"
         
-        edges.append(Edge(source=name,target=org,label=position))
+        edges.append(Edge(source=name,target=org))
 
     return [nodes, edges]
 
