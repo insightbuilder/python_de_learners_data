@@ -32,7 +32,7 @@ mgmt_data = filtered_df.to_json(orient='values')
 dict_convert = json.loads(mgmt_data)
 #st.write(dict_convert)
 
-def make_graph(dict_convert):
+def make_graph(dict_convert,position_show=False):
     nodes = []
     edges = []
     execs = []
@@ -52,8 +52,11 @@ def make_graph(dict_convert):
             orgs.append(org)
         
         position = f"{data[2]} of"
-        
-        edges.append(Edge(source=name,target=org))
+
+        if position_show: 
+            edges.append(Edge(source=name,target=org,label=position))
+        else:
+            edges.append(Edge(source=name,target=org))
 
     return [nodes, edges]
 
@@ -66,7 +69,9 @@ config = Config(width=750,
                     nodeHighlightBehavior=True,
                     node={'labelProperty':'label','renderLabel':False})
 
-filter_nodes, filter_edges = make_graph(dict_convert)
+position_show = st.sidebar.checkbox('Show Position')
+#st.write(position_show)
+filter_nodes, filter_edges = make_graph(dict_convert,position_show)
 
 return_value = agraph(nodes = filter_nodes, 
                       edges = filter_edges, 
