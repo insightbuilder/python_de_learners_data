@@ -1,0 +1,13 @@
+How do you find the largest and smallest number in an unsorted integer array? 
+How are duplicates removed from a given array in Java? 
+How is an integer array sorted in place using the quicksort algorithm? 
+How do you remove duplicates from an array in place? 
+How do you reverse an array in place in Java? 
+How are duplicates removed from an array without using any library? 
+How do you find the middle element of a singly linked list in one pass? 
+How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle? 
+How do you reverse a linked list? 
+How do you reverse a singly linked list without recursion? 
+How are duplicate nodes removed in an unsorted linked list? 
+How do you find the third node from the end in a singly linked list? 
+How do you check if two strings are anagrams of each other? 
