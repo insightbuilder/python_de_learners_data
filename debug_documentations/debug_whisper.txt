@@ -1,0 +1,31 @@
+## Debugging process used of Whisper.cpp 
+
+Error :  #include <SDL.h> is missing when trying to do "make stream"
+
+https://stackoverflow.com/questions/10488775/sdl-h-no-such-file-or-directory-found-when-compiling
+
+Root cause mentioned in above SO link is Simple Direct Media Layer application is missing in 
+the system. Need to install it using the below 
+
+sudo apt-get install libsdl2-dev
+
+Additionally install 
+
+apt-get install libsdl2-image-dev
+apt-get install libsdl2-mixer-dev
+apt-get install libsdl2-ttf-dev
+
+Add the headers
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_mixer.h>  
+
+Compiler linker commands
+
+-lSDL2_image
+-lSDL2_ttf
+-lSDL2_mixer
+
+Outcome: The above installation failed in Kali. Most probably the files that 
+were required couldn't be located in the apt-repo. Need to debug more.
+
