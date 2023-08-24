@@ -1,0 +1,30 @@
+## Contains the steps for building the search page
+part 3: 
+
+0) Talk about the bootstrapmade and bootstrap website and introduce the 
+places which the viewers have to visit
+
+1) Begin by looking at the examples provided by Bootstrap itself, and 
+decide which page can be suitable for our purpose
+
+2) Get access to the HTML and CSS page for the page that you have 
+selected, learn each part of the page 
+
+3) Set up the base.html with the head and foot of the page and 
+render it via the server view
+
+4) Move the header, footer in to seperate files, 
+  and place it in the components director. Include them into
+the base.html
+
+5) Work on the header.html page, so that multiple search bar can be
+presented to the user. 
+
+part 4:
+
+1) Build the search.html page using the component parts page 
+
+2) Render the search.html with placeholder data sent to the front end
+
+3) Program the logic of getting the data from the vector store 
+and loading it on to the page
