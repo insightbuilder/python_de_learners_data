@@ -1,0 +1,20 @@
+---
+- name: restart webserver
+  service:
+    name: httpd
+    state: restarted
+
+- name: reboot servers
+  action: command /sbin/reboot -t now
+
+# Registering variable from Output
+
+- name: return motd to registered variable
+  command: cat /etc/motd
+  register: mymotd
+
+- name: Run command
+  command:
+    cmd: /usr/bin/make_database.sh
+  db_user db_name
+    creates: /path/to/database

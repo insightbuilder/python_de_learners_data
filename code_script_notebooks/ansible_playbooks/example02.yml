@@ -1,0 +1,7 @@
+- name: Power off servers
+  hosts: servers  # Replace 'server_group' with the name of your server group or list of server IPs/hosts
+  become: True  # This is used to execute the command as a privileged user (e.g., root)
+
+  tasks:
+    - name: Power off servers
+      command: shutdown -h now  # This command will initiate a system shutdown

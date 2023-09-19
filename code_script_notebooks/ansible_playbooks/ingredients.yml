@@ -1,0 +1,30 @@
+Ingredients:
+- Coffee
+- Flavour Liquid
+- Milk
+- Water
+- Sugar
+
+Process:
+- Grinding
+- Pressing
+- Boiling
+- Filtering
+- Mixing
+
+Grinding:
+  Coffee: Peets
+  Texture: Coarse
+
+Mixing:
+  Milk: 'True'
+  Sugar: 'True'
+  No_Of_Cups: 1
+
+
+ansible webserver -m service -a "name=httpd state=restarted"
+
+-name: restart webserver
+service:
+ name: httpd
+ state: restarted
