@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  traefik:
+    image: "traefik"
+    restart: "always"
+    command:
+      - "--api=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposebydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificateresolvers.letls.acme.email=admin@reconlin.in"
+      - "--certificatereslovers.letls.acme.storage=/certs/acme.json"
+      - "--certificateresolvers.letls.acme.httpchallenge=true"
+      - "--certificateresolvers.letls.acme.httpchallenge.entrypoint=web"
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "traefik_certs:/certs"
+
+  nginx:
+    image: "nginx:1.22.0"
+    restart: "always"
+    volumes:
+      - nginx_conf:/etc/nginx/conf.d
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nginx.entrypoints=websecure"
+      - "traefik.http.routers.nginx.rule=Host(`matrix.reconline.in`)"
+      - "traefik.http.routers.nginx.tls=true"
+      - "traefik.http.routers.nginx.tls.certresolver=letls"
+  synapse:
+    image: docker.io/matrixdotorg/synapse:v1.63.0
+    restart: unless-stopped
+    environment:
+      - SYNAPSE_CONFIG_PATH=/data/homeserver.yaml
+    volumes:
+      - synapse_data:/data
+    depends_on:
+      - db
+  db:
+    image: docker.io/postgres:14-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=synapse
+      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    volumes:
+      # You may store the database tables in a local folder..
+      - synapse_db_data:/var/lib/postgresql/data
+
+volumes:
+  traefik_certs:
+  synapse_data:
+  synapse_db_data:
+  nginx_conf:
