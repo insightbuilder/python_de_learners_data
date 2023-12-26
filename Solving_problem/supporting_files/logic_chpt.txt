@@ -1,0 +1,18 @@
+0:00 Logic Is Sense Intro
+2:35 Why Logic is There?
+4:40 Machines Cannot Sense
+5:40 Logic on Numbers Demo 
+8:00 Logic on Strings Demo
+10:25 Errors Due to Illogic Input 
+12:20 Purpose of Code is to operate
+13:20 Asserting & Throwning Error 
+14:10 Assert in TDD
+15:00 Code Walkthrough Explanation
+16:00 Creating and Catching Error
+17:20 Logic with equal to
+19:15 Logic with Less and greater than
+21:00 Logic wih Strings
+22:15 Positive & Negative Comparison
+24:00 Try Except Block & Assert
+25:10 Recap & Outro
+

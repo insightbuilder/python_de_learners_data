@@ -1,0 +1,22 @@
+0:00 Intro
+1:00 Input Formats
+2:00 5 Ways of providing Inputs
+3:30 Functions used for Inputs
+4:20 What input requires
+6:00 Taking CLI Input Demo
+7:30 Input function Demo
+8:15 Reading File Input Demo
+9:00 CLI Input Code Explanation
+11:00 Input Functiona Explanation
+12:50 File Reading Explanation
+16:30 Developing Yourself
+18:00 GUI Input Options 
+19:20 PysimpleGUI Demo 
+21:20 PySimpleGUI Explanation
+26:10 Webframework API Demo
+28:10 API Code explanation
+30:00 Recap on Inputs
+31:00 Read Code / Write Comments
+33:00 Outro
+
+
