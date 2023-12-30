@@ -1,0 +1,11 @@
+0:00 Why Input & logic
+1:10 3 Ways to Move
+1:30 5 Purpose of Loops
+3:50 Visualising Taking a Walk 
+7:20 When to Visualise
+11:25 Code Demo : Taking walks
+14:30 Why Practice Moving with Loops 
+17:30 Code Explanation
+25:20 Recap
+25:50 DrawIO Intro for Visualisation
+27:00 Outro
