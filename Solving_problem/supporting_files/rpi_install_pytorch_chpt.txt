@@ -1,0 +1,13 @@
+0:00 Intro
+0:30 Why install Torch
+3:50 How To Install Torch on RPi
+5:50 Using RPI Imager
+6:20 Setting credentials & SSH to RPi
+9:45 Cooling RPi processor
+10:45 Establish ssh connection to RPi
+13:00 Updating PiOs Installing Rust & Torch
+15:00 Installation Command execution on SSH terminal
+19:00 Checking Torch Installation 
+21:30 Recap 
+20:00 Disclaimer on RPi Processor Overheating
+23:00 Outro

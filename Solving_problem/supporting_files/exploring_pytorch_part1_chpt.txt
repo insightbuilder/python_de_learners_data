@@ -1,0 +1,9 @@
+0:00 Why Explore Pytorch An Overview
+2:25 Linux Commands on RPi
+8:50 Setup VSCode Remote SSH to RPi 
+11:40 Testing VSCode Remote UI
+14:50 Executing Pytorch Methods
+18:25 Introducing Randomness in Pytorch
+30:40 Using view method on Tensors
+33:00 Recap 
+34:00 Outro
