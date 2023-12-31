@@ -42,10 +42,10 @@ if container_avbl <= container_cap:
     if container_avbl > container_cap:
         # if overflowing
         print("Tank Overflowing...")
-        print("_" * container_cap, end='')
-        print(container_cap)
-        print("|" * container_avbl)
-        print(f"Wasted {(container_avbl - container_cap)} litre fuel...")
+        print("_" * container_cap, end='')  # Show the container capacity 
+        print(container_cap)  # print the value of container capacity
+        print("|" * container_avbl)  # Show the available material
+        print(f"Wasted {(container_avbl - container_cap)} litre fuel...")  # alert if capacity exceeded
     else:  # if not overflowing
         print(f"There is {container_avbl - container_cap} litre space available")
         print("_" * container_cap, end='')

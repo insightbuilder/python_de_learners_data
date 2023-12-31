@@ -1,0 +1,10 @@
+0:00 7 Ways Functions help
+6:00 Converting Procedural to Functional Code
+6:35 Code Flow Chart Explanation 
+9:40 Python Code Explanation 
+16:20 Demo of Functions in action
+18:20 Importing Function Vs Executing Script
+21:20 Testing Function with Assert
+22:50 Recap 
+23:30 Create Flowchart
+24:20 Outro
