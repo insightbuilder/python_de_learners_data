@@ -1,0 +1,11 @@
+0:00 Intro & series Recap 
+1:15 MatMul continued 
+4:50 Becoming comfortable with N-Dim matrices
+5:30 Creating 2 X 3 X 3 tensor manually
+9:50 Batched Matrix Multiplication Visualised
+16:30 Introducing cat and stack in torch
+19:20 Discussing Unsqueeze and Squeeze
+24:00 Using cat on tensors  
+27:00 Using Stack where cat fails 
+32:00 Recap 
+33:00 Outro

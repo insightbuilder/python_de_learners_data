@@ -1,0 +1,12 @@
+0:00 Intro
+1:50 Visualising Matrices In Python 
+3:00 Matrix Multiplication Visualiser
+7:30 Visualising Smaller Matrices
+11:30 Visualising Vectors Multiplication
+14:30 Batches of Matrices
+15:00 Visualising Attention Layer in mm
+16:15 Creating tensors of different sizes
+24:50 Dot Matrix Multiplication 
+26:30 Matrix Multiplication intro
+30:00 Recap & Outro
+
