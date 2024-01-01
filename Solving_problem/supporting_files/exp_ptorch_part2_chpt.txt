@@ -1,0 +1,6 @@
+0:00 Intro
+0:50 JupyterLab with AutoCompletion
+7:30 Jupyter Console & Settings
+10:00 Torch Module Functions
+20:25 Creating Tensor From File
+25:30 Recap & Outro 
