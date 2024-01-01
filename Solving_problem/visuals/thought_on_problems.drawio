@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Sq-scTw5g7Prp9WMDyQx" name="Page-1">
-        <mxGraphModel dx="3214" dy="5328" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="5276" dy="5952" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -698,6 +698,39 @@
                 </mxCell>
                 <mxCell id="254" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;Stop&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;fillColor=#999999;" parent="1" vertex="1">
                     <mxGeometry x="9636" y="2190" width="208" height="188" as="geometry"/>
+                </mxCell>
+                <mxCell id="258" value="" style="edgeStyle=none;html=1;fontSize=72;" parent="1" source="256" target="257" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="260" value="" style="edgeStyle=none;html=1;fontSize=72;" parent="1" source="256" target="259" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="262" value="" style="edgeStyle=none;html=1;fontSize=72;" parent="1" source="256" target="261" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="256" value="&lt;h1&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;Evolving Machines From Functional to Object Oriented Paradigm&lt;/font&gt;&lt;/font&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1689" y="3302" width="1395" height="231" as="geometry"/>
+                </mxCell>
+                <mxCell id="257" value="&lt;h1&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;Why?&lt;/font&gt;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;1) World is made of Objects&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;2) Solutions are applied to and with Objects&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;3) Data can be Structured into Objects &amp;amp;&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;worked up on&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="295" y="3916" width="1455" height="485" as="geometry"/>
+                </mxCell>
+                <mxCell id="259" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How?&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;1) Using objects properties and attributes to identify&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;2) Implement the object characteristics and abilities&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="2616" y="3950" width="1764" height="291" as="geometry"/>
+                </mxCell>
+                <mxCell id="261" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;What?&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- A self, which stores the object blue-print&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Variables called &quot;attributes&quot; to store values&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Methods that operate on self and other objects&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Special methods defined by programming language&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1483.75" y="4601" width="1834.5" height="645" as="geometry"/>
+                </mxCell>
+                <mxCell id="265" value="" style="edgeStyle=none;html=1;fontSize=72;" parent="1" source="263" target="264" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="263" value="Turtle module will help us to Visualise how Python language&lt;br&gt;creates objects and gives it abilities" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
+                    <mxGeometry x="1414.5" y="5510" width="1927" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="264" value="&lt;ul&gt;&lt;li&gt;- Explore the capabilities of Turtle module&lt;/li&gt;&lt;li&gt;- Build a rectangle procedurally by typing the code&lt;/li&gt;&lt;li&gt;- Write a function to build a rectangle&lt;/li&gt;&lt;li&gt;- Create a Rectangle object that can draw it&quot;self&quot;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
+                    <mxGeometry x="1550.5" y="5985" width="1655" height="526" as="geometry"/>
+                </mxCell>
+                <mxCell id="266" value="Feat. Turtle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
+                    <mxGeometry x="2719" y="3539" width="382" height="98" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

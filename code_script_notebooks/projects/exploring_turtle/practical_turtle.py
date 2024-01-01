@@ -1,6 +1,6 @@
 # Script explores using Turtle along with OOP
 
-from turtle import Turtle, mainloop 
+from turtle import Turtle, mainloop
 
 
 if __name__ == '__main__':
@@ -25,3 +25,4 @@ if __name__ == '__main__':
     a.write("This is turtle 1")
     b.write("This is turtle b")
     mainloop()
+
