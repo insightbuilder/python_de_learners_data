@@ -1,0 +1,36 @@
+0:00 intro
+0:20 Why OOP
+4:00 How visualise OOP
+5:21 What Objects Contain
+6:40 Moving Ahead with Turtle
+7:55 Building Rectangle procedurally using Ipython
+15:30 Building Rectangle with Script
+17:30 Penrose Lindenmayer Demo
+19:20 Continuing Rectangle Script
+22:00 Looking at Turtle Module
+23:30 Executing & Updating Rectangle Script
+28:00 Recap & Discussing How to Modify
+29:30 Outro
+
+
+0:00 Part1 Recap & Intro
+1:10 Procedurally Creating Rectangle 
+2:10 Planning the Function
+5:20 Defining Build Rectangle Function
+11:30 Calling Function to Build
+14:00 Challenge of Functional Paradigm
+15:00 Implementing RectangleTurtle Class
+17:25 Intialising RectangleTurtle 
+19:00 Reviewing Turtle Module Implementation Code
+21:00 Continuing Initialisation
+22:45 Defining Draw_Self Method
+26:55 Defining give_dims & locate_home method
+29:10 Creating RectangleTurtle Instances
+30:50 Getting details of rectangle
+31:20 Giving names to Rectangle
+33:40 Asking RectangleTurtle instance to draw itself
+35:30 Recap on functional & OOP 
+36:25 Call to Practice & Outro
+  
+
+

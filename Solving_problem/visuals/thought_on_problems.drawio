@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Sq-scTw5g7Prp9WMDyQx" name="Page-1">
-        <mxGraphModel dx="5276" dy="5952" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="6195" dy="6340" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -726,11 +726,14 @@
                 <mxCell id="263" value="Turtle module will help us to Visualise how Python language&lt;br&gt;creates objects and gives it abilities" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
                     <mxGeometry x="1414.5" y="5510" width="1927" height="185" as="geometry"/>
                 </mxCell>
-                <mxCell id="264" value="&lt;ul&gt;&lt;li&gt;- Explore the capabilities of Turtle module&lt;/li&gt;&lt;li&gt;- Build a rectangle procedurally by typing the code&lt;/li&gt;&lt;li&gt;- Write a function to build a rectangle&lt;/li&gt;&lt;li&gt;- Create a Rectangle object that can draw it&quot;self&quot;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
-                    <mxGeometry x="1550.5" y="5985" width="1655" height="526" as="geometry"/>
+                <mxCell id="264" value="&lt;ul&gt;&lt;li&gt;- Explore the capabilities of Turtle module&lt;/li&gt;&lt;li&gt;- Build a rectangle procedurally by typing the code &amp;lt;&amp;lt; (Part1)&lt;/li&gt;&lt;li&gt;- Write a function to build a rectangle&lt;/li&gt;&lt;li&gt;- Create a Rectangle object that can draw it&quot;self&quot; &amp;lt;&amp;lt; (Part1)&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
+                    <mxGeometry x="1393" y="5990" width="1999" height="526" as="geometry"/>
                 </mxCell>
                 <mxCell id="266" value="Feat. Turtle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
                     <mxGeometry x="2719" y="3539" width="382" height="98" as="geometry"/>
+                </mxCell>
+                <mxCell id="267" value="Part2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
+                    <mxGeometry x="1649" y="3558" width="190" height="98" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
