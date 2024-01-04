@@ -1,0 +1,14 @@
+0:00 Intro
+1:00 Masked_fill practice
+5:00 Exploring SKlearn datasets
+9:00 Converting NDArray to Tensors
+10:00 Using View method on Y_data
+11:30 Creating Batch Tensor with View
+13:00 Practing Cat Method
+18:30 Practicing Stack Method
+20:30 Introducing Dataset Class
+22:10 Writing RegressionSet Class
+24:40 Creating RegressionSet instance
+26:00 Learning about Data Loader
+27:13 Iterating on Dataloader
+28:00 Recap & Outro

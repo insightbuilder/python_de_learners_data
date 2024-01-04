@@ -1,0 +1,18 @@
+0:00 Intro & recap 
+1:00 Layers in Torch
+2:10 Embedding Layer Process
+3:20 Experimenting with Embedding Layer
+8:50 Embedding 1D Tensor
+10:20 Embedding Text Corpus
+12:00 Tokenising Text
+13:50 Removing Stop words
+16:00 Stemming words
+18:15 Removing Special characters
+19:50 Removing Empty Strings
+21:10 Creating word-id dictionary
+22:10 Creating id-word dictionary
+24:30 Embedding a Test Sentence
+30:20 Creating New Embedding Layer
+32:00 Embedding the ID 
+33:00 Use Existing models & recap
+34:00 Outro
