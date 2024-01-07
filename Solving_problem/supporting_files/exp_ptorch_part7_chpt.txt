@@ -1,0 +1,12 @@
+0:00 Intro & recap 
+3:00 Introducing the Practice Steps
+4:20 Creating Tensors
+5:52 Creating Embedding Layer
+9:25 Linear layer Intro
+10:50 Reviewing Linear Layer params
+14:00 Forward Pass to Linear Layer 
+16:15 Checking If Params have Changed
+19:00 Working on 5 feature Embeddings
+19:50 Creating Batches of Data
+20:50 Looping on batches for Forward Pass
+23:50 Recap & Outro
