@@ -1,0 +1,13 @@
+0:00 Intro & recap 
+0:40 Introducing the Practice Steps
+1:20 Creating higher dimension Tensors
+2:50 How Much memory Tensor Takes
+5:40 Introducing & Creating Flatten Layer
+9:00 Using Flatten on Image Matrices
+11:25 Linear layer creation & review 
+14:00 Forward Pass to Linear Layer 
+15:15 Purpose of Dropout Layer 
+17:10 Purpose of Softmax Layer
+19:00 Introducing Argmax on SM output 
+20:10 Recap & Practice 
+21:10 Outro
