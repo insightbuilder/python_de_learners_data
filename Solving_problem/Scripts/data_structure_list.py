@@ -61,8 +61,10 @@ if __name__ == '__main__':
     x_list = [10, 55, -115, -210]
     y_list = [20, 60, 125, 210]
     # What problem it solves? Collecting stuff & providing ways to accessing stuff 
+    # x_list.append()
     rec_list = []
     for ind, x in enumerate(x_list):
+        # print(ind, x)
         # enumerate the list of co-ordinates & append to rec_list
         rec_list.append(RectangleTurtle(breadth=200,
                                         length=300,
@@ -73,5 +75,7 @@ if __name__ == '__main__':
         rec_list[ind].draw_self()
         # enumerate on the rectangle objects and get their dims
         rec_list[ind].give_dims()
+        rec_list[ind].destroy_self()
+        rec_list[ind].draw_self()
     t.exitonclick()
     t.mainloop()
