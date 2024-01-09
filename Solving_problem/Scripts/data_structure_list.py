@@ -18,7 +18,7 @@ class RectangleTurtle():
 
     def draw_self(self):
         self.turtle.pencolor('red')   # color of the border (const)
-        self.turtle.pensize(10)   # pensize  (const)
+        self.turtle.pensize(2)   # pensize  (const)
         self.turtle.penup()
         self.turtle.goto(self.x_cord, self.y_cord)
         self.turtle.pendown()
@@ -28,6 +28,11 @@ class RectangleTurtle():
         self.turtle.rt(90)
         self.turtle.forward(self.length)
         self.turtle.goto(self.x_cord, self.y_cord)
+        self.turtle.hideturtle()
+
+    def destroy_self(self):
+        self.turtle.clear()
+        self.turtle.hideturtle()
 
     def give_dims(self):
         self.turtle.penup()
@@ -48,52 +53,25 @@ class RectangleTurtle():
                           is {self.x_cord} & y_ord is {self.y_cord}""")
 
 
-def build_rectangle(myTurtle: t.Turtle,
-                    x_cord: int,
-                    y_cord: int,
-                    length: int,
-                    breadth: int):
-    myTurtle.pencolor('red')   # color of the border (const)
-    myTurtle.pensize(10)   # pensize  (const)
-    myTurtle.penup()
-    myTurtle.goto(x_cord, y_cord)
-    myTurtle.pendown()
-    # the rectangle is getting built
-    myTurtle.forward(length)  # length of rect
-    myTurtle.rt(90)
-    myTurtle.forward(breadth)  # breadth of rect
-    myTurtle.rt(90)
-    myTurtle.forward(length)
-    myTurtle.goto(x_cord, y_cord)
-    print('Done')
-
 if __name__ == '__main__':
     t1 = t.Turtle('turtle')  # we have to initialize
-
-    tem = input("Press enter when ready...")
-    # t1.pencolor('red')   # color of the border (const)
-    # t1.pensize(10)   # pensize  (const)
-    # t1.forward(200)  # length of rect
-    # t1.rt(90)
-    # t1.forward(100)  # breadth of rect
-    # t1.rt(90)
-    # t1.forward(200)
-    # t1.home()        # co-ordinates of the home 
-    # print('Done')
-    # build_rectangle(myTurtle=t1,
-                    # x_cord=50,
-                    # y_cord=150,
-                    # length=125,
-                    # breadth=250)
-    # build_rectangle(myTurtle=t1,
-                    # x_cord=200,
-                    # y_cord=300,
-                    # length=100,
-                    # breadth=75)
-    rec1 = RectangleTurtle(50, 150, 125, 250, 'rect1')
-    rec2 = RectangleTurtle(200, 300, 100, 75, 'rect2')
-    rec1.draw_self()
-    rec2.draw_self()
-    rec1.give_dims()
-    rec2.locate_home()
+    wait = input('Bring turtle window to view and press enter.')
+    t.setup(900, 600)
+    # What is a List? Its a collection of things. 
+    x_list = [10, 55, -115, -210]
+    y_list = [20, 60, 125, 210]
+    # What problem it solves? Collecting stuff & providing ways to accessing stuff 
+    rec_list = []
+    for ind, x in enumerate(x_list):
+        # enumerate the list of co-ordinates & append to rec_list
+        rec_list.append(RectangleTurtle(breadth=200,
+                                        length=300,
+                                        x_cord=x,
+                                        y_cord=y_list[ind],
+                                        name=f'rect_{ind}'))
+        # enumerate on the rectangle objects and draw them
+        rec_list[ind].draw_self()
+        # enumerate on the rectangle objects and get their dims
+        rec_list[ind].give_dims()
+    t.exitonclick()
     t.mainloop()
