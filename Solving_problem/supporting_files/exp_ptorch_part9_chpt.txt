@@ -1,0 +1,19 @@
+0:00 Intro & recap
+1:10 Loss Functions Intro
+2:10 How Back Propagation Happens 
+4:40 Handson Back Propagation setup 
+5:30 Making Tensor Data Ready
+8:50 Writing Steps Before Coding
+10:00 Creating Model & Reviewing Weights
+11:30 Creating Loss Function
+12:00 Generation Single prediction
+12:50 Calculating Loss
+13:20 Doing Back Propagation on Loss Value
+14:10 Reviewing Gradients 
+16:10 Updating Weights
+18:40 Recap
+19:20 Practice & Outro
+
+
+
+

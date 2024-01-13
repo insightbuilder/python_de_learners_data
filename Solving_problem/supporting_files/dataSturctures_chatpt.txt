@@ -1,0 +1,18 @@
+0:00 Intro to DataStructures Videos
+1:12 How Lists are Going to help
+2:03 Why it is called Data Structure
+3:10 Code Overview
+4:10 Demo of List Rectangles
+5:10 List explanation in Code
+8:20 Everything Has a purpose
+10:35 Have Anything in List
+11:10 How to do things with Ease
+12:20 Exploring with Print Stmts
+13:10 Placing RectangleTurtle in List
+14:50 How to Play with List Objects
+18:30 Controlling Objects with Methods 
+19:20 Modifying Object in List
+20:25 List Intuition  
+22:10 Destroying Objects  
+27:00 Recap of List Purpose 
+28:00 Outro
