@@ -16,3 +16,18 @@
 22:10 Destroying Objects  
 27:00 Recap of List Purpose 
 28:00 Outro
+
+# Dictionaries
+0:00 Intro & Agenda
+1:45 Dictionary examples
+2:30 Problems Solved by Dictionaries
+5:20 Valid Dictionaries
+10:20 Rectangle Turtle Code Walkthrough
+12:00 Purpose of the Discussion
+12:40 Code Walkthrough Continued
+14:00 Dictionaries Code Demo
+20:00 Recaping Problem Solved 
+22:30 Solving Trivial Problems
+23:45 Recap discussion
+24:20 Outro
+

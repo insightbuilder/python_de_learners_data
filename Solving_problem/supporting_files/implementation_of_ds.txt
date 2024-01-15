@@ -1,0 +1,2037 @@
+
+Data Structure: List
+Here is a simple implementation of a class named ListDatastructure, which represents a list data structure in Python.
+
+```python
+class ListDatastructure:
+    def __init__(self):
+        """
+        Initialize an empty list.
+        """
+        self.data = []
+
+    def add_element(self, element):
+        """
+        Add an element to the list.
+
+        Parameters:
+        - element: The element to be added.
+        """
+        self.data.append(element)
+
+    def remove_element(self, element):
+        """
+        Remove the specified element from the list.
+
+        Parameters:
+        - element: The element to be removed.
+
+        Raises:
+        - ValueError: If the element is not present in the list.
+        """
+        self.data.remove(element)
+
+    def get_elements(self):
+        """
+        Get all the elements in the list.
+
+        Returns:
+        - A list of elements in the data structure.
+        """
+        return self.data
+
+    def is_empty(self):
+        """
+        Check if the list is empty.
+
+        Returns:
+        - True if the list is empty, False otherwise.
+        """
+        return len(self.data) == 0
+
+
+# Example usage
+
+# Create an instance of the ListDatastructure class
+list_ds = ListDatastructure()
+
+# Add elements to the list
+list_ds.add_element(1)
+list_ds.add_element(2)
+list_ds.add_element(3)
+
+# Get the elements in the list
+elements = list_ds.get_elements()
+
+print(elements)  # Output: [1, 2, 3]
+
+# Remove an element from the list
+list_ds.remove_element(2)
+
+# Get the updated elements in the list
+elements = list_ds.get_elements()
+
+print(elements)  # Output: [1, 3]
+
+# Check if the list is empty
+print(list_ds.is_empty())  # Output: False
+```
+
+Data Structure: Dict
+Here is a simple Python implementation of the provided data structure using a class:
+
+```python
+class Dict:
+    def __init__(self):
+        self.data = {}
+
+    def add(self, key, value):
+        """
+        Add a new key-value pair to the dictionary.
+
+        Parameters:
+        key (any): The key of the pair.
+        value (any): The value of the pair.
+        """
+        self.data[key] = value
+
+    def remove(self, key):
+        """
+        Remove a key-value pair from the dictionary.
+
+        Parameters:
+        key (any): The key of the pair.
+        """
+        del self.data[key]
+
+    def get(self, key):
+        """
+        Get the value associated with a given key.
+
+        Parameters:
+        key (any): The key of the pair.
+
+        Returns:
+        any: The value associated with the key, or None if the key is not found.
+        """
+        return self.data.get(key)
+
+    def keys(self):
+        """
+        Get a list of all keys in the dictionary.
+
+        Returns:
+        list: A list of all keys in the dictionary.
+        """
+        return list(self.data.keys())
+
+    def values(self):
+        """
+        Get a list of all values in the dictionary.
+
+        Returns:
+        list: A list of all values in the dictionary.
+        """
+        return list(self.data.values())
+
+    def items(self):
+        """
+        Get a list of all key-value pairs in the dictionary.
+
+        Returns:
+        list: A list of all key-value pairs (tuples) in the dictionary.
+        """
+        return list(self.data.items())
+```
+
+Here is an example usage of this implementation:
+
+```python
+# Create a new instance of the Dict class
+my_dict = Dict()
+
+# Add key-value pairs to the dictionary
+my_dict.add("apple", 5)
+my_dict.add("banana", 10)
+my_dict.add("orange", 3)
+
+# Retrieve the value associated with a key
+print(my_dict.get("apple"))  # Output: 5
+
+# Remove a key-value pair from the dictionary
+my_dict.remove("banana")
+
+# Get a list of all keys in the dictionary
+print(my_dict.keys())  # Output: ['apple', 'orange']
+
+# Get a list of all values in the dictionary
+print(my_dict.values())  # Output: [5, 3]
+
+# Get a list of all key-value pairs in the dictionary
+print(my_dict.items())  # Output: [('apple', 5), ('orange', 3)]
+```
+
+Data Structure: Tuples
+Here is a simple implementation of tuples in Python:
+
+```python
+class Tuple:
+    def __init__(self, *args):
+        self.data = tuple(args)  # Convert input arguments to tuple
+        self.length = len(self.data)  # Get length of the tuple
+
+    def __getitem__(self, index):
+        return self.data[index]
+
+    def __len__(self):
+        return self.length
+
+    def __repr__(self):
+        return repr(self.data)
+
+    def __str__(self):
+        return str(self.data)
+
+
+# Example usage
+if __name__ == '__main__':
+    my_tuple = Tuple(1, 2, 3)
+    print(my_tuple)  # Output: (1, 2, 3)
+    print(my_tuple[0])  # Output: 1
+    print(len(my_tuple))  # Output: 3
+    print(repr(my_tuple))  # Output: (1, 2, 3)
+```
+
+In this implementation, we define a class `Tuple` that represents a tuple data structure. The `__init__` method accepts any number of arguments and converts them to a tuple using `tuple(args)`. The `length` attribute stores the length of the tuple.
+
+We also implement the `__getitem__` method to enable indexing of the tuple, the `__len__` method to return the length of the tuple, and the `__repr__` and `__str__` methods to provide a string representation of the tuple.
+
+In the example usage, we create an instance of the `Tuple` class with three elements. We then print the tuple, access individual elements using indexing, get the length of the tuple, and print its representation.
+
+Data Structure: Strings
+Sure! Here's a simple Python class implementation of a data structure that stores strings:
+
+```python
+class StringDataStructure:
+    def __init__(self):
+        self.strings = []
+
+    def add_string(self, string):
+        """
+        Add a string to the data structure.
+
+        Args:
+            string (str): The string to add.
+
+        Returns:
+            None
+        """
+        self.strings.append(string)
+
+    def count_strings(self):
+        """
+        Count the number of strings in the data structure.
+
+        Returns:
+            int: The number of strings.
+        """
+        return len(self.strings)
+
+    def get_strings(self):
+        """
+        Get all the strings stored in the data structure.
+
+        Returns:
+            List[str]: A list of all the strings.
+        """
+        return self.strings
+
+# Example usage
+data_structure = StringDataStructure()
+data_structure.add_string("Hello")
+data_structure.add_string("World")
+data_structure.add_string("Python")
+
+print(data_structure.count_strings())  # Output: 3
+print(data_structure.get_strings())    # Output: ['Hello', 'World', 'Python']
+```
+
+This implementation defines a class called `StringDataStructure` that has three methods:
+- `add_string`: adds a string to the data structure.
+- `count_strings`: returns the number of strings stored in the data structure.
+- `get_strings`: returns a list of all the strings stored in the data structure.
+
+You can create an instance of this class and use the methods to add strings, count strings, and get all the strings stored in the data structure. The example usage demonstrates how to add three strings, count them, and retrieve them.
+
+Data Structure: Deque
+class Deque:
+    def __init__(self):
+        """
+        Initialize an empty deque.
+        """
+        self.items = []
+
+    def is_empty(self):
+        """
+        Check if the deque is empty.
+
+        Returns:
+            bool: True if deque is empty, False otherwise.
+        """
+        return len(self.items) == 0
+
+    def add_front(self, item):
+        """
+        Add an item to the front of the deque.
+
+        Args:
+            item: The item to be added to the deque.
+        """
+        self.items.append(item)
+
+    def add_rear(self, item):
+        """
+        Add an item to the rear of the deque.
+
+        Args:
+            item: The item to be added to the deque.
+        """
+        self.items.insert(0, item)
+
+    def remove_front(self):
+        """
+        Remove and return the item from the front of the deque.
+
+        Returns:
+            The item removed from the front of the deque.
+        """
+        if not self.is_empty():
+            return self.items.pop()
+
+    def remove_rear(self):
+        """
+        Remove and return the item from the rear of the deque.
+
+        Returns:
+            The item removed from the rear of the deque.
+        """
+        if not self.is_empty():
+            return self.items.pop(0)
+
+    def peek_front(self):
+        """
+        Peek and return the item from the front of the deque without removing it.
+
+        Returns:
+            The item at the front of the deque.
+        """
+        if not self.is_empty():
+            return self.items[-1]
+
+    def peek_rear(self):
+        """
+        Peek and return the item from the rear of the deque without removing it.
+
+        Returns:
+            The item at the rear of the deque.
+        """
+        if not self.is_empty():
+            return self.items[0]
+
+    def size(self):
+        """
+        Return the number of items in the deque.
+
+        Returns:
+            int: The size of the deque.
+        """
+        return len(self.items)
+
+
+# Example usage
+deque = Deque()
+deque.add_front(1)
+deque.add_front(2)
+deque.add_rear(3)
+print(deque.size())                 # Output: 3
+print(deque.remove_front())         # Output: 2
+print(deque.peek_front())           # Output: 1
+print(deque.remove_rear())          # Output: 3
+print(deque.peek_rear())            # Output: 1
+print(deque.is_empty())             # Output: False
+deque.remove_front()
+deque.remove_rear()
+print(deque.is_empty())             # Output: True
+
+Data Structure: NamedTuple
+An example implementation of the data structure using `NamedTuple` in Python is as follows:
+
+```python
+from typing import NamedTuple
+
+class DataStructure(NamedTuple):
+    """
+    A data structure using NamedTuple to represent the key-value pairs.
+    """
+
+    key: str
+    value: int
+    
+
+# Example usage
+# Creating an instance of the data structure
+data = DataStructure(key="example", value=42)
+
+# Accessing the key and value
+print(data.key)    # Output: "example"
+print(data.value)  # Output: 42
+
+# Updating the value
+data = data._replace(value=21)
+print(data.value)  # Output: 21
+```
+
+In this implementation, the `NamedTuple` class is used to define the structure of each element in the data structure. The `key` and `value` fields are defined as attributes of the `DataStructure` class.
+
+To create an instance of the data structure, you can use the class constructor and pass the values for the `key` and `value`. You can then access the individual fields using dot notation (`data.key`, `data.value`).
+
+To update the values of the data structure, you can use the `_replace` method, which returns a new instance of the data structure with the specified fields replaced.
+
+Data Structure: Heapq
+import heapq
+
+
+class Heap:
+    def __init__(self):
+        self._heap = []
+
+    def push(self, value):
+        """
+        Add value to the heap.
+        
+        Args:
+            value: The value to be added to the heap.
+        """
+        heapq.heappush(self._heap, value)
+
+    def pop(self):
+        """
+        Remove and return the smallest value from the heap.
+        
+        Returns:
+            The smallest value from the heap.
+        
+        Raises:
+            IndexError: If the heap is empty.
+        """
+        if self._heap:
+            return heapq.heappop(self._heap)
+        else:
+            raise IndexError("Heap is empty")
+
+    def peek(self):
+        """
+        Return the smallest value from the heap without removing it.
+        
+        Returns:
+            The smallest value from the heap.
+        
+        Raises:
+            IndexError: If the heap is empty.
+        """
+        if self._heap:
+            return self._heap[0]
+        else:
+            raise IndexError("Heap is empty")
+
+    def size(self):
+        """
+        Return the number of elements in the heap.
+        
+        Returns:
+            The number of elements in the heap.
+        """
+        return len(self._heap)
+
+
+# Example usage:
+
+heap = Heap()
+heap.push(5)
+heap.push(3)
+heap.push(7)
+heap.push(2)
+
+print(heap.peek())  # Output: 2
+
+print(heap.pop())  # Output: 2
+
+print(heap.size())  # Output: 3
+
+Data Structure: DefaultDict
+Here is a simple implementation of the DefaultDict data structure using a class in Python:
+
+```python
+class DefaultDict:
+    def __init__(self, default_value=None):
+        self.default_value = default_value
+        self.dict = {}
+
+    def __getitem__(self, key):
+        try:
+            return self.dict[key]
+        except KeyError:
+            return self.default_value
+
+    def __setitem__(self, key, value):
+        self.dict[key] = value
+
+    def __contains__(self, key):
+        return key in self.dict
+
+    def keys(self):
+        return self.dict.keys()
+
+    def values(self):
+        return self.dict.values()
+
+    def items(self):
+        return self.dict.items()
+
+    def get(self, key, default=None):
+        return self.dict.get(key, default or self.default_value)
+```
+
+The `DefaultDict` class has the following methods:
+
+- `__init__(self, default_value=None)`: Initializes the DefaultDict with a default value.
+- `__getitem__(self, key)`: Returns the value associated with the given key. If the key is not present, it returns the default value.
+- `__setitem__(self, key, value)`: Sets the value associated with the given key.
+- `__contains__(self, key)`: Checks if the given key is present in the DefaultDict.
+- `keys(self)`: Returns a list of all keys in the DefaultDict.
+- `values(self)`: Returns the list of all values in the DefaultDict.
+- `items(self)`: Returns a list of tuples containing key-value pairs in the DefaultDict.
+- `get(self, key, default=None)`: Returns the value associated with the given key. If the key is not present, it returns the default value or the default value provided during initialization.
+
+Here is an example usage of the DefaultDict class:
+
+```python
+# Create a DefaultDict object with a default value of 0
+dd = DefaultDict(0)
+
+# Set some values
+dd['apple'] = 5
+dd['banana'] = 3
+
+# Access a value
+print(dd['apple'])  # Output: 5
+
+# Access a non-existent key
+print(dd['mango'])  # Output: 0 (default value)
+
+# Get all keys
+print(dd.keys())  # Output: ['apple', 'banana']
+
+# Get all values
+print(dd.values())  # Output: [5, 3]
+
+# Get all items
+print(dd.items())  # Output: [('apple', 5), ('banana', 3)]
+
+# Get value with a default
+print(dd.get('mango', 'Not found'))  # Output: 'Not found'
+```
+
+Data Structure: Counter
+Here is a simple Python implementation of the Counter data structure using a class:
+
+```python
+class Counter:
+    def __init__(self):
+        """
+        Initialize the Counter data structure with an empty dictionary.
+        """
+        self.counter = {}
+    
+    def add(self, element):
+        """
+        Add an element to the Counter.
+        
+        Parameters:
+        - element: The element to be added.
+        """
+        if element in self.counter:
+            self.counter[element] += 1
+        else:
+            self.counter[element] = 1
+    
+    def remove(self, element):
+        """
+        Remove an element from the Counter.
+        
+        Parameters:
+        - element: The element to be removed.
+        """
+        if element in self.counter:
+            if self.counter[element] == 1:
+                del self.counter[element]
+            else:
+                self.counter[element] -= 1
+    
+    def count(self, element):
+        """
+        Get the count of an element in the Counter.
+        
+        Parameters:
+        - element: The element to get the count for.
+        
+        Returns:
+        - The count of the element in the Counter.
+        """
+        if element in self.counter:
+            return self.counter[element]
+        else:
+            return 0
+```
+
+Example usage:
+
+```python
+# Create a Counter object
+counter = Counter()
+
+# Add elements to the Counter
+counter.add('apple')
+counter.add('banana')
+counter.add('apple')
+
+# Print the count of each element
+print(counter.count('apple'))    # Output: 2
+print(counter.count('banana'))   # Output: 1
+print(counter.count('orange'))   # Output: 0
+
+# Remove an element from the Counter
+counter.remove('apple')
+
+# Print the updated count of the element
+print(counter.count('apple'))    # Output: 1
+```
+
+Data Structure: ChainMap
+Here is a simple implementation of the ChainMap data structure using Python's built-in libraries:
+
+```python
+from collections import ChainMap
+
+# Create a ChainMap
+chain_map = ChainMap({"name": "Alice", "age": 25}, {"city": "New York"})
+
+# Access elements in the ChainMap
+print(chain_map["name"])  # Output: Alice
+print(chain_map["city"])  # Output: New York
+
+# Update elements in the ChainMap
+chain_map["name"] = "Bob"
+print(chain_map["name"])  # Output: Bob
+
+# Add a new dictionary to the ChainMap
+chain_map["occupation"] = "Engineer"
+print(chain_map["occupation"])  # Output: Engineer
+
+# Delete an element from the ChainMap
+del chain_map["age"]
+print(chain_map["age"])  # Output: KeyError: 'age'
+```
+
+In this implementation, we're using the `ChainMap` class from the `collections` module. We create a `ChainMap` by passing a list of dictionaries as arguments to the `ChainMap()` constructor. Each dictionary represents a mapping, and the order of dictionaries determines the order of lookup.
+
+The `ChainMap` provides a single, unified view of all the dictionaries, making them accessible as a single entity. It allows us to access elements using square bracket notation (`[]`) and supports updating, adding, and deleting elements using standard dictionary operations.
+
+Data Structure: OrderedDict
+```python
+from collections import OrderedDict
+
+# Define a class that wraps the OrderedDict data structure
+class MyOrderedDict:
+    def __init__(self):
+        self.data = OrderedDict()
+
+    def add(self, key, value):
+        """
+        Add a key-value pair to the OrderedDict.
+
+        Args:
+            key: The key to be added.
+            value: The value associated with the key.
+        """
+        self.data[key] = value
+
+    def remove(self, key):
+        """
+        Remove a key-value pair from the OrderedDict.
+
+        Args:
+            key: The key to be removed.
+        """
+        del self.data[key]
+
+    def get_keys(self):
+        """
+        Get a list of all the keys in the OrderedDict.
+
+        Returns:
+            A list of keys.
+        """
+        return list(self.data.keys())
+
+    def get_values(self):
+        """
+        Get a list of all the values in the OrderedDict.
+
+        Returns:
+            A list of values.
+        """
+        return list(self.data.values())
+
+    def get_items(self):
+        """
+        Get a list of all the key-value pairs in the OrderedDict.
+
+        Returns:
+            A list of tuples containing (key, value) pairs.
+        """
+        return list(self.data.items())
+
+    def print_ordered_dict(self):
+        """
+        Print the OrderedDict in a readable format.
+        """
+        for key, value in self.data.items():
+            print(f"{key}: {value}")
+
+# Example usage
+my_dict = MyOrderedDict()
+my_dict.add('name', 'John')
+my_dict.add('age', 25)
+my_dict.add('city', 'New York')
+
+my_dict.print_ordered_dict()
+# Output:
+# name: John
+# age: 25
+# city: New York
+
+my_dict.remove('age')
+
+my_dict.get_keys()
+# Output: ['name', 'city']
+
+my_dict.get_values()
+# Output: ['John', 'New York']
+
+my_dict.get_items()
+# Output: [('name', 'John'), ('city', 'New York')]
+```
+
+Data Structure: Set
+Here's a simple Python class implementation of the Set data structure:
+
+```python
+class Set:
+    def __init__(self):
+        """
+        Initialize an empty set.
+        """
+        self.elements = []
+
+    def add(self, element):
+        """
+        Add an element to the set if it doesn't already exist.
+        """
+        if element not in self.elements:
+            self.elements.append(element)
+
+    def remove(self, element):
+        """
+        Remove an element from the set if it exists.
+        """
+        if element in self.elements:
+            self.elements.remove(element)
+
+    def contains(self, element):
+        """
+        Check if the set contains a given element.
+        Returns True if the element exists, False otherwise.
+        """
+        return element in self.elements
+
+    def size(self):
+        """
+        Returns the number of elements in the set.
+        """
+        return len(self.elements)
+
+    def union(self, other_set):
+        """
+        Perform a union operation with another set.
+        Returns a new set that contains all elements from both sets.
+        """
+        new_set = Set()
+        for element in self.elements:
+            new_set.add(element)
+        for element in other_set.elements:
+            new_set.add(element)
+        return new_set
+
+    def intersection(self, other_set):
+        """
+        Perform an intersection operation with another set.
+        Returns a new set that contains common elements from both sets.
+        """
+        new_set = Set()
+        for element in self.elements:
+            if element in other_set.elements:
+                new_set.add(element)
+        return new_set
+
+    def difference(self, other_set):
+        """
+        Perform a difference operation with another set.
+        Returns a new set that contains the elements from the current set
+        that are not present in the other set.
+        """
+        new_set = Set()
+        for element in self.elements:
+            if element not in other_set.elements:
+                new_set.add(element)
+        return new_set
+
+    def is_subset(self, other_set):
+        """
+        Check if the current set is a subset of another set.
+        Returns True if all elements in the current set are present in the other set,
+        False otherwise.
+        """
+        for element in self.elements:
+            if element not in other_set.elements:
+                return False
+        return True
+```
+
+Example usage:
+
+```python
+# Create two sets
+set1 = Set()
+set2 = Set()
+
+# Add elements to set1
+set1.add(1)
+set1.add(2)
+set1.add(3)
+
+# Add elements to set2
+set2.add(2)
+set2.add(3)
+set2.add(4)
+
+# Perform operations on the sets
+print(set1.size())              # Output: 3
+print(set2.is_subset(set1))     # Output: False
+
+set3 = set1.union(set2)
+print(set3.elements)            # Output: [1, 2, 3, 4]
+
+set4 = set1.intersection(set2)
+print(set4.elements)            # Output: [2, 3]
+
+set5 = set3.difference(set4)
+print(set5.elements)            # Output: [1, 4]
+
+set1.remove(3)
+print(set1.elements)            # Output: [1, 2]
+print(set1.contains(3))         # Output: False
+```
+
+Note: This implementation is not optimized for large sets, but provides a basic understanding of how a set works.
+
+Data Structure: Arrays
+class Array:
+    def __init__(self, size):
+        """
+        Constructor to initialize the array with a given size.
+
+        Args:
+        size: The size of the array.
+
+        Returns:
+        None.
+        """
+        self.size = size
+        self.array = [None] * size
+
+    def get(self, index):
+        """
+        Get the element at a given index.
+
+        Args:
+        index: The index of the element to retrieve.
+
+        Returns:
+        The element at the given index, or None if the index is out of bounds.
+        """
+        if index < 0 or index >= self.size:
+            return None
+        return self.array[index]
+
+    def set(self, index, value):
+        """
+        Set the element at a given index to a given value.
+
+        Args:
+        index: The index of the element to set.
+        value: The value to set the element to.
+
+        Returns:
+        True if the element was successfully set, False otherwise.
+        """
+        if index < 0 or index >= self.size:
+            return False
+        self.array[index] = value
+        return True
+
+    def __str__(self):
+        """
+        Return a string representation of the array.
+
+        Args:
+        None.
+
+        Returns:
+        A string representation of the array.
+        """
+        return str(self.array)
+
+# Example usage
+array = Array(5)
+print(array)  # Output: [None, None, None, None, None]
+
+array.set(0, 1)
+array.set(2, 3)
+array.set(4, 5)
+print(array)  # Output: [1, None, 3, None, 5]
+
+print(array.get(2))  # Output: 3
+print(array.get(3))  # Output: None
+
+Data Structure: Queues
+Here is a simple implementation of a Queue data structure in Python:
+
+```python
+class Queue:
+    def __init__(self):
+        self.items = []
+
+    def is_empty(self):
+        """
+        Check if the queue is empty.
+        Returns:
+            True if the queue is empty, False otherwise.
+        """
+        return len(self.items) == 0
+
+    def enqueue(self, item):
+        """
+        Add an item to the end of the queue.
+        Args:
+            item: The item to be added.
+        """
+        self.items.append(item)
+
+    def dequeue(self):
+        """
+        Remove and return the first item from the queue.
+        Returns:
+            The first item of the queue.
+        Raises:
+            IndexError: If the queue is empty.
+        """
+        if not self.is_empty():
+            return self.items.pop(0)
+        else:
+            raise IndexError("Cannot dequeue from an empty queue.")
+
+    def size(self):
+        """
+        Get the number of items in the queue.
+        Returns:
+            The number of items in the queue.
+        """
+        return len(self.items)
+```
+
+Here's an example usage:
+
+```python
+# Create a new queue
+my_queue = Queue()
+
+# Add items to the queue
+my_queue.enqueue("apple")
+my_queue.enqueue("banana")
+my_queue.enqueue("cherry")
+
+# Check if the queue is empty
+print(my_queue.is_empty())  # False
+
+# Get the size of the queue
+print(my_queue.size())  # 3
+
+# Remove and return the first item from the queue
+print(my_queue.dequeue())  # "apple"
+
+# Get the size of the queue
+print(my_queue.size())  # 2
+```
+
+Data Structure: Stacks
+Here is a simple implementation of a Stack data structure in Python:
+
+```python
+class Stack:
+    def __init__(self):
+        """Initialize an empty stack."""
+        self.stack = []
+
+    def push(self, item):
+        """Add an item to the top of the stack."""
+        self.stack.append(item)
+
+    def pop(self):
+        """
+        Remove and return the top item of the stack.
+        Raises an exception if stack is empty.
+        """
+        if not self.is_empty():
+            return self.stack.pop()
+        else:
+            raise IndexError("Stack is empty")
+
+    def peek(self):
+        """
+        Return the top item of the stack without removing it.
+        Raises an exception if stack is empty.
+        """
+        if not self.is_empty():
+            return self.stack[-1]
+        else:
+            raise IndexError("Stack is empty")
+
+    def is_empty(self):
+        """Check if the stack is empty."""
+        return len(self.stack) == 0
+
+    def size(self):
+        """Return the number of items in the stack."""
+        return len(self.stack)
+```
+
+Usage:
+
+```python
+# Creating a new stack
+stack = Stack()
+
+# Pushing items onto the stack
+stack.push(1)
+stack.push(2)
+stack.push(3)
+
+# Checking size of the stack
+print(stack.size())  # Output: 3
+
+# Checking the top item of the stack
+top_item = stack.peek()
+print(top_item)  # Output: 3
+
+# Popping items from the stack
+item = stack.pop()
+print(item)  # Output: 3
+print(stack.size())  # Output: 2
+
+item = stack.pop()
+print(item)  # Output: 2
+print(stack.size())  # Output: 1
+
+item = stack.pop()
+print(item)  # Output: 1
+print(stack.size())  # Output: 0
+
+# Trying to pop from an empty stack will raise an exception
+item = stack.pop()  # Raises IndexError: Stack is empty
+```
+
+Data Structure: Linked Lists
+Here is a simple implementation of a singly linked list in Python. The implementation includes a Node class and a LinkedList class that provides basic operations such as inserting at the beginning and end, deleting a node, and printing the linked list.
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert_at_beginning(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def insert_at_end(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        curr_node = self.head
+        while curr_node.next:
+            curr_node = curr_node.next
+        curr_node.next = new_node
+
+    def delete_node(self, key):
+        curr_node = self.head
+        if curr_node and curr_node.data == key:
+            self.head = curr_node.next
+            curr_node = None
+            return
+        prev_node = None
+        while curr_node:
+            if curr_node.data == key:
+                break
+            prev_node = curr_node
+            curr_node = curr_node.next
+        if curr_node is None:
+            return
+        prev_node.next = curr_node.next
+        curr_node = None
+
+    def print_linked_list(self):
+        curr_node = self.head
+        linkedlist_str = ""
+        while curr_node:
+            linkedlist_str += str(curr_node.data) + " -> "
+            curr_node = curr_node.next
+        linkedlist_str += "None"
+        print(linkedlist_str)
+```
+
+The above implementation consists of two classes: Node and LinkedList. The Node class represents each node in the linked list, with a data attribute and a next attribute pointing to the next node in the list. The LinkedList class represents the linked list as a whole, with a head attribute pointing to the first node in the list.
+
+The LinkedList class provides the following methods:
+- `insert_at_beginning(data)`: Inserts a new node with the given data at the beginning of the linked list.
+- `insert_at_end(data)`: Inserts a new node with the given data at the end of the linked list.
+- `delete_node(key)`: Deletes the node with the given key from the linked list.
+- `print_linked_list()`: Prints the linked list in a readable format.
+
+Here's an example usage of the LinkedList class:
+
+```python
+# Create a linked list and insert nodes
+linked_list = LinkedList()
+linked_list.insert_at_end(10)
+linked_list.insert_at_end(20)
+linked_list.insert_at_end(30)
+linked_list.insert_at_beginning(5)
+
+# Print the linked list
+linked_list.print_linked_list()  # Output: 5 -> 10 -> 20 -> 30 -> None
+
+# Delete a node
+linked_list.delete_node(20)
+
+# Print the updated linked list
+linked_list.print_linked_list()  # Output: 5 -> 10 -> 30 -> None
+```
+
+In the example above, a linked list is created and nodes are inserted at the beginning and end of the list. The list is then printed and a node with the value 20 is deleted. The updated list is printed again to verify the deletion.
+
+Data Structure: Trees
+Below is an example implementation of the Tree data structure in Python using a class:
+
+```python
+class TreeNode:
+    def __init__(self, data):
+        self.data = data
+        self.children = []
+
+    def add_child(self, child):
+        self.children.append(child)
+
+    def remove_child(self, child):
+        self.children.remove(child)
+
+
+# Example usage:
+root = TreeNode("A")
+
+child1 = TreeNode("B")
+child2 = TreeNode("C")
+child3 = TreeNode("D")
+
+root.add_child(child1)
+root.add_child(child2)
+root.add_child(child3)
+
+grandchild1 = TreeNode("E")
+grandchild2 = TreeNode("F")
+grandchild3 = TreeNode("G")
+
+child1.add_child(grandchild1)
+child1.add_child(grandchild2)
+child2.add_child(grandchild3)
+
+print(root.data)                   # Output: A
+print(root.children[0].data)       # Output: B
+print(root.children[1].data)       # Output: C
+print(root.children[2].data)       # Output: D
+print(root.children[0].children[0].data)  # Output: E
+print(root.children[0].children[1].data)  # Output: F
+print(root.children[1].children[0].data)  # Output: G
+
+root.remove_child(child2)
+print(root.children[1].data)       # Output: D
+```
+
+In the above code, the TreeNode class represents a node in the tree. Each node has data and a list of children nodes. The add_child() method is used to add a child node to a parent node, and the remove_child() method is used to remove a child node from the parent node's list of children.
+
+The example usage demonstrates how to create a tree structure and access the node's data.
+
+Data Structure: Graphs
+Here is a simple implementation of a graph data structure using an adjacency list:
+
+```python
+class Graph:
+    def __init__(self):
+        self.adjacency_list = {}
+
+    def add_vertex(self, vertex):
+        """
+        Add a vertex to the graph
+        """
+        if vertex not in self.adjacency_list:
+            self.adjacency_list[vertex] = []
+
+    def add_edge(self, vertex1, vertex2):
+        """
+        Add an edge between two vertices in the graph
+        """
+        if vertex1 in self.adjacency_list and vertex2 in self.adjacency_list:
+            self.adjacency_list[vertex1].append(vertex2)
+            self.adjacency_list[vertex2].append(vertex1)
+
+    def remove_vertex(self, vertex):
+        """
+        Remove a vertex and all its associated edges from the graph
+        """
+        if vertex in self.adjacency_list:
+            for v in self.adjacency_list[vertex]:
+                self.adjacency_list[v].remove(vertex)
+            del self.adjacency_list[vertex]
+
+    def remove_edge(self, vertex1, vertex2):
+        """
+        Remove an edge between two vertices in the graph
+        """
+        if vertex1 in self.adjacency_list and vertex2 in self.adjacency_list:
+            self.adjacency_list[vertex1].remove(vertex2)
+            self.adjacency_list[vertex2].remove(vertex1)
+
+    def get_adjacent_vertices(self, vertex):
+        """
+        Get the list of vertices adjacent to a given vertex
+        """
+        if vertex in self.adjacency_list:
+            return self.adjacency_list[vertex]
+        else:
+            return []
+
+    def print_graph(self):
+        """
+        Print the graph in adjacency list format
+        """
+        for vertex in self.adjacency_list:
+            print(vertex, "->", " -> ".join(self.adjacency_list[vertex]))
+
+# Example usage
+if __name__ == '__main__':
+    graph = Graph()
+
+    # Adding vertices
+    graph.add_vertex("A")
+    graph.add_vertex("B")
+    graph.add_vertex("C")
+    graph.add_vertex("D")
+
+    # Adding edges
+    graph.add_edge("A", "B")
+    graph.add_edge("B", "C")
+    graph.add_edge("C", "D")
+    graph.add_edge("D", "A")
+
+    # Printing the graph
+    graph.print_graph()
+
+    # Removing a vertex
+    graph.remove_vertex("C")
+
+    # Printing the graph after removing a vertex
+    graph.print_graph()
+```
+
+Output:
+
+```
+A -> B
+B -> A -> C
+C -> B -> D
+D -> C -> A
+A -> B
+B -> A
+D -> A
+```
+
+Data Structure: HashTables
+Here is a simple python implementation of a HashTable data structure using a class:
+
+```python
+class HashTable:
+    def __init__(self, size):
+        """
+        Initializes a HashTable with the given size.
+        
+        Parameters:
+        size (int): The size of the internal array used for storing key-value pairs.
+        """
+        self.size = size
+        self.array = [None] * self.size
+    
+    def hash_function(self, key):
+        """
+        Hashes the given key and returns an index within the size of the array.
+        
+        Parameters:
+        key: The key to be hashed.
+        
+        Returns:
+        int: The index generated by the hash function.
+        """
+        if type(key) == str:
+            ascii_sum = sum(ord(char) for char in key)
+            return ascii_sum % self.size
+        else:
+            return key % self.size
+    
+    def insert(self, key, value):
+        """
+        Inserts the given key-value pair into the HashTable.
+        
+        Parameters:
+        key: The key to be inserted.
+        value: The value associated with the key.
+        """
+        index = self.hash_function(key)
+        if self.array[index] is None:
+            self.array[index] = []
+        self.array[index].append((key, value))
+    
+    def search(self, key):
+        """
+        Searches for the given key in the HashTable and returns its corresponding value.
+        
+        Parameters:
+        key: The key to be searched.
+        
+        Returns:
+        The value associated with the provided key.
+        If the key is not found, returns None.
+        """
+        index = self.hash_function(key)
+        if self.array[index] is None:
+            return None
+        for item in self.array[index]:
+            if item[0] == key:
+                return item[1]
+        return None
+    
+    def remove(self, key):
+        """
+        Removes the given key and its corresponding value from the HashTable.
+        
+        Parameters:
+        key: The key to be removed.
+        
+        Returns:
+        The value associated with the provided key.
+        If the key is not found, returns None.
+        """
+        index = self.hash_function(key)
+        if self.array[index] is None:
+            return None
+        for i, item in enumerate(self.array[index]):
+            if item[0] == key:
+                return self.array[index].pop(i)[1]
+        return None
+
+# Example usage
+hash_table = HashTable(10)
+hash_table.insert("apple", 5)
+hash_table.insert("banana", 10)
+
+value = hash_table.search("apple")
+print(value)  # Output: 5
+
+removed_value = hash_table.remove("banana")
+print(removed_value)  # Output: 10
+
+value = hash_table.search("banana")
+print(value)  # Output: None
+```
+
+Data Structure: Trie
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end_of_word = False
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word: str) -> None:
+        """
+        Insert a word into the trie.
+        """
+        current_node = self.root
+        for char in word:
+            if char not in current_node.children:
+                current_node.children[char] = TrieNode()
+            current_node = current_node.children[char]
+        current_node.is_end_of_word = True
+
+    def search(self, word: str) -> bool:
+        """
+        Returns True if the word is in the trie, False otherwise.
+        """
+        current_node = self.root
+        for char in word:
+            if char not in current_node.children:
+                return False
+            current_node = current_node.children[char]
+        return current_node.is_end_of_word
+
+    def startsWith(self, prefix: str) -> bool:
+        """
+        Returns True if there is any word in the trie that starts with the given prefix, False otherwise.
+        """
+        current_node = self.root
+        for char in prefix:
+            if char not in current_node.children:
+                return False
+            current_node = current_node.children[char]
+        return True
+
+# Example usage
+trie = Trie()
+
+trie.insert("apple")
+trie.insert("banana")
+trie.insert("pear")
+
+print(trie.search("apple"))  # Output: True
+print(trie.search("banana"))  # Output: True
+print(trie.search("pear"))  # Output: True
+print(trie.search("grape"))  # Output: False
+
+print(trie.startsWith("ap"))  # Output: True
+print(trie.startsWith("ba"))  # Output: True
+print(trie.startsWith("pe"))  # Output: True
+print(trie.startsWith("gr"))  # Output: False
+
+Data Structure: BloomFilter
+"""
+Bloom Filter class
+
+A Bloom filter is a space-efficient probabilistic data structure that is used to test whether an element is a member of a set.
+
+This implementation uses a bit array and multiple hash functions to store and check for the presence of elements.
+
+"""
+
+import hashlib
+import math
+from bitarray import bitarray
+
+class BloomFilter:
+    """
+    Bloom Filter class
+
+    Parameters:
+    - n : int : expected number of elements to be inserted
+    - p : float : desired false positive rate (0 < p < 1)
+
+    Attributes:
+    - m : int : size of the bit array (calculated based on n and p)
+    - k : int : number of hash functions (calculated based on n and p)
+    - bit_array : bitarray : the bit array used to store the presence of elements
+
+    """
+    def __init__(self, n, p):
+        self.m = self.calculate_size(n, p)
+        self.k = self.calculate_hash_functions(n, self.m)
+        self.bit_array = bitarray(self.m)
+        self.bit_array.setall(0)
+
+    def calculate_size(self, n, p):
+        """
+        Calculate the size of the bit array (m) based on the expected number of elements (n) and the desired false positive rate (p).
+
+        Formula:
+        m = - (n * log(p)) / (log(2) ^ 2)
+
+        """
+        m = math.ceil(-(n * math.log(p)) / math.log(2) ** 2)
+        return m
+
+    def calculate_hash_functions(self, n, m):
+        """
+        Calculate the number of hash functions (k) based on the expected number of elements (n) and the size of the bit array (m).
+
+        Formula:
+        k = (m / n) * log(2)
+
+        """
+        k = math.ceil((m / n) * math.log(2))
+        return k
+
+    def add(self, element):
+        """
+        Add an element to the Bloom filter.
+
+        Parameters:
+        - element : str : the element to be added
+
+        """
+        for i in range(self.k):
+            hash_value = hashlib.sha256((element + str(i)).encode()).hexdigest()
+            index = int(hash_value, 16) % self.m
+            self.bit_array[index] = 1
+
+    def __contains__(self, element):
+        """
+        Check if an element is present in the Bloom filter.
+
+        Parameters:
+        - element : str : the element to be checked
+
+        Returns:
+        - bool : True if element is possibly in the set, False if not
+
+        """
+        for i in range(self.k):
+            hash_value = hashlib.sha256((element + str(i)).encode()).hexdigest()
+            index = int(hash_value, 16) % self.m
+            if self.bit_array[index] != 1:
+                return False
+        return True
+
+
+# Example usage:
+
+# Create a Bloom filter with expected 100 elements and desired false positive rate of 0.1
+bloom_filter = BloomFilter(100, 0.1)
+
+# Add some elements to the filter
+bloom_filter.add("apple")
+bloom_filter.add("banana")
+bloom_filter.add("cat")
+
+# Check if elements are in the filter
+print("apple" in bloom_filter)  # True
+print("banana" in bloom_filter)  # True
+print("dog" in bloom_filter)  # False
+
+# Check false positive rate
+false_positive_count = 0
+for i in range(1000):
+    if "dog" in bloom_filter:
+        false_positive_count += 1
+false_positive_rate = false_positive_count / 1000
+print("False positive rate:", false_positive_rate)
+
+Data Structure: SkipList
+class SkipListNode:
+    def __init__(self, value):
+        self.value = value
+        self.next = []  # List to store references to next nodes on different levels
+
+class SkipList:
+    def __init__(self):
+        self.head = SkipListNode(None)  # Dummy node at start of each level
+        self.levels = 1
+
+    def __len__(self):
+        length = 0
+        node = self.head.next[0]  # Start from the first level
+        while node is not None:
+            length += 1
+            node = node.next[0]
+        return length
+
+    def insert(self, value):
+        # Determine the level for the new node
+        level = self.__random_level()
+        
+        if level > self.levels:
+            # Update the reference to the current highest level
+            for i in range(self.levels, level):
+                self.head.next.append(None)
+            self.levels = level
+        
+        new_node = SkipListNode(value)
+        node = self.head
+        
+        for i in range(self.levels-1, -1, -1):  # Traverse the levels in descending order
+            while node.next[i] is not None and node.next[i].value < value:
+                node = node.next[i]
+            
+            if i < level:
+                # Update the references in the current level
+                new_node.next.append(node.next[i])
+                node.next[i] = new_node
+                
+    def search(self, value):
+        node = self.head
+        
+        for i in range(self.levels-1, -1, -1):  # Traverse the levels in descending order
+            while node.next[i] is not None and node.next[i].value < value:
+                node = node.next[i]
+            
+            if node.next[i] is not None and node.next[i].value == value:
+                return True
+            
+        return False
+    
+    def remove(self, value):
+        node = self.head
+        
+        for i in range(self.levels-1, -1, -1):  # Traverse the levels in descending order
+            while node.next[i] is not None and node.next[i].value < value:
+                node = node.next[i]
+            
+            if node.next[i] is not None and node.next[i].value == value:
+                # Remove the node from the current level
+                node.next[i] = node.next[i].next[i]
+                
+        # Remove any levels that are no longer needed (all nodes have been removed)
+        while self.levels > 1 and self.head.next[self.levels-1] is None:
+            self.levels -= 1
+            self.head.next.pop()
+    
+    def __random_level(self):
+        # Generate a random level for the new node
+        level = 1
+        while random.random() < 0.5 and level < MAX_LEVEL:
+            level += 1
+        return level
+
+
+# Example usage:
+
+skip_list = SkipList()
+skip_list.insert(5)
+skip_list.insert(3)
+skip_list.insert(8)
+
+print(len(skip_list))  # Output: 3
+
+print(skip_list.search(3))  # Output: True
+print(skip_list.search(7))  # Output: False
+
+skip_list.remove(3)
+print(len(skip_list))  # Output: 2
+
+Data Structure: B-Trees
+Here is a simple python implementation of B-Trees using a class:
+
+```python
+class BTreeNode:
+    def __init__(self, leaf=False):
+        self.leaf = leaf
+        self.keys = []
+        self.child = []
+
+class BTree:
+    def __init__(self, degree):
+        self.root = BTreeNode(True)
+        self.degree = degree
+
+    def insert(self, k):
+        root = self.root
+        if len(root.keys) == (2*self.degree) - 1:
+            temp = BTreeNode()
+            self.root = temp
+            temp.child.insert(0, root)
+            self._split_child(temp, 0)
+            self._insert_non_full(temp, k)
+        else:
+            self._insert_non_full(root, k)
+
+    def _insert_non_full(self, x, k):
+        i = len(x.keys) - 1
+        if x.leaf:
+            x.keys.append((None, None))
+            while i >= 0 and k < x.keys[i]:
+                x.keys[i+1] = x.keys[i]
+                i -= 1
+            x.keys[i+1] = k
+        else:
+            while i >= 0 and k < x.keys[i]:
+                i -= 1
+            i += 1
+            if len(x.child[i].keys) == (2*self.degree) - 1:
+                self._split_child(x, i)
+                if k > x.keys[i]:
+                    i += 1
+            self._insert_non_full(x.child[i], k)
+
+    def _split_child(self, x, i):
+        t = self.degree
+        y = x.child[i]
+        z = BTreeNode(y.leaf)
+        x.child.insert(i+1, z)
+        x.keys.insert(i, y.keys[t-1])
+        z.keys = y.keys[t:(2*t)-1]
+        y.keys = y.keys[0:t-1]
+        if not y.leaf:
+            z.child = y.child[t:(2*t)]
+            y.child = y.child[0:t-1]
+
+    def search(self, k, x=None):
+        if isinstance(x, BTreeNode) or x is None:
+            i = 0
+            if x is not None:
+                while i < len(x.keys) and k > x.keys[i]:
+                    i += 1
+                if i < len(x.keys) and k == x.keys[i]:
+                    return (x, i)
+                elif x.leaf:
+                    return None
+                else:
+                    return self.search(k, x.child[i])
+            else:
+                return self.search(k, self.root)
+        else:
+            return None
+```
+
+Example usage:
+
+```python
+btree = BTree(3)
+btree.insert(1)
+btree.insert(2)
+btree.insert(3)
+btree.insert(4)
+btree.insert(5)
+
+result = btree.search(3)
+if result:
+    print(f"Key found at index {result[1]}")
+else:
+    print("Key not found")
+
+```
+
+Output:
+
+```
+Key found at index 2
+```
+
+Data Structure: PriorityQueues
+class PriorityQueue:
+    def __init__(self):
+        """
+        Initializes an empty priority queue.
+        """
+        self.queue = []
+
+    def is_empty(self):
+        """
+        Checks if the priority queue is empty.
+        Returns:
+            bool: True if the priority queue is empty, False otherwise.
+        """
+        return len(self.queue) == 0
+
+    def insert(self, item, priority):
+        """
+        Inserts an item with a given priority into the priority queue.
+        Args:
+            item: Any object to be inserted.
+            priority: The priority associated with the item. Lower values indicate higher priority.
+        """
+        element = (item, priority)
+        self.queue.append(element)
+        self.queue.sort(key=lambda x: x[1])
+
+    def delete(self):
+        """
+        Removes and returns the item with the highest priority from the priority queue.
+        Returns:
+            tuple: The item and its priority as a tuple.
+        Raises:
+            IndexError: If the priority queue is empty.
+        """
+        if self.is_empty():
+            raise IndexError("Priority queue is empty")
+        return self.queue.pop(0)
+
+    def peek(self):
+        """
+        Returns the item with the highest priority without removing it from the priority queue.
+        Returns:
+            tuple: The item and its priority as a tuple.
+        Raises:
+            IndexError: If the priority queue is empty.
+        """
+        if self.is_empty():
+            raise IndexError("Priority queue is empty")
+        return self.queue[0]
+
+# Example usage
+
+# Create a new empty priority queue
+pq = PriorityQueue()
+
+# Check if the priority queue is empty
+print(pq.is_empty())  # Output: True
+
+# Insert items with priorities into the priority queue
+pq.insert('Apple', 2)
+pq.insert('Banana', 1)
+pq.insert('Orange', 3)
+
+# Get the item with the highest priority without removing it
+print(pq.peek())  # Output: ('Banana', 1)
+
+# Remove and return the item with the highest priority
+print(pq.delete())  # Output: ('Banana', 1)
+
+# Check if the priority queue is empty again
+print(pq.is_empty())  # Output: False
+
+Data Structure: DisjointSet
+class DisjointSet:
+    def __init__(self, n):
+        """
+        Initializes the DisjointSet with n sets, each containing a single element.
+
+        Args:
+            n (int): The number of sets to initialize.
+
+        """
+        self.parent = [i for i in range(n)]
+        self.rank = [0 for _ in range(n)]
+
+    def find(self, x):
+        """
+        Finds the representative (root) of the set containing the element x.
+
+        Args:
+            x (int): The element to find.
+
+        Returns:
+            int: The representative (root) of the set containing x.
+
+        """
+        if self.parent[x] != x:
+            self.parent[x] = self.find(self.parent[x])
+        return self.parent[x]
+
+    def union(self, x, y):
+        """
+        Unites the sets containing elements x and y.
+
+        Args:
+            x (int): The first element to unite.
+            y (int): The second element to unite.
+
+        """
+        root_x = self.find(x)
+        root_y = self.find(y)
+
+        if root_x != root_y:
+            if self.rank[root_x] < self.rank[root_y]:
+                self.parent[root_x] = root_y
+            elif self.rank[root_x] > self.rank[root_y]:
+                self.parent[root_y] = root_x
+            else:
+                self.parent[root_y] = root_x
+                self.rank[root_x] += 1
+
+# Example usage
+ds = DisjointSet(5)
+
+# The initial structure will be:
+# 0 -> 0, 1 -> 1, 2 -> 2, 3 -> 3, 4 -> 4
+print(ds.parent)  # output: [0, 1, 2, 3, 4]
+print(ds.rank)  # output: [0, 0, 0, 0, 0]
+
+ds.union(0, 1)
+ds.union(2, 3)
+
+# After uniting 0 and 1, and 2 and 3, the structure will be:
+# 0 -> 1, 1 -> 1, 2 -> 3, 3 -> 3, 4 -> 4
+print(ds.parent)  # output: [1, 1, 3, 3, 4]
+print(ds.rank)  # output: [0, 0, 0, 0, 0]
+
+ds.union(0, 3)
+
+# After uniting 0 and 3, the structure will be:
+# 0 -> 1, 1 -> 1, 2 -> 3, 3 -> 1, 4 -> 4
+print(ds.parent)  # output: [1, 1, 3, 1, 4]
+print(ds.rank)  # output: [0, 0, 0, 0, 0]
+
+print(ds.find(2))  # output: 3
+print(ds.find(4))  # output: 4
+print(ds.find(0))  # output: 1
+
+Data Structure: BinaryIndexedTree
+class BinaryIndexedTree:
+    def __init__(self, n):
+        """
+        Initialize a Binary Indexed Tree with a given size.
+
+        Args:
+          n: The size of the Binary Indexed Tree.
+        """
+        self.size = n
+        self.tree = [0] * (n + 1)
+
+    def update(self, i, delta):
+        """
+        Update the value at index i with a given delta.
+
+        Args:
+          i: The index to be updated.
+          delta: The value by which the element at index i needs to be updated.
+        """
+        while i <= self.size:
+            self.tree[i] += delta
+            i += i & -i
+
+    def query(self, i):
+        """
+        Get the cumulative sum from index 1 to i.
+
+        Args:
+          i: The index up to which cumulative sum is calculated.
+
+        Returns:
+          The cumulative sum from index 1 to i.
+        """
+        result = 0
+        while i > 0:
+            result += self.tree[i]
+            i -= i & -i
+        return result
+
+# Example usage
+bit = BinaryIndexedTree(5)  # Create a Binary Indexed Tree of size 5
+bit.update(1, 2)  # Update index 1 with value 2
+bit.update(2, 3)  # Update index 2 with value 3
+bit.update(4, 1)  # Update index 4 with value 1
+
+# Get the cumulative sum from index 1 to 3
+print(bit.query(3))  # Output: 5
+
+# Get the cumulative sum from index 1 to 5
+print(bit.query(5))  # Output: 6
+
+Data Structure: SuffixArray
+class SuffixArray:
+    def __init__(self, text):
+        """
+        Construct a suffix array from a given text.
+
+        Parameters:
+        text (str) : The input text string
+        """
+        self.text = text
+        self.suffixes = self._generate_suffixes()
+
+    def _generate_suffixes(self):
+        """
+        Generate a list of suffixes from the input text.
+
+        Returns:
+        list : A list of suffixes
+        """
+        return [self.text[i:] for i in range(len(self.text))]
+
+    def find_suffix(self, pattern):
+        """
+        Find the starting indexes of all occurrences of a given pattern in the text.
+
+        Parameters:
+        pattern (str) : The input pattern to search for
+
+        Returns:
+        list : A list of starting indexes of pattern occurrences
+        """
+        sorted_suffixes = sorted(self.suffixes)
+        left, right = 0, len(self.text) - 1
+        pattern_length = len(pattern)
+
+        while left <= right:
+            mid = (left + right) // 2
+            suffix = sorted_suffixes[mid]
+
+            if pattern == suffix[:pattern_length]:
+                result = []
+                result.append(self.text.index(suffix))
+                i = mid - 1
+                while i >= 0:
+                    if sorted_suffixes[i][:pattern_length] != pattern:
+                        break
+                    result.append(self.text.index(sorted_suffixes[i]))
+                    i -= 1
+                i = mid + 1
+                while i < len(sorted_suffixes):
+                    if sorted_suffixes[i][:pattern_length] != pattern:
+                        break
+                    result.append(self.text.index(sorted_suffixes[i]))
+                    i += 1
+                return sorted(result)
+            elif pattern < suffix[:pattern_length]:
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return []
+
+# Example usage
+text = "banana"
+suffix_array = SuffixArray(text)
+
+# Find all occurrences of "ana" in the text
+pattern = "ana"
+occurrences = suffix_array.find_suffix(pattern)
+print("Occurrences of '{}': {}".format(pattern, occurrences))  # Output: [1, 3]
+
+# Find all occurrences of "na" in the text
+pattern = "na"
+occurrences = suffix_array.find_suffix(pattern)
+print("Occurrences of '{}': {}".format(pattern, occurrences))  # Output: [2, 4]

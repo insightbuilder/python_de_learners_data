@@ -1,0 +1,76 @@
+Tuples:
+
+Description: Similar to lists, but immutable. Once created, the elements and their order cannot be changed.
+Declaration:
+my_tuple = (1, 2, 3)
+
+Strings:
+
+Description: Immutable sequences of characters.
+Declaration:
+my_string = "Hello, World!"
+
+Deque (Double-Ended Queue):
+
+Description: A double-ended queue that supports adding and removing elements from both ends efficiently.
+Module: collections
+Declaration:
+from collections import deque
+my_deque = deque([1, 2, 3])
+
+NamedTuple:
+
+Description: A subclass of tuple with named fields, making code more readable.
+Module: collections
+Declaration:
+from collections import namedtuple
+Point = namedtuple('Point', ['x', 'y'])
+my_point = Point(1, 2)
+
+Heapq:
+Description: A module providing an implementation of the heap queue algorithm, which is a priority queue.
+Module: heapq
+Declaration:
+import heapq
+my_heap = [3, 1, 4, 1, 5, 9, 2]
+heapq.heapify(my_heap)
+
+DefaultDict:
+
+Description: A dictionary subclass that provides a default value for each key.
+Module: collections
+Declaration:
+from collections import defaultdict
+my_dict = defaultdict(int)
+
+Counter:
+
+Description: A dictionary subclass for counting hashable objects.
+Module: collections
+Declaration:
+from collections import Counter
+my_counter = Counter([1, 2, 3, 1, 2, 1])
+
+ChainMap:
+
+Description: A class for creating a single view of multiple mappings.
+Module: collections
+Declaration:
+from collections import ChainMap
+map1 = {'a': 1, 'b': 2}
+map2 = {'b': 3, 'c': 4}
+my_chainmap = ChainMap(map1, map2)
+
+OrderedDict:
+
+Description: A dictionary subclass that remembers the order in which items were inserted.
+Module: collections
+Declaration:
+from collections import OrderedDict
+my_ordered_dict = OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+
+Set:
+
+Description: An unordered collection of unique elements.
+Declaration:
+my_set = {1, 2, 3}

@@ -1,3 +1,6 @@
+import numpy as np
+from collections import defaultdict
+from collections import Counter
 
 def count_letter(word):
     # declare a counter dict
@@ -13,7 +16,6 @@ def count_letter(word):
     # after enumeration, then return counter 
     return counter
 
-from collections import defaultdict
 
 def default_dict_counter(word):
     # declare default dict
@@ -23,7 +25,6 @@ def default_dict_counter(word):
         counter[letter] += 1 
     return counter
 
-from collections import Counter
 
 word = 'Thinunelveli Rani'
 counter = Counter(word)
@@ -90,3 +91,15 @@ def predict(self, X):
     y_predicted = self._sigmoid(linear_model)
     y_predicted_cls = [1 if i > 0.5 else 0 for i in y_predicted]
     return np.array(y_predicted_cls)
+
+
+def sigmoid_t(x, *args, **kwargs):
+    if args:
+        print(args)
+    if kwargs:
+        print(kwargs)
+    # returns between 0 to 1
+    return 1 / (np.exp(-x) + 1)
+
+
+sigmoid_t(5, 57, t='hen')

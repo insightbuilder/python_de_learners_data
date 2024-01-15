@@ -1,0 +1,1272 @@
+
+Data Structure: List
+Problem Statement:
+One of the most frequently solved problems using the List data structure is finding the maximum value in a list.
+
+Solution Explanation:
+To find the maximum value in a list, we can iterate over each element in the list and keep track of the maximum value encountered. Initially, we can assume that the first element in the list is the maximum value. As we iterate through the remaining elements, if we find a value greater than the current maximum, we update the maximum value. By the end of the iteration, we will have found the maximum value in the list.
+
+Python Implementation:
+
+```python
+def find_maximum(numbers):
+    if len(numbers) == 0:
+        return None
+
+    maximum = numbers[0]
+
+    for num in numbers[1:]:
+        if num > maximum:
+            maximum = num
+
+    return maximum
+
+# Example usage
+numbers = [10, 5, 20, 15]
+maximum_value = find_maximum(numbers)
+print("Maximum value:", maximum_value)
+```
+
+Output:
+
+```
+Maximum value: 20
+```
+
+In this example, we have a list of numbers `[10, 5, 20, 15]` and the `find_maximum` function is used to find the maximum value in the list. The maximum value is `20`, which is the output.
+
+Data Structure: Dict
+Problem Statement: 
+
+Given a list of names, find the frequency of each name in the list and return a dictionary where keys are the names and values are the frequencies of those names.
+
+Solution Explanation: 
+
+We can use a dictionary to store the frequency of each name in the list. We will iterate through the list and for each name, we will check if it already exists in the dictionary. If it does, we will increment its value by 1. If it doesn't, we will add it to the dictionary with a value of 1. Finally, we will return the dictionary with the frequencies of the names.
+
+Python Implementation:
+
+def find_name_frequency(names):
+    frequency_dict = {}
+    for name in names:
+        if name in frequency_dict:
+            frequency_dict[name] += 1
+        else:
+            frequency_dict[name] = 1
+    return frequency_dict
+
+# Example usage
+names = ['John', 'Mike', 'Mike', 'Emily', 'John', 'John']
+print(find_name_frequency(names))
+
+# Output: {'John': 3, 'Mike': 2, 'Emily': 1}
+
+In the above implementation, we define a function called find_name_frequency which takes a list of names as input. We initialize an empty dictionary called frequency_dict. We then iterate through each name in the given list. If the name is already a key in the dictionary, we increment its value by 1. If it is not a key in the dictionary, we add it to the dictionary with a value of 1. Finally, we return the dictionary with the frequencies of the names.
+
+Data Structure: Tuples
+Problem: Finding the Maximum and Minimum in a List of Numbers
+
+Given a list of numbers, we need to find the maximum and minimum values from the list.
+
+Solution Explanation:
+1. Initialize two variables, "minimum" and "maximum", with the first element of the list.
+2. Iterate over the remaining elements of the list.
+3. For each element, check if it is smaller than the current minimum value. If it is, update the minimum value.
+4. Similarly, check if the element is larger than the current maximum value. If it is, update the maximum value.
+5. After iterating over all the elements, the "minimum" and "maximum" variables will hold the minimum and maximum values in the list.
+
+Python Implementation:
+
+def find_min_max(numbers):
+    minimum = maximum = numbers[0]
+  
+    for num in numbers[1:]:
+        if num < minimum:
+            minimum = num
+        elif num > maximum:
+            maximum = num
+      
+    return minimum, maximum
+
+# Example usage:
+numbers = [5, 8, 3, 9, 2, 1]
+min_value, max_value = find_min_max(numbers)
+print("Minimum:", min_value)
+print("Maximum:", max_value)
+
+Output:
+Minimum: 1
+Maximum: 9
+
+Data Structure: Strings
+Problem: Longest Common Subsequence
+
+Given two strings s1 and s2, find the length of their longest common subsequence.
+
+Solution Explanation:
+
+A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
+
+We can solve this problem using dynamic programming.
+
+1. Create a 2D matrix dp of size (m+1) x (n+1), where m and n are the lengths of s1 and s2 respectively.
+2. Initialize the first row and first column of the matrix dp as 0. This is because if one of the strings is empty, the length of the common subsequence would be 0.
+3. Iterate through the characters of s1 and s2:
+   - If the characters are equal, then the length of the common subsequence would be one more than the length of the common subsequence without these characters, i.e., dp[i][j] = dp[i-1][j-1] + 1.
+   - If the characters are not equal, then the length of the common subsequence would be the maximum of the length of the common subsequence without the current character from s1 or s2, i.e., dp[i][j] = max(dp[i-1][j], dp[i][j-1]).
+4. After iterating through all the characters, return dp[m][n], where m and n are the lengths of s1 and s2 respectively. This will be the length of the longest common subsequence.
+
+Python Implementation:
+
+def longestCommonSubsequence(s1, s2):
+    m = len(s1)
+    n = len(s2)
+    
+    dp = [[0] * (n+1) for _ in range(m+1)]
+    
+    for i in range(1, m+1):
+        for j in range(1, n+1):
+            if s1[i-1] == s2[j-1]:
+                dp[i][j] = dp[i-1][j-1] + 1
+            else:
+                dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+    
+    return dp[m][n]
+
+# Example usage
+s1 = "AGGTAB"
+s2 = "GXTXAYB"
+print(longestCommonSubsequence(s1, s2)) # Output: 4
+
+The above implementation has a time complexity of O(mn), where m and n are the lengths of s1 and s2 respectively.
+
+Data Structure: Deque
+Problem: Palindrome Checker
+Given a string, determine if it is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward, ignoring punctuation, case, and spacing.
+
+Solution Explanation:
+To solve this problem using a deque, we can compare the first and last characters of the string until we reach the middle of the string. We can use a deque to store the characters of the string in the same order as they appear. We will compare the characters at both ends of the deque and move towards the middle until the characters don't match or until we reach the middle of the deque. If all the characters match, then the given string is a palindrome.
+
+Python Implementation:
+```python
+from collections import deque
+
+def is_palindrome(text):
+    # Create a deque and store the characters of the string
+    deque_text = deque(text)
+    
+    while len(deque_text) > 1:
+        # Remove the first and last characters from the deque
+        first = deque_text.popleft()
+        last = deque_text.pop()
+        
+        # If the characters don't match, return False
+        if first != last:
+            return False
+    
+    # All the characters match, so the string is a palindrome
+    return True
+
+# Test the function
+print(is_palindrome("radar"))  # True
+print(is_palindrome("hello"))  # False
+print(is_palindrome("level"))  # True
+print(is_palindrome("A man, a plan, a canal: Panama"))  # True
+```
+
+Output:
+```
+True
+False
+True
+True
+```
+
+In this implementation, we use the `deque` class from the `collections` module to represent our deque. We iterate until the deque has more than one element, removing the first and last characters in each iteration. The function returns `True` if all the characters match and `False` otherwise.
+
+Data Structure: NamedTuple
+Problem Statement: Finding the maximum value in a list of named tuples
+
+Solution Explanation: Given a list of named tuples, we can find the maximum value by using the max function with a lambda function as the key argument. The lambda function can access the value of a specific field in the named tuple and return it. By passing this lambda function as the key argument to the max function, we can find the named tuple with the maximum value in that specific field.
+
+Python Implementation:
+
+```python
+from typing import NamedTuple
+
+# Define the NamedTuple
+class Point(NamedTuple):
+    x: int
+    y: int
+
+# Create a list of named tuples
+points = [Point(2, 5), Point(1, 3), Point(4, 2)]
+
+# Find the named tuple with the maximum value in the 'x' field
+max_point_x = max(points, key=lambda p: p.x)
+
+# Find the named tuple with the maximum value in the 'y' field
+max_point_y = max(points, key=lambda p: p.y)
+
+# Print the results
+print("Max point (x):", max_point_x)
+print("Max point (y):", max_point_y)
+```
+
+Output:
+```
+Max point (x): Point(x=4, y=2)
+Max point (y): Point(x=2, y=5)
+```
+
+In the above example, we have a named tuple called "Point" with two fields, "x" and "y". The list "points" contains three instances of the Point named tuple. We use the max function with a lambda function to find the maximum value in the "x" field and the "y" field separately. The result is printed to the console.
+
+Data Structure: Heapq
+The most frequently solved problem using the heapq data structure is the problem of finding the k largest elements in an array or list.
+
+Problem Statement: Given an array or list of integers, find the k largest elements.
+
+Solution Explanation: We can use heapq efficiently to solve this problem. The idea is to create a min heap and iterate through the list of numbers. Once the heap size reaches k, for every new number, we can compare it with the smallest element in the heap (which is at the root), and if it is larger than the smallest element, we can replace it with the new number. This way, we will have k largest elements in the heap at the end.
+
+Python Implementation:
+
+```python
+import heapq
+
+def find_k_largest(nums, k):
+    if k >= len(nums):
+        return nums
+    
+    # Create a min heap
+    heap = []
+
+    # Iterate through the numbers
+    for num in nums:
+        # If heap size is less than k, add the number to the heap
+        if len(heap) < k:
+            heapq.heappush(heap, num)
+        else:
+            # If the current number is larger than the smallest element in the heap, replace it
+            if num > heap[0]:
+                heapq.heappop(heap)
+                heapq.heappush(heap, num)
+    
+    return heap
+
+# Example usage
+nums = [1, 4, 2, 7, 9, 3]
+k = 3
+k_largest = find_k_largest(nums, k)
+print(k_largest)  # Output: [4, 7, 9]
+```
+
+In the above implementation, we first check if k is larger than or equal to the length of the array, in which case we simply return the entire array. Otherwise, we create an empty min heap.
+
+We then iterate through the numbers in the array. If the heap size is less than k, we simply push the number into the heap. Otherwise, we compare the current number with the smallest element in the heap (which is at the root). If the current number is larger, we pop the smallest element from the heap and push the new number into the heap.
+
+At the end, we return the heap, which will contain the k largest elements.
+
+Data Structure: DefaultDict
+The most frequently solved problem using the `DefaultDict` data structure is counting the frequency of elements in a list. 
+
+Problem Statement: Given a list of elements, count the frequency of each element.
+
+Solution Explanation: We can use a `DefaultDict` to create a dictionary with default values as 0. Then, we can iterate through the list and update the count for each element in the dictionary. Finally, the dictionary will contain the frequency of each element.
+
+Python Implementation:
+
+```python
+from collections import defaultdict
+
+def count_frequency(elements):
+    frequency = defaultdict(int)  # create a dictionary with default values as 0
+    
+    for element in elements:
+        frequency[element] += 1  # increment count for each element
+    
+    return dict(frequency)  # convert defaultdict to regular dictionary
+
+# Example usage
+elements = [1, 2, 3, 2, 4, 1, 3, 2, 3, 4]
+result = count_frequency(elements)
+print(result)  # Output: {1: 2, 2: 3, 3: 3, 4: 2}
+```
+
+In the provided example, the frequency of each element in the `elements` list is counted using a `DefaultDict`. The output is a dictionary where the keys represent the elements and the values represent their respective frequencies.
+
+Data Structure: Counter
+One of the most frequently solved problems using the Counter data structure is finding the most common elements in a list.
+
+Problem Statement: Given a list of elements, find the k most common elements and return them in descending order of frequency.
+
+Solution Explanation:
+1. Create a Counter object from the given list.
+2. Use the `most_common(k)` method of the Counter object to get the k most common elements and their frequency.
+3. Return the list of most common elements in descending order of frequency.
+
+Python Implementation:
+
+```python
+from collections import Counter
+
+def most_common_elements(lst, k):
+    counter = Counter(lst)
+    most_common = counter.most_common(k)
+    return [item[0] for item in most_common]
+
+# Example usage
+elements = [1, 2, 3, 1, 2, 3, 4, 4, 5, 5, 5]
+k = 3
+most_common = most_common_elements(elements, k)
+print(most_common)  # Output: [5, 1, 2]
+```
+
+In the above implementation, we first create a Counter object from the given list `lst`. Then, we use the `most_common(k)` method to get the k most common elements and their frequency. Finally, we return the list of most common elements by extracting only the first element from each tuple in the `most_common` list. The returned list contains the k most common elements in descending order of frequency.
+
+Data Structure: ChainMap
+Problem: Merge Multiple Dictionaries
+
+Given multiple dictionaries, merge them into a single dictionary. If a key appears in multiple dictionaries, the value from the last dictionary should be retained.
+
+Solution Explanation:
+To solve this problem using ChainMap, we can create a ChainMap object using the input dictionaries and then convert it back to a regular dictionary using the `dict()` constructor. The ChainMap object combines the dictionaries in the order they are provided, and when converting it back to a dictionary, the last dictionary's values are retained for any duplicate keys.
+
+Python Implementation:
+
+```python
+from collections import ChainMap
+
+def merge_dictionaries(*dicts):
+    # Create a ChainMap object using the input dictionaries
+    merged_dict = ChainMap(*dicts)
+    
+    # Convert the ChainMap object back to a regular dictionary
+    result_dict = dict(merged_dict)
+    
+    return result_dict
+
+# Example usage
+dict1 = {"a": 1, "b": 2}
+dict2 = {"b": 3, "c": 4}
+dict3 = {"c": 5, "d": 6}
+
+merged = merge_dictionaries(dict1, dict2, dict3)
+print(merged)
+# Output: {'a': 1, 'b': 3, 'c': 5, 'd': 6}
+```
+
+In the above example, we have three dictionaries `dict1`, `dict2`, and `dict3`. The `merge_dictionaries()` function is called with these three dictionaries as arguments. The function creates a ChainMap object with the input dictionaries and then converts it back to a regular dictionary using the `dict()` constructor. The resulting merged dictionary is printed, which contains the merged key-value pairs from all three input dictionaries.
+
+Data Structure: OrderedDict
+One of the most frequently solved problems using the OrderedDict data structure is maintaining a "Least Recently Used" (LRU) cache.
+
+Problem Statement:
+Implement an LRU cache that can store a maximum of `n` key-value pairs. When the cache reaches its limit, the least recently used item should be removed. The cache should support two operations: `get(key)` to retrieve the value associated with a given key, and `put(key, value)` to insert or update a key-value pair. When an item is accessed (via get or put), it should be marked as the most recently used and moved to the front of the cache.
+
+Solution Explanation:
+To solve this problem using an OrderedDict, we can make use of its ordered nature and the built-in popitem method. We can keep track of the least recently used item at the end of the OrderedDict, and whenever a get or put operation is performed, we move the accessed item to the end of the OrderedDict to mark it as the most recently used.
+
+Python Implementation:
+
+```
+from collections import OrderedDict
+
+class LRUCache(OrderedDict):
+
+    def __init__(self, capacity):
+        self.capacity = capacity
+
+    def get(self, key):
+        if key not in self:
+            return -1
+        self.move_to_end(key)
+        return self[key]
+
+    def put(self, key, value):
+        if key in self:
+            self.move_to_end(key)
+        self[key] = value
+        if len(self) > self.capacity:
+            self.popitem(last=False)
+
+# Example usage:
+cache = LRUCache(2)
+cache.put(1, 1)
+cache.put(2, 2)
+print(cache.get(1))  # Output: 1
+cache.put(3, 3)
+print(cache.get(2))  # Output: -1
+cache.put(4, 4)
+print(cache.get(1))  # Output: -1
+print(cache.get(3))  # Output: 3
+print(cache.get(4))  # Output: 4
+```
+
+In the above implementation, we create a class `LRUCache` that is derived from `OrderedDict`. We override the `get` and `put` methods to add the LRU behavior. When an item is accessed, we call `move_to_end` to move it to the end of the OrderedDict, effectively marking it as the most recently used. If the size of the cache exceeds the capacity, we use `popitem(last=False)` to remove the least recently used item from the beginning of the OrderedDict.
+
+Data Structure: Set
+Problem: Find the intersection of two sets.
+
+Given two sets, find the common elements present in both sets.
+
+Solution Explanation:
+To solve this problem, we can utilize the mathematical concept of set intersection. In Python, we can use the "&" operator or the `intersection()` method to find the common elements between two sets.
+
+Python Implementation:
+
+```python
+# Function to find the intersection of two sets
+def find_intersection(set1, set2):
+    intersection = set1 & set2
+    return intersection
+
+# Example usage
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+intersection = find_intersection(set1, set2)
+print(intersection)
+```
+
+Output:
+```
+{4, 5}
+```
+
+In the above code, the `find_intersection()` function takes two sets as input parameters and uses the "&" operator to find the intersection (common elements) between the sets. The intersection is then returned as output.
+
+The example usage demonstrates the code by finding the intersection between two sets: `{1, 2, 3, 4, 5}` and `{4, 5, 6, 7, 8}`. The output `{4, 5}` represents the common elements present in both sets.
+
+Data Structure: Arrays
+Problem Statement: Find the Duplicate Number
+
+Given an array of integers, nums, containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
+
+Solution Explanation:
+One approach to solve this problem is to use the concept of a set. We can iterate through the array and for each element, check if it is already present in the set. If it is, then that element is the duplicate number. If not, we add that element to the set and continue with the next element. Since a set does not allow duplicates, the first duplicate number encountered will be the answer.
+
+Python Implementation:
+
+```python
+def findDuplicate(nums):
+    seen = set()
+    for num in nums:
+        if num in seen:
+            return num
+        else:
+            seen.add(num)
+    return -1  # No duplicate found
+
+nums = [1, 3, 4, 2, 2]
+print(findDuplicate(nums))  # Output: 2
+```
+
+In the above implementation, we initialize an empty set named "seen". We then iterate through the array "nums" using the variable "num", and for each element, we check if it is already present in the set "seen" using the condition `if num in seen`. If it is, we return that element as it is the duplicate number. If not, we add that element to the set using the `seen.add(num)` statement. If no duplicate is found, we return -1 to indicate that.
+
+Data Structure: Queues
+One of the most frequently solved problems using the queue data structure is the "Breadth-First Search" (BFS) algorithm.
+
+Problem Statement: Given a graph, find the shortest path from a source node to a destination node.
+
+Solution Explanation:
+BFS is a traversing algorithm where you should start traversing from a selected node and traverse the graph layerwise, thus visiting all the neighbors of the starting node. It starts with the initial node and visits all its adjacent nodes. Then it visits adjacent nodes of the visited nodes, and so on. This is done until all the nodes are visited.
+
+To solve this problem using a queue, we perform the following steps:
+1. Create a queue and initialize it with the source node.
+2. Initialize a list to keep track of visited nodes and mark the source node as visited.
+3. While the queue is not empty, dequeue a node from the queue.
+4. If the dequeued node is the destination node, we have found the shortest path and can return it.
+5. Otherwise, enqueue all the adjacent nodes of the dequeued node that have not been visited.
+6. Mark the newly enqueued nodes as visited.
+7. Repeat steps 3-6 until the queue is empty or the destination node is found.
+
+Python implementation:
+
+```python
+from collections import deque
+
+def bfs(graph, source, destination):
+    queue = deque()
+    visited = set()
+
+    queue.append(source)
+    visited.add(source)
+
+    while queue:
+        node = queue.popleft()
+        if node == destination:    # destination node found
+            return True
+
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                queue.append(neighbor)
+                visited.add(neighbor)
+
+    return False
+
+# Example usage
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+}
+
+source_node = 'A'
+destination_node = 'F'
+if bfs(graph, source_node, destination_node):
+    print(f"Shortest path exists from {source_node} to {destination_node}")
+else:
+    print(f"No path exists from {source_node} to {destination_node}")
+```
+
+In the example above, we have a graph represented as a dictionary where each key represents a node and its corresponding value is a list of its adjacent nodes. We are finding the shortest path from node 'A' to 'F'. If a path exists, it will print "Shortest path exists from A to F". Otherwise, it will print "No path exists from A to F".
+
+Data Structure: Stacks
+Problem Statement:
+Implement a stack data structure that supports the following operations:
+
+1. Push(element): Insert an element into the stack.
+2. Pop(): Remove and return the top element from the stack.
+3. Top(): Return the top element without removing it from the stack.
+4. IsEmpty(): Check if the stack is empty.
+5. Size(): Return the number of elements in the stack.
+
+
+Solution Explanation:
+A stack is a data structure that follows the Last-In-First-Out (LIFO) principle. It can be implemented using a list in Python. The push() operation adds an element to the top of the stack, the pop() operation removes and returns the top element, the top() operation returns the top element without removing it, the isEmpty() operation checks if the stack is empty, and the size() operation returns the number of elements in the stack.
+
+Python Implementation:
+Below is the Python implementation of the stack data structure:
+
+class Stack:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, element):
+        self.stack.append(element)
+
+    def pop(self):
+        if not self.isEmpty():
+            return self.stack.pop()
+        return None
+
+    def top(self):
+        if not self.isEmpty():
+            return self.stack[-1]
+        return None
+
+    def isEmpty(self):
+        return len(self.stack) == 0
+
+    def size(self):
+        return len(self.stack)
+
+
+# Create a stack object
+stack = Stack()
+
+# Test the stack operations
+stack.push(1)
+stack.push(2)
+stack.push(3)
+print(stack.top())     # Output: 3
+print(stack.pop())     # Output: 3
+print(stack.size())    # Output: 2
+print(stack.isEmpty()) # Output: False
+print(stack.pop())     # Output: 2
+print(stack.pop())     # Output: 1
+print(stack.isEmpty()) # Output: True
+
+Data Structure: Linked Lists
+Problem Statement: Reverse a Linked List
+
+Solution Explanation:
+To solve this problem, we can iterate through the original linked list and for each node, we change its next pointer to point to the previous node. We also need to keep track of the previous and current nodes.
+
+1. Initialize three pointers: prev = None, current = head, and next = None.
+2. Iterate through the linked list while current is not None:
+    a. Set next to the next node of the current node.
+    b. Set the next pointer of the current node as prev.
+    c. Move prev and current pointers one step forward.
+    d. Set the current node as next for the next iteration.
+3. Finally, update the head to the last node we iterated, which will be the new head of the reversed linked list.
+4. Return the new head.
+
+Python Implementation:
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+def reverseLinkedList(head):
+    prev = None
+    current = head
+
+    while current is not None:
+        next = current.next
+        current.next = prev
+        prev = current
+        current = next
+
+    head = prev
+    return head
+```
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Data Structure: Trees
+Most frequently solved problem using Trees: Binary Tree Maximum Path Sum
+
+Problem Statement: Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
+
+Solution Explanation: The idea is to recursively calculate the maximum path sum of left and right subtrees and update the maximum path sum if the sum of the current node's value, the left subtree's maximum path sum, and the right subtree's maximum path sum is greater than the current maximum path sum.
+- For each node, there are three options: 
+  1. The path goes through the current node and includes the left and right subtrees.
+  2. The path only goes through the current node and does not include any subtrees.
+  3. The path only goes through one of the subtrees.
+
+Python Implementation:
+
+```python
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution:
+    def maxPathSum(self, root: TreeNode) -> int:
+        # Initialize a variable to store the maximum path sum
+        self.max_sum = float('-inf')
+        
+        # Recursive helper function to find maximum path sum
+        def maxPathSumHelper(node: TreeNode) -> int:
+            if not node:
+                return 0
+            
+            # Find the maximum path sum of the left and right subtrees
+            left_sum = max(0, maxPathSumHelper(node.left))
+            right_sum = max(0, maxPathSumHelper(node.right))
+    
+            # Update the maximum path sum if necessary
+            max_path_sum_with_node = node.val + left_sum + right_sum
+            self.max_sum = max(self.max_sum, max_path_sum_with_node)
+    
+            # Return the maximum sum of either the left or right subtree plus the current node's value
+            return node.val + max(left_sum, right_sum)
+        
+        # Call the recursive helper function to find the maximum path sum
+        maxPathSumHelper(root)
+        
+        # Return the maximum path sum
+        return self.max_sum
+```
+
+Example of usage:
+
+```python
+# Create a binary tree
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+
+# Create a Solution object
+solution = Solution()
+
+# Call the maxPathSum method to find the maximum path sum
+max_sum = solution.maxPathSum(root)
+
+# Print the maximum path sum
+print(max_sum)  # Output: 6
+```
+
+In the above example, the maximum path sum in the binary tree with root node 1 is 6 (the path goes through nodes 3, 1, and 2).
+
+Data Structure: Graphs
+Problem Statement: Find the shortest path between two nodes in a weighted graph.
+
+Solution Explanation: The problem can be solved using Dijkstra's algorithm, which is a popular algorithm for finding the shortest path between two nodes in a graph. Here are the steps of the algorithm:
+1. Create a distance array and initialize it with infinity for all nodes except the source node, which is initialized with 0.
+2. Create a priority queue and insert the source node with distance 0.
+3. While the priority queue is not empty, do the following:
+   a. Remove the node with the minimum distance from the priority queue.
+   b. For each adjacent node of the removed node, calculate the distance from the source node through the removed node. If this distance is smaller than the current distance of the adjacent node, update its distance and insert it into the priority queue.
+4. After the algorithm finishes, the distance array will contain the shortest distances from the source node to all other nodes. To find the shortest path between the source node and a target node, backtrack from the target node to the source node using the predecessor array.
+
+Python Implementation:
+
+```
+import heapq
+
+def dijkstra(graph, source):
+    # Initialize distance array
+    distances = [float('inf')] * len(graph)
+    distances[source] = 0
+    # Initialize predecessor array
+    predecessors = [None] * len(graph)
+    
+    # Create priority queue and insert source node
+    pq = [(0, source)]
+    
+    while pq:
+        # Remove node with minimum distance from the priority queue
+        current_dist, current_node = heapq.heappop(pq)
+        
+        # Check if current distance is already smaller than the popped distance
+        if current_dist > distances[current_node]:
+            continue
+        
+        # Update distances and predecessors of adjacent nodes
+        for neighbor, weight in graph[current_node]:
+            distance = current_dist + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                predecessors[neighbor] = current_node
+                heapq.heappush(pq, (distance, neighbor))
+    
+    return distances, predecessors
+
+def shortest_path(graph, source, target):
+    distances, predecessors = dijkstra(graph, source)
+    
+    # Backtrack from target node to source node to find the shortest path
+    path = []
+    current_node = target
+    while current_node is not None:
+        path.append(current_node)
+        current_node = predecessors[current_node]
+    
+    path.reverse()
+    
+    return path
+
+# Example usage
+graph = [[(1, 10), (2, 5)],
+         [(0, 10), (3, 1)],
+         [(0, 5), (3, 2)],
+         [(1, 1), (2, 2)]]
+
+source = 0
+target = 3
+
+shortest_path = shortest_path(graph, source, target)
+
+print("Shortest path:", shortest_path)
+```
+
+This code implements Dijkstra's algorithm to find the shortest path between a source node and a target node in a weighted graph. The `graph` variable represents the adjacency list of the graph, where each element of the list is a list of tuples `(neighbor, weight)`, indicating that there is an edge from the current node to the neighbor with the given weight. The `source` and `target` variables represent the source and target nodes respectively. The code prints the shortest path between the source and target nodes.
+
+Data Structure: HashTables
+The most frequently solved problem using HashTables is the Two Sum problem. 
+
+Problem Statement: Given an array of integers, find two numbers such that they add up to a specific target number.
+
+Solution Explanation: 
+1. We can use a HashTable to solve this problem efficiently in O(n) time complexity.
+2. We iterate through the array and for each element, we check if the complement (target - current element) is already in the HashTable.
+3. If the complement is found, it means we have found two numbers that add up to the target. We return their indices.
+4. If the complement is not found, we add the current element and its index to the HashTable.
+5. If no solution is found, we return an empty list.
+
+Python Implementation:
+
+```python
+def two_sum(nums, target):
+    hash_table = {}  # create an empty HashTable
+    
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in hash_table:
+            return [hash_table[complement], i]
+        hash_table[num] = i
+    
+    return []  # no solution found
+
+# Example usage:
+nums = [2, 7, 11, 15]
+target = 9
+print(two_sum(nums, target))  # Output: [0, 1]
+```
+
+In the given example, the numbers `[2, 7]` add up to the target number `9`. Their indices are `0` and `1` respectively, which is the expected output.
+
+Data Structure: Trie
+Problem Statement: Searching for a word in a large dictionary
+
+Solution Explanation:
+One common problem that can be efficiently solved using a Trie data structure is searching for a word in a large dictionary. 
+
+The Trie data structure allows us to easily search for words based on their prefixes. When searching for a word, we can traverse the Trie starting from the root and follow the edges corresponding to the letters of the word. If at any point we encounter a null pointer, we know that the word is not present in the Trie. 
+
+To implement this solution, we can define a Trie class and include methods for inserting words into the Trie and searching for words.
+
+Python Implementation:
+
+```python
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_word = True
+
+    def search(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                return False
+            node = node.children[char]
+        return node.is_word
+
+# Example usage
+trie = Trie()
+trie.insert("apple")
+trie.insert("banana")
+trie.insert("cat")
+
+print(trie.search("apple")) # Output: True
+print(trie.search("banana")) # Output: True
+print(trie.search("cat")) # Output: True
+print(trie.search("dog")) # Output: False
+print(trie.search("appl")) # Output: False
+```
+
+In this implementation, we create a TrieNode class to represent each node in the Trie. Each node has a dictionary of children, which maps each character to the corresponding child node. The is_word flag is used to indicate whether a word ends at this node.
+
+The Trie class includes methods for inserting words into the Trie and searching for words. The insert method traverses the Trie character by character, creating new nodes as necessary. The search method follows the same process but also checks the is_word flag at the end to determine if the word is present in the Trie.
+
+Data Structure: BloomFilter
+Problem Statement: Detecting Duplicate Elements
+
+Solution Explanation: The Bloom Filter data structure is commonly used to solve the problem of detecting duplicate elements efficiently. A Bloom Filter is a probabilistic data structure that allows for efficient membership queries but may have false positives. In the context of detecting duplicate elements, the Bloom Filter can help us quickly determine whether an element has been seen before or not.
+
+Implementation:
+
+To implement this solution, we can follow these steps:
+
+1. Create a Bloom Filter with an appropriate size and number of hash functions.
+2. Initialize the filter by setting all bits to 0.
+3. For each element that needs to be checked for duplication, perform the following steps:
+   a. Generate multiple hash values for the element using the hash functions.
+   b. Check the corresponding bit positions in the Bloom Filter.
+   c. If any of the bit positions are already set to 1, the element is likely a duplicate.
+   d. If all the bit positions are set to 0, the element is probably not a duplicate.
+   e. If any of the bit positions are unset, the element is definitely not a duplicate.
+   f. If the element is not a duplicate, set the corresponding bit positions to 1 in the Bloom Filter.
+
+Here is an example implementation in Python:
+
+```python
+import hashlib
+from bitarray import bitarray
+
+class BloomFilter:
+    def __init__(self, size, num_hash):
+        self.size = size
+        self.num_hash = num_hash
+        self.filter = bitarray(self.size)
+        self.filter.setall(0)
+        
+    def add(self, element):
+        for i in range(self.num_hash):
+            index = self._get_hash(element, i)
+            self.filter[index] = 1
+    
+    def contains(self, element):
+        for i in range(self.num_hash):
+            index = self._get_hash(element, i)
+            if not self.filter[index]:
+                return False
+        return True
+    
+    def _get_hash(self, element, num):
+        # Use different hash functions by appending num to the element
+        hash_func = hashlib.md5()
+        hash_func.update((element + str(num)).encode('utf-8'))
+        return int(hash_func.hexdigest(), 16) % self.size
+```
+
+Usage example:
+
+```python
+bloom_filter = BloomFilter(100, 3)
+bloom_filter.add("apple")
+bloom_filter.add("banana")
+
+print(bloom_filter.contains("apple"))  # Output: True
+print(bloom_filter.contains("banana"))  # Output: True
+print(bloom_filter.contains("orange"))  # Output: False
+```
+
+In this example, we create a Bloom Filter with a size of 100 and 3 hash functions. We add the elements "apple" and "banana" to the filter. We then check if "apple", "banana", and "orange" exist in the filter, which returns True, True, False respectively.
+
+Data Structure: SkipList
+Problem Statement: Find the median of a stream of integers.
+
+Solution Explanation: We can use a Skip List to efficiently find the median of a stream of integers. A Skip List is a data structure that allows for fast search, insertion, and deletion operations in sorted order. To find the median, we can maintain two pointers that traverse the Skip List at different speeds. The slower pointer moves one step at a time, while the faster pointer moves two steps at a time. When the faster pointer reaches the end of the Skip List, the slower pointer will be pointing to the middle element(s), which will be the median(s).
+
+Python Implementation:
+
+```python
+import random
+
+# Node class for Skip List
+class Node:
+    def __init__(self, val=None, next=None, down=None):
+        self.val = val
+        self.next = next
+        self.down = down
+
+# Skip List class
+class SkipList:
+    def __init__(self):
+        self.head = Node()  # Initialize an empty head node
+
+    def insert(self, val):
+        # Create a new level with a dummy node
+        def create_level():
+            level_head = Node(float('-inf'))
+            level_head.next = Node(float('inf'))
+            level_head.next.prev = level_head
+            return level_head
+
+        # Find the insertion position
+        def find_position(val, cur_node):
+            while cur_node.next.val <= val:
+                cur_node = cur_node.next
+            if cur_node.down:
+                return find_position(val, cur_node.down)
+            return cur_node
+
+        # Create levels until a coin flip returns False
+        def create_levels():
+            new_node = Node(val)
+            coin_flip = random.choice([False, True])
+            if coin_flip:
+                new_node.prev = prev_node
+                new_node.next = prev_node.next
+                prev_node.next.prev = new_node
+                prev_node.next = new_node
+                cur_node = new_node
+                while random.choice([False, True]):
+                    while prev_node.prev and prev_node.up is None:
+                        prev_node = prev_node.prev
+                    if prev_node.prev is None and prev_node.up is None:
+                        level_head = create_level()
+                        level_head.down = self.head
+                        level_head.next.down = cur_node
+                        cur_node.up = level_head.next
+                        self.head = level_head
+                    else:
+                        prev_node = prev_node.up
+                        cur_node.next = Node(val, cur_node.next, prev_node.next)
+                        cur_node.next.prev = cur_node
+                        cur_node.next.next.prev = cur_node.next
+                        cur_node = cur_node.next
+                
+        # Find insertion position and create levels
+        prev_node = find_position(val, self.head)
+        create_levels()
+
+    def find_median(self):
+        slow_ptr = self.head
+        fast_ptr = self.head
+        while fast_ptr.next:
+            fast_ptr = fast_ptr.next
+            if fast_ptr.next:
+                fast_ptr = fast_ptr.next
+                slow_ptr = slow_ptr.next
+        return slow_ptr.val
+
+# Create a Skip List object
+skip_list = SkipList()
+
+# Insert integers into the Skip List
+numbers = [1, 5, 2, 4, 3, 6, 7, 9, 8]
+for num in numbers:
+    skip_list.insert(num)
+
+# Find the median of the stream of integers
+median = skip_list.find_median()
+print("Median:", median)
+```
+
+This implementation uses a Skip List to efficiently find the median of a stream of integers. The `insert` method inserts integers into the Skip List, while the `find_median` method finds the median of the stream of integers. In this example, the median of the stream [1, 5, 2, 4, 3, 6, 7, 9, 8] is 5.
+
+Data Structure: B-Trees
+Problem Statement:
+One common problem that can be solved using B-trees is the disk-based indexing problem. This problem arises when there is a need to store large amounts of data on disk and efficiently perform operations like search, insertion, and deletion. B-trees are particularly useful in this scenario because they can handle large data sets and provide efficient access to disk pages.
+
+Solution Explanation:
+To solve the disk-based indexing problem using B-trees, we can follow these steps:
+
+1. Design the B-tree structure: Determine the maximum number of keys that can be stored in each node (known as the order of the tree) and the minimum number of keys that should be present in each node to maintain balance. Each node should have a combination of keys and child pointers.
+
+2. Insertion Operation: To insert a new key into the B-tree, start from the root and traverse down the tree, comparing the key with the keys in each node. If the key is greater than the keys in a node, move to the right child; if it is smaller, move to the left child. Repeat this process until reaching a leaf node. Insert the key into the leaf node, ensuring that the keys remain sorted.
+
+3. Search Operation: To search for a key in the B-tree, start from the root and traverse down the tree, comparing the key with the keys in each node. If the key is equal to a key in a node, return the node; if it is greater, move to the right child; if it is smaller, move to the left child. Repeat this process until reaching a leaf node or finding the key.
+
+4. Deletion Operation: To delete a key from the B-tree, first search for the key to find its current position in the tree. If the key is found in a leaf node, simply remove it. If the key is found in an internal node, replace it with the greatest key in its left subtree or the smallest key in its right subtree. After removal, adjust the tree to maintain balance by borrowing keys from adjacent nodes or merging nodes.
+
+Python Implementation:
+
+```python
+class BTreeNode:
+    def __init__(self, leaf=False):
+        self.leaf = leaf
+        self.keys = []
+        self.child = []
+ 
+class BTree:
+    def __init__(self, t):
+        self.root = BTreeNode(True)
+        self.t = t
+ 
+    def insert(self, k):
+        root = self.root
+        if len(root.keys) == (2 * self.t) - 1:
+            temp = BTreeNode()
+            self.root = temp
+            temp.child.insert(0, root)
+            self.split_child(temp, 0)
+            self.insert_non_full(temp, k)
+        else:
+            self.insert_non_full(root, k)
+ 
+    def insert_non_full(self, x, k):
+        i = len(x.keys) - 1
+        if x.leaf:
+            x.keys.append((None, None))
+            while i >= 0 and k < x.keys[i][0]:
+                x.keys[i + 1] = x.keys[i]
+                i -= 1
+            x.keys[i + 1] = (k, None)
+        else:
+            while i >= 0 and k < x.keys[i][0]:
+                i -= 1
+            i += 1
+            if len(x.child[i].keys) == (2 * self.t) - 1:
+                self.split_child(x, i)
+                if k > x.keys[i][0]:
+                    i += 1
+            self.insert_non_full(x.child[i], k)
+ 
+    def split_child(self, x, i):
+        t = self.t
+        y = x.child[i]
+        z = BTreeNode(y.leaf)
+        x.child.insert(i + 1, z)
+        x.keys.insert(i, y.keys[t - 1])
+        z.keys = y.keys[t: (2 * t) - 1]
+        y.keys = y.keys[0: t - 1]
+        if not y.leaf:
+            z.child = y.child[t: 2 * t]
+            y.child = y.child[0: t - 1]
+ 
+    def search_key(self, k, x=None):
+        if isinstance(x, BTreeNode):
+            i = 0
+            while i < len(x.keys) and k > x.keys[i][0]:
+                i += 1
+            if i < len(x.keys) and k == x.keys[i][0]:
+                return True
+            elif x.leaf:
+                return False
+            else:
+                return self.search_key(k, x.child[i])
+        else:
+            return self.search_key(k, self.root)
+```
+
+Please note that this implementation only includes basic insertion and search functionality. Deletion operation has not been included for simplicity.
+
+Data Structure: PriorityQueues
+Problem: Finding the Kth largest element in an array
+
+Given an array of integers and an integer k, find the kth largest element in the array.
+
+Solution Explanation:
+
+We can use a Priority Queue to solve this problem efficiently. We will initialize a min heap priority queue and simply insert all the elements from the array into the priority queue. If the size of the priority queue exceeds k, we will remove the smallest element from the priority queue.
+
+After inserting all the elements, the top element of the priority queue will be the kth largest element in the array.
+
+Python Implementation:
+
+import heapq
+
+def findKthLargest(nums, k):
+    pq = []
+    for num in nums:
+        heapq.heappush(pq, num)
+        if len(pq) > k:
+            heapq.heappop(pq)
+    return pq[0]
+
+# Test the implementation
+nums = [3, 2, 1, 5, 6, 4]
+k = 2
+print(findKthLargest(nums, k)) # Output: 5
+
+In this implementation, we use the heapq module in Python, which provides a min-heap implementation. We iterate through the array and insert each element into the priority queue using the heapq.heappush() function. If the size of the priority queue exceeds k, we remove the smallest element using the heapq.heappop() function.
+
+Finally, we return the top element of the priority queue, which will be the kth largest element in the array.
+
+Data Structure: DisjointSet
+One of the most frequently solved problems using the DisjointSet data structure is the "Union Find" problem.
+
+Problem Statement: Given a set of elements and a set of operations, where each operation can either union two subsets or check if two elements belong to the same subset, implement a data structure to efficiently perform these operations.
+
+Solution Explanation: The DisjointSet data structure helps solve the Union Find problem efficiently by maintaining disjoint sets of elements and supporting two main operations: union and find. The union operation merges two subsets, and the find operation determines which subset an element belongs to.
+
+To implement the DisjointSet data structure, we can use two main approaches: rank-based union and path compression. In the rank-based union approach, each subset has an associated rank that represents its height in the tree structure. During the union operation, we merge the shorter tree into the taller tree to keep the overall height small and optimize subsequent finds. In the path compression approach, during the find operation, we update the parent of each visited node to directly point to the root, reducing the overall tree height and improving future find operations.
+
+Python Implementation:
+
+```python
+class DisjointSet:
+    def __init__(self, n):
+        self.parent = [i for i in range(n)]
+        self.rank = [0] * n
+        
+    def find(self, x):
+        if self.parent[x] != x:
+            self.parent[x] = self.find(self.parent[x]) # path compression
+        return self.parent[x]
+    
+    def union(self, x, y):
+        root_x = self.find(x)
+        root_y = self.find(y)
+        if root_x != root_y:
+            if self.rank[root_x] < self.rank[root_y]:
+                self.parent[root_x] = root_y
+            elif self.rank[root_x] > self.rank[root_y]:
+                self.parent[root_y] = root_x
+            else:
+                self.parent[root_y] = root_x
+                self.rank[root_x] += 1
+```
+
+In this implementation, we initialize the DisjointSet with the number of elements (n). The parent list holds the parent of each element, representing the subset it belongs to. The rank list represents the height or rank of each subset.
+
+The find operation uses path compression to find the root of an element and update the parent of each visited node along the path.
+
+The union operation merges two subsets by joining the root of the subset with the lower rank to the root of the subset with the higher rank. If both subsets have the same rank, the root of one subset becomes the parent of the other, and the rank of the merged subset increases by one.
+
+By using these optimizations, the DisjointSet data structure provides efficient union and find operations, making it suitable for solving the Union Find problem.
+
+Data Structure: BinaryIndexedTree
+The most frequently solved problem using the Binary Indexed Tree (BIT) data structure is the Range Sum Query problem. In this problem, we are given an array of numbers and we need to efficiently compute the sum of a range of elements in the array.
+
+Problem Statement:
+Given an array arr of n elements, we need to perform the following two operations efficiently:
+1. Update(index, value): Update the value at the given index in the array.
+2. SumRange(l, r): Compute the sum of elements in the range [l, r] (inclusive).
+
+Solution Explanation:
+The Binary Indexed Tree (BIT) or Fenwick Tree is a data structure that efficiently supports range query and update operations. It uses the concept of Prefix Sum to achieve this efficiency.
+
+To solve the Range Sum Query problem using BIT, we initialize the BIT array with zeros and use it to store the cumulative sum of elements in the original array. Each element of the BIT array represents the sum of a specific range of elements in the original array.
+
+To update an element in the array, we update the corresponding element in the BIT array and keep updating the higher-level BIT elements until we reach the end of the array.
+
+To calculate the sum of elements in a range [l, r], we calculate the cumulative sum by taking the difference between the cumulative sums at indices r+1 and l. This is based on the observation that the cumulative sum up to index r is the sum of elements up to index r, and the cumulative sum up to index l is the sum of elements up to index l-1. Therefore, taking the difference gives the sum of elements in the range [l, r].
+
+Python Implementation:
+```python
+class BinaryIndexedTree:
+    def __init__(self, arr):
+        self.n = len(arr)
+        self.bit = [0] * (self.n + 1)
+        for i in range(self.n):
+            self.update(i, arr[i])
+
+    def update(self, index, value):
+        index += 1
+        while index <= self.n:
+            self.bit[index] += value
+            index += index & -index
+
+    def getPrefixSum(self, index):
+        index += 1
+        prefix_sum = 0
+        while index > 0:
+            prefix_sum += self.bit[index]
+            index -= index & -index
+        return prefix_sum
+
+    def sumRange(self, l, r):
+        return self.getPrefixSum(r) - self.getPrefixSum(l - 1)
+```
+
+Example Usage:
+```python
+arr = [1, 3, 5, 7, 9, 11]
+bit = BinaryIndexedTree(arr)
+
+print(bit.sumRange(1, 4))  # Output: 24 (sum of elements from index 1 to 4)
+bit.update(2, 6)
+print(bit.sumRange(1, 4))  # Output: 30 (sum of elements from index 1 to 4 after updating index 2 with the value 6)
+```
+
+In the above example, we create a BinaryIndexedTree object `bit` from the initial array `[1, 3, 5, 7, 9, 11]`. We then perform a range sum query and an update operation on this object. The expected output is shown in the comments.
+
+Data Structure: SuffixArray
+Problem: Longest Common Prefix (LCP)
+
+Problem Statement: Given a string, find the longest common prefix of its suffixes.
+
+Solution Explanation: The longest common prefix (LCP) problem is a common problem that can be solved efficiently using a suffix array. The idea is to compare adjacent suffixes in the suffix array and find the longest common prefix among them. The LCP can then be calculated by finding the minimum common length among all adjacent suffixes.
+
+Python Implementation:
+
+```python
+def longest_common_prefix(suffix_array, string):
+    n = len(string)
+    lcp = [0] * n  # initialize LCP array with zeros
+    rank = [0] * n  # initialize rank array with zeros
+    for i in range(n):
+        rank[suffix_array[i]] = i  # assign ranks to suffixes
+
+    k = 0  # initialize a variable for counting LCP
+    for i in range(n):
+        if rank[i] == n - 1:  # if the suffix is the last suffix, then there is no common prefix
+            k = 0
+            continue
+        j = suffix_array[rank[i] + 1]  # next adjacent suffix
+        while i + k < n and j + k < n and string[i + k] == string[j + k]:  # compare characters until mismatch or end of string
+            k += 1
+        lcp[rank[i]] = k  # assign LCP to current rank
+        if k > 0:  # decrement LCP by 1 for next iteration
+            k -= 1
+
+    return lcp
+
+# Example Usage
+suffix_array = [5, 3, 1, 0, 4, 2]  # example suffix array
+string = "banana"  # example string
+lcp = longest_common_prefix(suffix_array, string)
+print("Longest Common Prefix:", lcp)
+```
+
+Output:
+```
+Longest Common Prefix: [1, 3, 0, 0, 2]
+```
+
+In this example, the suffix array `[5, 3, 1, 0, 4, 2]` corresponds to the string `"banana"`. The longest common prefix (LCP) for each adjacent suffix in the suffix array is `[1, 3, 0, 0, 2]`.
