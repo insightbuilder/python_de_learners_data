@@ -91,14 +91,14 @@ Data Structure: NamedTuple
 
 7. Semantic naming and readability: NamedTuple allows for semantic naming of fields, making the code more readable and self-explanatory. It provides a way to specify the purpose and meaning of each field, enhancing code maintainability and understanding.
 Data Structure: Heapq
-{"Priority Queue": "Heapq can be used to implement a priority queue, where elements are inserted with a priority and the element with the highest priority is always at the top.",
- "Top K Elements": "Heapq can find the top K elements from a list or stream of elements efficiently.",
- "Merge Sorted Lists": "Heapq can merge multiple sorted lists into a single sorted list efficiently.",
- "Kth Largest Element": "Heapq can find the Kth largest element from a list efficiently.",
- "Dijkstra's Algorithm": "Heapq can be used to efficiently implement Dijkstra's algorithm for finding the shortest path in a graph.",
- "Median of a Stream": "Heapq can maintain the median of a stream of numbers efficiently.",
- "Interval Scheduling": "Heapq can schedule intervals or jobs based on their start and end times optimally.",
- "Merging Overlapping Intervals": "Heapq can merge overlapping intervals efficiently."}
+Priority Queue:Heapq can be used to implement a priority queue, where elements are inserted with a priority and the element with the highest priority is always at the top.",
+Top K Elements:Heapq can find the top K elements from a list or stream of elements efficiently.",
+Merge Sorted Lists:Heapq can merge multiple sorted lists into a single sorted list efficiently.",
+Kth Largest Element:Heapq can find the Kth largest element from a list efficiently.",
+Dijkstra's Algorithm:Heapq can be used to efficiently implement Dijkstra's algorithm for finding the shortest path in a graph.",
+Median of a Stream:Heapq can maintain the median of a stream of numbers efficiently.",
+Interval Scheduling:Heapq can schedule intervals or jobs based on their start and end times optimally.",
+Merging Overlapping Intervals:Heapq can merge overlapping intervals efficiently."}
 Data Structure: DefaultDict
 Problems that the DefaultDict data structure can solve:
 
@@ -331,29 +331,18 @@ Data Structure: Trie
 7. Longest Common Prefix: The Trie data structure can efficiently find the longest common prefix among a set of strings. This is useful in applications like finding common patterns in DNA sequences or processing text strings efficiently.
 
 8. Scrabble Game Optimization: Tries are frequently used to optimize searching for valid words during a game of Scrabble. The structure of the Trie allows for efficient lookup of valid words based on the tiles available to a player.
-
-{
-  "Autocomplete": "Suggests and predicts completed words or phrases",
-  "Spell Checking": "Efficiently checks the spelling of a word and suggests similar words",
-  "Prefix Search": "Quickly retrieves all words starting with a given prefix",
-  "Word Frequency Count": "Calculates the frequency of occurrence of words in a text",
-  "IP Address Routing": "Stores and searches for IP addresses and their corresponding routes",
-  "Phone Number Digit Mapping": "Maps phone numbers to corresponding words or phrases",
-  "Longest Common Prefix": "Finds the longest common prefix among a set of strings",
-  "Scrabble Game Optimization": "Optimizes searching for valid words in a game of Scrabble"
-}
 Data Structure: BloomFilter
-{"Duplicate Detection": "A Bloom Filter can be used to efficiently check whether an element is already in a collection, reducing the need for expensive lookups in a database or table.",
- "Caching": "A Bloom Filter can be used to quickly and easily check whether a particular item is already in a cache, avoiding the need for expensive disk or memory accesses.",
- "Spell Checking": "A Bloom Filter can be used to quickly determine whether a given word is likely to be misspelled, saving time and computational resources in the spell checking process.",
- "URL Shortening": "A Bloom Filter can be used to quickly check whether a given URL has already been shortened and mapped to a specific key, avoiding the need to perform a database lookup for each URL.",
- "Set Membership Testing": "A Bloom Filter can be used to efficiently determine whether an element is a member of a set, without needing to store the entire set in memory.",
- "Tokenization": "A Bloom Filter can be used to tokenize a large volume of data quickly, by checking whether a given token has already been seen or processed.",
- "Deduplication": "A Bloom Filter can be used to efficiently remove duplicate elements from a large dataset, by testing each element's membership in the Bloom Filter before adding it.",
- "Network Traffic Analysis": "A Bloom Filter can be used to quickly check whether network traffic belongs to a known set of malicious or suspicious patterns, improving the efficiency of network security systems.",
- "Spam Filtering": "A Bloom Filter can be used to quickly check whether an email or message is likely to be spam, reducing the computational cost of filtering and improving email and message delivery speed.",
- "Approximate Counting": "A Bloom Filter can be used to estimate the number of distinct elements in a large dataset, without needing to store all the elements explicitly.",
- "Large-Scale Data Processing": "A Bloom Filter can be used as a preprocessing step to filter out unnecessary data or duplicate records before performing more computationally expensive operations on a large dataset."}
+Duplicate Detection:A Bloom Filter can be used to efficiently check whether an element is already in a collection, reducing the need for expensive lookups in a database or table.",
+Caching:A Bloom Filter can be used to quickly and easily check whether a particular item is already in a cache, avoiding the need for expensive disk or memory accesses.",
+Spell Checking:A Bloom Filter can be used to quickly determine whether a given word is likely to be misspelled, saving time and computational resources in the spell checking process.",
+URL Shortening:A Bloom Filter can be used to quickly check whether a given URL has already been shortened and mapped to a specific key, avoiding the need to perform a database lookup for each URL.",
+Set Membership Testing:A Bloom Filter can be used to efficiently determine whether an element is a member of a set, without needing to store the entire set in memory.",
+Tokenization:A Bloom Filter can be used to tokenize a large volume of data quickly, by checking whether a given token has already been seen or processed.",
+Deduplication:A Bloom Filter can be used to efficiently remove duplicate elements from a large dataset, by testing each element's membership in the Bloom Filter before adding it.",
+Network Traffic Analysis:A Bloom Filter can be used to quickly check whether network traffic belongs to a known set of malicious or suspicious patterns, improving the efficiency of network security systems.",
+Spam Filtering:A Bloom Filter can be used to quickly check whether an email or message is likely to be spam, reducing the computational cost of filtering and improving email and message delivery speed.",
+Approximate Counting:A Bloom Filter can be used to estimate the number of distinct elements in a large dataset, without needing to store all the elements explicitly.",
+Large-Scale Data Processing:A Bloom Filter can be used as a preprocessing step to filter out unnecessary data or duplicate records before performing more computationally expensive operations on a large dataset."
 Data Structure: SkipList
 1. Efficient Search: SkipList is a data structure that allows for efficient search operations. It uses multiple linked lists with different skip distances to accelerate the search process, resulting in a time complexity of O(log n) for search operations.
 

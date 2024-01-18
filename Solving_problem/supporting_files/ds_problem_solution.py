@@ -22,7 +22,7 @@ client = OpenAI()
 your_prompt = """Provide the various problems that the above datastructure can solve.
                 Make the output into a dictionary of problems and a short description."""
 salient_point = """Provide a precise introduction and 5 distinguishing factor
-                of Deque datastructure. Make the introduction less than 25 words.
+                of the datastructure. Make the introduction less than 25 words.
                 The distinguishing factor has to be less than 40 words.
                 Ensure the subheadings and descriptions are in the same line."""
 implementation = """Provide a simple python implementation of above datastructure.
@@ -47,11 +47,11 @@ def custom_text(message, prompt):
 # data_test = custom_text(f"Datastructure is {ds_list[0]}.",
                         # your_prompt)
 
-with open("solutioncode_ds.txt", 'w') as ds:
+with open("salient_pt_of_ds.txt", 'w') as ds:
     for struct in ds_list:
         print(f'Working on {struct}')
         out = custom_text(f"Datastructure is {struct}",
-                          solution_code)
+                          salient_point)
         print(f"Printing the output for the {struct} datastructure.")
         print('\n')
         print(out)
