@@ -19,10 +19,11 @@ ds_list = ["List", "Dict", "Tuples", "Strings", "Deque", "NamedTuple",
 
 # locating the file
 code_dir = pathlib.Path(__file__).parent.resolve()
-files_location = code_dir / "complete_ds_data.json"
+files_location = code_dir / "complete_ds_data.json"  # Available data
 files_location = files_location.resolve()
 st.write(files_location)
-# reading the complete_ds_data.json file
+# After the above resolution process, the complete_ds_data.json file
+# is located correctly
 with open(files_location, 'r') as cds:
     final_json = json.load(cds)
 

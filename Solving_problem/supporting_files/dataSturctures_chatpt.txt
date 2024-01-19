@@ -31,3 +31,20 @@
 23:45 Recap discussion
 24:20 Outro
 
+# 27 DataStructures Intro
+0:00 Intro 
+0:30 What Problem We Are Solving
+3:00 Demo of Streamlit App 
+7:00 LLMs are Not Sentient
+11:15 Interesting DataStructures 
+13:00 Flow Chart of Automating LLMs
+17:30 Code Walkthrough Data Generation 
+22:30 Code Walkthrough Data Extraction
+24:30 Creating Streamlit App
+27:20 Reviewing the Extracted Json Data
+28:20 Getting Machines Work for You
+29:00 Recap
+30:20 Outro
+
+
+
