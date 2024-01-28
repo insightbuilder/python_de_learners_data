@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "description": "Create a Social Media User Profile",
+        "features": ["Profile Information", "Posts", "Friend List"],
+        "abilities": ["Post", "Connect with Friends"],
+        "interactions": ["Like", "Comment"]
+    },
+    {
+        "id": 2,
+        "description": "Building a Car Simulation",
+        "features": ["Engine", "Wheels", "Fuel Tank"],
+        "abilities": ["Start Engine", "Accelerate", "Brake"],
+        "interactions": ["Refuel", "Drive"]
+    },
+    {
+        "id": 3,
+        "description": "Online Shopping System",
+        "features": ["Product Listings", "Shopping Cart", "User Account"],
+        "abilities": ["Add to Cart", "Checkout", "View Order History"],
+        "interactions": ["Place Order", "Track Shipment"]
+    },
+    {
+        "id": 4,
+        "description": "Smart Home Automation",
+        "features": ["Lights", "Thermostat", "Security System"],
+        "abilities": ["Turn On/Off Lights", "Adjust Temperature", "Arm/Disarm Security"],
+        "interactions": ["Set Schedule", "Receive Alerts"]
+    },
+    {
+        "id": 5,
+        "description": "Library Management System",
+        "features": ["Books", "Borrowers", "Transactions"],
+        "abilities": ["Check Out Book", "Return Book", "View Due Dates"],
+        "interactions": ["Search Catalog", "Generate Reports"]
+    },
+    {
+        "id": 6,
+        "description": "Virtual Pet Simulation",
+        "features": ["Pet Stats", "Activities", "Inventory"],
+        "abilities": ["Feed", "Play", "Train"],
+        "interactions": ["Level Up", "Earn Rewards"]
+    },
+    {
+        "id": 7,
+        "description": "Project Management Tool",
+        "features": ["Tasks", "Teams", "Project Timelines"],
+        "abilities": ["Create Task", "Assign Team Members", "Set Deadlines"],
+        "interactions": ["Track Progress", "Generate Reports"]
+    },
+    {
+        "id": 8,
+        "description": "Restaurant Ordering System",
+        "features": ["Menu Items", "Orders", "Customer Profiles"],
+        "abilities": ["Place Order", "Modify Order", "View Order History"],
+        "interactions": ["Payment", "Provide Feedback"]
+    },
+    {
+        "id": 9,
+        "description": "Fitness Tracking App",
+        "features": ["Workouts", "Progress Logs", "User Profiles"],
+        "abilities": ["Log Exercise", "Set Goals", "Track Progress"],
+        "interactions": ["Generate Reports", "Share Achievements"]
+    },
+    {
+        "id": 10,
+        "description": "Weather Forecast System",
+        "features": ["Temperature Data", "Forecast Models", "User Preferences"],
+        "abilities": ["View Forecast", "Set Location", "Receive Alerts"],
+        "interactions": ["Toggle Units", "Explore Historical Data"]
+    },
+    {
+        "id": 11,
+        "description": "Online Learning Platform",
+        "features": ["Courses", "User Profiles", "Progress Tracking"],
+        "abilities": ["Enroll in Course", "Submit Assignments", "Take Quizzes"],
+        "interactions": ["View Grades", "Participate in Forums"]
+    },
+    {
+        "id": 12,
+        "description": "Tourist Guide App",
+        "features": ["Points of Interest", "User Preferences", "Maps"],
+        "abilities": ["Plan Trip", "Explore Attractions", "Get Directions"],
+        "interactions": ["Find Nearby Restaurants", "Discover Events"]
+    },
+    {
+        "id": 13,
+        "description": "Financial Portfolio Tracker",
+        "features": ["Investments", "Transactions", "Asset Allocation"],
+        "abilities": ["Track Portfolio Value", "Execute Trades", "Set Goals"],
+        "interactions": ["View Performance Analytics", "Receive Alerts"]
+    },
+    {
+        "id": 14,
+        "description": "Language Translation Tool",
+        "features": ["Languages", "Text Input", "User Preferences"],
+        "abilities": ["Translate Text", "Save Translations", "Text Pronunciation"],
+        "interactions": ["Detect Language", "Explore Synonyms"]
+    },
+    {
+        "id": 15,
+        "description": "Social Gaming Platform",
+        "features": ["Games Library", "User Profiles", "In-Game Currency"],
+        "abilities": ["Play Games", "Connect with Players", "Earn Rewards"],
+        "interactions": ["Join Tournaments", "Share Achievements"]
+    }
+]

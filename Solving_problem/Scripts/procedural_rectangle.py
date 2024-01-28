@@ -47,6 +47,26 @@ class RectangleTurtle():
         self.turtle.write(f"""The x_ord of {self.name} rectangle 
                           is {self.x_cord} & y_ord is {self.y_cord}""")
 
+    def get_center(self):
+        # get the coords and add half of length and breadth
+        x_cen = self.x_cord + self.length / 2
+        y_cen = self.y_cord - self.breadth / 2
+        return x_cen, y_cen
+
+    def connect_centers(self, other):
+        # lift pen_up
+        self.turtle.penup()
+        # get self center
+        my_center = self.get_center()
+        # go to the center
+        self.turtle.goto(my_center)
+        # get other's center
+        other_center = other.get_center()
+        # put pen down
+        self.turtle.pendown()
+        # draw line to other center
+        self.turtle.goto(other_center)
+
 
 def build_rectangle(myTurtle: t.Turtle,
                     x_cord: int,
@@ -66,6 +86,7 @@ def build_rectangle(myTurtle: t.Turtle,
     myTurtle.forward(length)
     myTurtle.goto(x_cord, y_cord)
     print('Done')
+
 
 if __name__ == '__main__':
     t1 = t.Turtle('turtle')  # we have to initialize
