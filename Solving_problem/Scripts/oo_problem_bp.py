@@ -68,22 +68,23 @@ if __name__ == '__main__':
 
     rec1.connect_with(rec2)  # can get other's detail
     rec1.get_other_center(rec2)
+    rec1.get_other_center(rec3)
 
     # build two rectangles
-    say = input("Press enter to start: ")
-    if say == '0':
-        sys.exit()
     rect1 = RectangleTurtle(x_cord=0,
                             y_cord=0,
                             length=50,
                             breadth=35,
                             name='rect1')
-    rect1.draw_self()  # draw self
     rect2 = RectangleTurtle(x_cord=100,
                             y_cord=150,
                             length=35,
                             breadth=45,
                             name='rect2')
+    say = input("Press enter to start: ")
+    if say == '0':
+        sys.exit()
+    rect1.draw_self()  # draw self
     rect2.draw_self()  # draw self
     # connect each other
     rect1.connect_centers(rect2)

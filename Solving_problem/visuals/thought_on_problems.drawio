@@ -1328,20 +1328,59 @@
                 <mxCell id="500" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 48px;&quot;&gt;Teaching Machines To Solve Problems&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-2622" y="8714" width="592" height="134" as="geometry"/>
                 </mxCell>
-                <mxCell id="503" style="edgeStyle=none;html=1;" edge="1" parent="1" source="501" target="502">
+                <mxCell id="503" style="edgeStyle=none;html=1;" parent="1" source="501" target="502" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="501" value="&lt;h1&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;Objects Contain Data, Have Abilities &amp;amp; Interact with Each other&lt;/font&gt;&lt;/font&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1664" y="6762" width="1395" height="231" as="geometry"/>
+                <mxCell id="501" value="&lt;h1&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 72px;&quot;&gt;Objects Contain Data, Have Abilities &amp;amp; Interact with Each other&lt;/font&gt;&lt;/font&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1701" y="6762" width="1395" height="231" as="geometry"/>
                 </mxCell>
-                <mxCell id="505" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="502" target="504">
+                <mxCell id="505" value="" style="edgeStyle=none;html=1;" parent="1" source="512" target="504" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="502" value="Write a ProblemSolved Class, that contains&lt;br&gt;description, features, abilities &amp;amp; interaction" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
-                    <mxGeometry x="1676" y="7342" width="1401" height="185" as="geometry"/>
+                <mxCell id="507" style="edgeStyle=none;html=1;" edge="1" parent="1" source="512" target="506">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="504" value="Come up with methods that operate on the&amp;nbsp;&lt;br&gt;data it contains, like printing abilities, showing&amp;nbsp;&lt;br&gt;interactions and features" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
-                    <mxGeometry x="1673" y="7808" width="1491" height="271" as="geometry"/>
+                <mxCell id="513" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="502" target="512">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="502" value="Objective: Two Robots &lt;br&gt;have to Talk!!!!" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
+                    <mxGeometry x="2018" y="7273" width="737" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="511" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="504" target="510">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="504" value="R1 completes his task&lt;br&gt;of making Rectangle" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="8179" width="722" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="509" style="edgeStyle=none;html=1;" edge="1" parent="1" source="506" target="508">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="506" value="R2 completes his task&lt;br&gt;of making Rectangle" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
+                    <mxGeometry x="2824" y="8123" width="722" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="516" style="edgeStyle=none;html=1;" edge="1" parent="1" source="508" target="514">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="508" value="R2 Waits..." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
+                    <mxGeometry x="3092" y="8684" width="367" height="98" as="geometry"/>
+                </mxCell>
+                <mxCell id="515" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="510" target="514">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="510" value="R1 finds center of R2 &lt;br&gt;rectangle" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
+                    <mxGeometry x="1090" y="8780" width="694" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="512" value="Robots Connect &lt;br&gt;with each&amp;nbsp;other" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
+                    <mxGeometry x="2134" y="7708" width="534" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="518" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="514" target="517">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="514" value="R1 Moves to R2's Center" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
+                    <mxGeometry x="2832" y="9104" width="820" height="98" as="geometry"/>
+                </mxCell>
+                <mxCell id="517" value="End" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=72;" vertex="1" parent="1">
+                    <mxGeometry x="3189" y="9524" width="146" height="98" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

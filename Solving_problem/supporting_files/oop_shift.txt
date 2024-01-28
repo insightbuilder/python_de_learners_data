@@ -32,5 +32,18 @@
 35:30 Recap on functional & OOP 
 36:25 Call to Practice & Outro
   
+Object oriented Communication
+0:00 Making Robots Talk Intro
+0:40 Recap of How/Why/What OOP 
+1:20 How Objects can Communicate & Work
+3:05 Demo of Rectangle Turtle
+4:50 Code of RectangleBP That Connect 
+6:55 Creating RectangleBP objects
+7:55 Explaining Connecting Methods
+8:50 Using List as glue
+9:20 Explaining Get center Method
+10:40 How the RectangleTurtle Communicate 
+12:35 Recap
+13:31 Outro
 
 
