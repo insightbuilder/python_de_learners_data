@@ -27,7 +27,8 @@ class Challenge(object):
 
 
 class RectangleBP(object):
-    def __init__(self, x_c, y_c, length, breadth, name):
+    def __init__(self, x_c=0.0, y_c=0.0, length=100, breadth=159,
+                 name='default'):
         self.x_cord = x_c
         self.y_cord = y_c
         self.length = length
@@ -52,6 +53,14 @@ class RectangleBP(object):
             print("Not connected, cannot get center")
 
 
+class NewRectangle(RectangleBP):
+    def __init__(self, color):
+        super().__init__()
+        self.color = color
+    
+    def print_color(self):
+        print(self.color)
+
 if __name__ == '__main__':
     rec1 = RectangleBP(x_c=0, y_c=0,
                        length=50, breadth=35,
@@ -65,6 +74,12 @@ if __name__ == '__main__':
     rec4 = RectangleBP(x_c=20, y_c=30,
                        length=75, breadth=15,
                        name='rec4')
+    
+    rec4Kolor = NewRectangle(color='Green')
+    
+    rec4Kolor.print_color()
+    rec4Kolor.connect_with(rec1)
+    rec4Kolor.get_other_center(rec1)
 
     rec1.connect_with(rec2)  # can get other's detail
     rec1.get_other_center(rec2)

@@ -46,4 +46,26 @@ Object oriented Communication
 12:35 Recap
 13:31 Outro
 
+Object Oriented Mastery
+0:00 Intro
+0:20 Why Master OOP
+1:00 UML Diagram Of Classes
+2:30 Explaining Parts of Class
+6:00 Why User Logging
+8:25 Shape Class Init Method 
+9:30 What is Class / Instance / Object
+12:20 Shape Class Demo
+13:40 Logic to Break Code Execution
+14:40 Rectangle Inherits Shape
+15:00 Super & object Keyword 
+17:36 Rectangle Class Demo
+19:30 Editable Abstraction Explained
+25:40 EditableSelf Abstraction Explained
+28:20 Editable Objects Demo
+30:00 Composing Table Class
+32:25 Building a Table visualised
+34:25 Table Class Demo
+35:40 Code Recap
+37:00 Outro
+
 
