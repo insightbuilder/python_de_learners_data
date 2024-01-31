@@ -1,0 +1,11 @@
+Steps to Train any model in Hugging Face: Reliably
+- Bringing in the Datasets
+    > Review the datasets, its features and names
+    > Decide on the input and output column names
+
+- Preprocessing classes:
+    > Task decides what kind of processing is required
+    > Import the Tokenizer models
+    > Tokenizer objects can pad the input sequences 
+    and provide attention masks
+    >
