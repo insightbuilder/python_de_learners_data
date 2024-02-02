@@ -2,12 +2,19 @@ Steps to Train any model in Hugging Face: Reliably
 
 - Bringing in the Datasets
     > Review the datasets, its features and names
-    > Decide on the input and output column names
-
-- Preprocessing classes:
-    > Task decides what kind of processing is required
-        <> Review the tokenizer used in the model, during training
-    > Import the Tokenizer models
-    > Tokenizer objects can pad the input sequences 
-    and provide attention masks
-    >
+    > Need to work on the data, based on the task at hand. 
+    (Need to complete other tutorial NBs in HF) 
+    > Create a Dataloader, Iterator out of the dataset
+- Bringing in the Tokenisers
+    > Decide on the type of tokenizer that best suits
+    > Setup the function that tokenizes
+- Preprocessing functions:
+    > Tokenise the input sequences, and remove the text data 
+    > To process the input_ids for the task, write/ import the 
+    functions, depending on the task 
+    > Map the imported functions on the dataset, 
+- Setup Training:  
+    > Instantiate the Training Arguments
+    > Instantiate DataCollators if required
+    > Build the Trainer, with datasets and collators. 
+    > Start the training
