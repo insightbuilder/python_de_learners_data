@@ -9,6 +9,7 @@ Steps to Train any model in Hugging Face: Reliably
     > Create a Dataloader, Iterator out of the dataset
 - Bringing in the Tokenisers
     > Decide on the type of tokenizer that best suits
+    > Practice creating new tokenizers and training them using own corpus
     > Setup the function that tokenizes and returns the ids
 - Preprocessing functions:
     > Tokenise the input sequences, and remove the text data 
