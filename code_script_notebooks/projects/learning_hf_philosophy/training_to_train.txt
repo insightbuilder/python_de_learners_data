@@ -6,11 +6,13 @@ Steps to Train any model in Hugging Face: Reliably
     columns are clean, and you know the column names
     > Need to work on the data, based on the task at hand. 
     (Need to complete other tutorial NBs in HF) 
+    > Load the dataset based on the splits
     > Create a Dataloader, Iterator out of the dataset
 - Bringing in the Tokenisers
     > Decide on the type of tokenizer that best suits
     > Practice creating new tokenizers and training them using own corpus
     > Setup the function that tokenizes and returns the ids
+        + Review the padding, max_length, truncate options, review output
 - Preprocessing functions:
     > Tokenise the input sequences, and remove the text data 
     > To process the input_ids for the task, write/ import the 
@@ -19,5 +21,10 @@ Steps to Train any model in Hugging Face: Reliably
 - Setup Training:  
     > Instantiate the Training Arguments
     > Instantiate DataCollators if required
+    > Instantiate the post-processing collator to support trainer
     > Build the Trainer, with datasets and collators. 
     > Start the training
+- Work on Post Processing:
+    > Instantiate the metrics
+    > Write post-processing function for evaluation
+    > Run the evaluation and get the resuls
