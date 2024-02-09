@@ -166,6 +166,15 @@ def compute_metrics(eval_predictions):
     preds = np.argmax(predictions, axis=1)
     return {"accuracy": (preds == label_ids).astype(np.float32).mean().item()}
 
+def get_sentiment(row, column):
+    text = row[column]
+    tokened_text = tokenizer_from_name(text, truncation=True,
+                                      padding=True, max_length=512,
+                                      return_tensors='pt').to('cuda')
+    model_out = trained_model(**tokened_text).logits
+    prediction = model_out.argmax().item()
+    return {'prediction': trained_model.config.id2label[prediction]}
+
 # used for QnA training
 def prepare_train_features(examples):
     # Some of the questions have lots of whitespace on the left, 
