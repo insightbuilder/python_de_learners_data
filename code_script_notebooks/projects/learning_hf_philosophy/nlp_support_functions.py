@@ -51,6 +51,12 @@ print(len(create_corpus(example)))
 assert len(create_corpus(example)) == 28
 
 
+def get_maxlen(dataset, column: str):
+    """Returns the max length of the given 
+    column in the dataset"""
+    all_len = [len(row[column]) for row in dataset]
+    return max(all_len)
+
 def group_texts(examples, block_size):
     """Function takes the datasets that have input_ids & attention_masks
     as keys. Returns the lists as concatenated & chunked list
