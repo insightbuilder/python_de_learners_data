@@ -13,6 +13,22 @@ from IPython.display import display, HTML
 import numpy as np
 from tqdm import tqdm
 
+from huggingface_hub import HfApi, ModelFilter
+
+# Extracting Model based on given task
+api = HfApi()
+
+models = api.list_models(
+    filter=ModelFilter(
+        task="text-classification"
+    )
+)
+
+models = list(models)
+print(len(models))
+print(models[0].modelId)
+
+
 # oneline logic with mulitple else if
 task = 'cola'
 num_labels = 3 if task.startswith("mnli") else 1 \
