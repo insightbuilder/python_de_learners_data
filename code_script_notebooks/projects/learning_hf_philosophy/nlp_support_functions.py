@@ -145,6 +145,31 @@ def tokenize_and_align_labels(examples, tokenizer,
     return tokenized_inputs
 
 
+label_list = wnut["train"].features[f"ner_tags"].feature.names  # get features
+
+def compute_metrics(p):
+    """Metric computation for token_classification"""
+    predictions, labels = p
+    predictions = np.argmax(predictions, axis=2)
+
+    true_predictions = [
+        [label_list[p] for (p, l) in zip(prediction, label) if l != -100]
+        for prediction, label in zip(predictions, labels)
+    ] # for each datapoint, get prediction for each token
+    true_labels = [
+        [label_list[l] for (p, l) in zip(prediction, label) if l != -100]
+        for prediction, label in zip(predictions, labels)
+    ] # for each datapoint, get label for each token
+
+    results = seqeval.compute(predictions=true_predictions, references=true_labels)
+    # return the result in form of precision, recall, f1 and accuracy
+    return {
+        "precision": results["overall_precision"],
+        "recall": results["overall_recall"],
+        "f1": results["overall_f1"],
+        "accuracy": results["overall_accuracy"],
+    }
+
 def show_one(example):
     print(f"Context: {example['sent1']}")
     print(f"  A - {example['sent2']} {example['ending0']}")
@@ -211,7 +236,7 @@ def prepare_train_features(examples):
         max_length=max_length,
         stride=doc_stride,
         return_overflowing_tokens=True,
-        return_offsets_mapping=True,
+        return_offsets_mapping=True,  # map the start and end positions of the answer to the original context by setting
         padding="max_length",
     )
 
@@ -224,7 +249,7 @@ def prepare_train_features(examples):
     # position in the original context. This will
     # help us compute the start_positions and end_positions.
     offset_mapping = tokenized_examples.pop("offset_mapping")
-
+    # offset_mapping is part of the tokenizer return dictionary
     # Let's label those examples!
     tokenized_examples["start_positions"] = []
     tokenized_examples["end_positions"] = []
