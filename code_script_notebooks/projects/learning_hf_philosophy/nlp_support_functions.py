@@ -513,3 +513,25 @@ def compute_sacrebleu(eval_preds, tokenizer, metric):
     result["gen_len"] = np.mean(prediction_lens)
     result = {k: round(v, 4) for k, v in result.items()}
     return result
+
+
+# define collate function - transform list of dictionaries [ {input_ids: [123, ..]}, {.. ] to single batch dictionary { input_ids: [..], labels: [..], attention_mask: [..] }
+def collate(elements):
+    tokenlist=[e["input_ids"] for e in elements]
+    tokens_maxlen=max([len(t) for t in tokenlist])
+
+    input_ids,labels,attention_masks = [],[],[]
+    for tokens in tokenlist:
+        pad_len=tokens_maxlen-len(tokens)
+
+        # pad input_ids with pad_token, labels with ignore_index (-100) and set attention_mask 1 where content otherwise 0
+        input_ids.append( tokens + [tokenizer.pad_token_id]*pad_len )   
+        labels.append( tokens + [-100]*pad_len )    
+        attention_masks.append( [1]*len(tokens) + [0]*pad_len ) 
+
+    batch={
+        "input_ids": torch.tensor(input_ids),
+        "labels": torch.tensor(labels),
+        "attention_mask": torch.tensor(attention_masks)
+    }
+    return batch
