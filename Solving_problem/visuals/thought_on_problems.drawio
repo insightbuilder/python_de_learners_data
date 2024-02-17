@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Sq-scTw5g7Prp9WMDyQx" name="Page-1">
-        <mxGraphModel dx="14390" dy="8280" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="17453" dy="9573" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1422,7 +1422,7 @@
                     <mxGeometry x="1207" y="11177" width="590" height="231" as="geometry"/>
                 </mxCell>
                 <mxCell id="573" value="" style="group" parent="1" vertex="1" connectable="0">
-                    <mxGeometry x="1567.5" y="11930" width="1667" height="1211" as="geometry"/>
+                    <mxGeometry x="-412.5" y="10923" width="1667" height="1211" as="geometry"/>
                 </mxCell>
                 <mxCell id="532" value="Shape" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="573" vertex="1">
                     <mxGeometry x="8.0080064051241" width="667.3338670936749" height="160.55555555555551" as="geometry"/>
@@ -1533,358 +1533,358 @@
                     <mxGeometry x="194.5" y="962" width="47" height="231" as="geometry"/>
                 </mxCell>
                 <mxCell id="574" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1378" y="12864" width="447" height="27" as="geometry"/>
+                    <mxGeometry x="-602" y="11857" width="447" height="27" as="geometry"/>
                 </mxCell>
                 <mxCell id="575" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1396" y="12891" width="47" height="231" as="geometry"/>
+                    <mxGeometry x="-584" y="11884" width="47" height="231" as="geometry"/>
                 </mxCell>
-                <mxCell id="579" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="577" target="578">
+                <mxCell id="579" value="" style="edgeStyle=none;html=1;" parent="1" source="577" target="578" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="581" style="edgeStyle=none;html=1;" edge="1" parent="1" source="577" target="580">
+                <mxCell id="581" style="edgeStyle=none;html=1;" parent="1" source="577" target="580" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="606" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="577" target="605">
+                <mxCell id="606" value="" style="edgeStyle=none;html=1;" parent="1" source="577" target="605" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="577" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Grind This 4 DataStructures For Exceling in Problem Solving&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="577" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Grind This 4 DataStructures For Exceling in Problem Solving&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1636" y="13699" width="1391" height="269" as="geometry"/>
                 </mxCell>
-                <mxCell id="598" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="578" target="597">
+                <mxCell id="598" value="" style="edgeStyle=none;html=1;" parent="1" source="578" target="597" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="578" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Why?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="578" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Why?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1204.5" y="14448" width="595" height="181" as="geometry"/>
                 </mxCell>
-                <mxCell id="583" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="580" target="582">
+                <mxCell id="583" value="" style="edgeStyle=none;html=1;" parent="1" source="580" target="582" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="580" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How? 5 steps&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="580" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How? 5 steps&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2892" y="14448" width="595" height="181" as="geometry"/>
                 </mxCell>
-                <mxCell id="589" style="edgeStyle=none;html=1;" edge="1" parent="1" source="582" target="584">
+                <mxCell id="589" style="edgeStyle=none;html=1;" parent="1" source="582" target="584" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="582" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;1- Visualise the Operations&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="582" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;1- Visualise the Operations&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2892" y="14993" width="595" height="181" as="geometry"/>
                 </mxCell>
-                <mxCell id="590" style="edgeStyle=none;html=1;" edge="1" parent="1" source="584" target="585">
+                <mxCell id="590" style="edgeStyle=none;html=1;" parent="1" source="584" target="585" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="584" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;2- Implement The Operations&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="584" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;2- Implement The Operations&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2872" y="15505" width="595" height="181" as="geometry"/>
                 </mxCell>
-                <mxCell id="591" style="edgeStyle=none;html=1;" edge="1" parent="1" source="585" target="586">
+                <mxCell id="591" style="edgeStyle=none;html=1;" parent="1" source="585" target="586" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="585" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;3-Write Test case for each Ops&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="585" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;3-Write Test case for each Ops&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2872" y="16017" width="595" height="181" as="geometry"/>
                 </mxCell>
-                <mxCell id="588" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="586" target="587">
+                <mxCell id="588" value="" style="edgeStyle=none;html=1;" parent="1" source="586" target="587" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="586" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;4- Repeat Step 2 &amp;amp; 3 for 5 times&amp;nbsp;&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="586" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;4- Repeat Step 2 &amp;amp; 3 for 5 times&amp;nbsp;&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2877" y="16641" width="595" height="181" as="geometry"/>
                 </mxCell>
-                <mxCell id="595" style="edgeStyle=none;html=1;" edge="1" parent="1" source="587" target="593">
+                <mxCell id="595" style="edgeStyle=none;html=1;" parent="1" source="587" target="593" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="596" style="edgeStyle=none;html=1;" edge="1" parent="1" source="587" target="594">
+                <mxCell id="596" style="edgeStyle=none;html=1;" parent="1" source="587" target="594" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="587" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;5- Each time record&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="587" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;5- Each time record&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2806.25" y="17133.5" width="726.5" height="269" as="geometry"/>
                 </mxCell>
-                <mxCell id="593" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How much you were able implement&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="593" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How much you were able implement&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2060" y="17694" width="726.5" height="269" as="geometry"/>
                 </mxCell>
-                <mxCell id="594" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;What points you misunderstood / missed&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="594" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;What points you misunderstood / missed&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="3700" y="17694" width="847" height="269" as="geometry"/>
                 </mxCell>
-                <mxCell id="600" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="597" target="599">
+                <mxCell id="600" value="" style="edgeStyle=none;html=1;" parent="1" source="597" target="599" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="597" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;1) Logic with Objects becomes clear&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="597" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;1) Logic with Objects becomes clear&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1138" y="14993" width="735" height="206" as="geometry"/>
                 </mxCell>
-                <mxCell id="602" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="599" target="601">
+                <mxCell id="602" value="" style="edgeStyle=none;html=1;" parent="1" source="599" target="601" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="599" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;2) Traversing Connected Objects becomes 2nd nature&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="599" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;2) Traversing Connected Objects becomes 2nd nature&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1119.5" y="15566" width="747.5" height="305" as="geometry"/>
                 </mxCell>
-                <mxCell id="604" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="601" target="603">
+                <mxCell id="604" value="" style="edgeStyle=none;html=1;" parent="1" source="601" target="603" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="601" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Each repetition opens up new errors &amp;amp; opportunities&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="601" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Each repetition opens up new errors &amp;amp; opportunities&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1110.5" y="16279" width="747.5" height="305" as="geometry"/>
                 </mxCell>
-                <mxCell id="603" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Visualising Dynamic/ Backtracking problems becomes easy&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="603" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Visualising Dynamic/ Backtracking problems becomes easy&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1090" y="17071.5" width="779.5" height="393" as="geometry"/>
                 </mxCell>
-                <mxCell id="608" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="605" target="607">
+                <mxCell id="608" value="" style="edgeStyle=none;html=1;" parent="1" source="605" target="607" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="612" style="edgeStyle=none;html=1;" edge="1" parent="1" source="605" target="611">
+                <mxCell id="612" style="edgeStyle=none;html=1;" parent="1" source="605" target="611" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="615" style="edgeStyle=none;html=1;" edge="1" parent="1" source="605" target="614">
+                <mxCell id="615" style="edgeStyle=none;html=1;" parent="1" source="605" target="614" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="634" style="edgeStyle=none;html=1;" edge="1" parent="1" source="605" target="633">
+                <mxCell id="634" style="edgeStyle=none;html=1;" parent="1" source="605" target="633" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="605" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Datastructures are&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Singly Linked List&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Stack&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Queue&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Graphs&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="605" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Datastructures are&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Singly Linked List&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Stack&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Queue&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Graphs&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="4315" y="13555" width="767" height="533" as="geometry"/>
                 </mxCell>
-                <mxCell id="610" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="607" target="609">
+                <mxCell id="610" value="" style="edgeStyle=none;html=1;" parent="1" source="607" target="609" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="607" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Similarities:&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Have nodes with value and connected node attr&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Has methods to&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;a) Connect method&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;b) Print all nodes&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;c) Check contains&lt;/span&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;d) Delete node&lt;/span&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="607" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Similarities:&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Have nodes with value and connected node attr&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Has methods to&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;a) Connect method&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;b) Print all nodes&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;c) Check contains&lt;/span&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;d) Delete node&lt;/span&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="4191" y="14468" width="1027" height="813" as="geometry"/>
                 </mxCell>
-                <mxCell id="638" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="609" target="637">
+                <mxCell id="638" value="" style="edgeStyle=none;html=1;" parent="1" source="609" target="637" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="670" style="edgeStyle=none;html=1;fontSize=48;entryX=0.427;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="609" target="671">
+                <mxCell id="670" style="edgeStyle=none;html=1;fontSize=48;entryX=0.427;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="609" target="671" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="7110" y="16730" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="686" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=48;" edge="1" parent="1" source="609" target="685">
+                <mxCell id="686" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=48;" parent="1" source="609" target="685" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="700" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="1" source="609" target="699">
+                <mxCell id="700" style="edgeStyle=none;html=1;fontSize=48;" parent="1" source="609" target="699" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="609" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Differences:&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- How new Nodes are connected.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Ways to Traverse and Check value of each node.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px; background-color: initial;&quot;&gt;- Purpose &amp;amp; problems solved&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="609" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Differences:&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- How new Nodes are connected.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;- Ways to Traverse and Check value of each node.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px; background-color: initial;&quot;&gt;- Purpose &amp;amp; problems solved&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="4196" y="15741" width="1027" height="601" as="geometry"/>
                 </mxCell>
-                <mxCell id="617" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="611" target="616">
+                <mxCell id="617" value="" style="edgeStyle=none;html=1;" parent="1" source="611" target="616" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="619" style="edgeStyle=none;html=1;" edge="1" parent="1" source="611" target="618">
+                <mxCell id="619" style="edgeStyle=none;html=1;" parent="1" source="611" target="618" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="611" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How the Nodes are initiated?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="611" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How the Nodes are initiated?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="5847" y="12971" width="651" height="257" as="geometry"/>
                 </mxCell>
-                <mxCell id="623" style="edgeStyle=none;html=1;" edge="1" parent="1" source="614" target="622">
+                <mxCell id="623" style="edgeStyle=none;html=1;" parent="1" source="614" target="622" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="625" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="614" target="626">
+                <mxCell id="625" value="" style="edgeStyle=none;html=1;" parent="1" source="614" target="626" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="7147.13795620438" y="15150" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="614" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How the DS is initiated?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="614" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How the DS is initiated?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="5824" y="14465" width="651" height="257" as="geometry"/>
                 </mxCell>
-                <mxCell id="616" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Common Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.next = None&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="616" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Common Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.next = None&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="6862" y="12871" width="1259" height="457" as="geometry"/>
                 </mxCell>
-                <mxCell id="628" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="618" target="627">
+                <mxCell id="628" value="" style="edgeStyle=none;html=1;" parent="1" source="618" target="627" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="631" style="edgeStyle=none;html=1;" edge="1" parent="1" source="618" target="630">
+                <mxCell id="631" style="edgeStyle=none;html=1;" parent="1" source="618" target="630" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="632" style="edgeStyle=none;html=1;" edge="1" parent="1" source="618" target="629">
+                <mxCell id="632" style="edgeStyle=none;html=1;" parent="1" source="618" target="629" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="618" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.right = None&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.left = None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="618" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.right = None&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.left = None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="6902" y="13567" width="1311" height="605" as="geometry"/>
                 </mxCell>
-                <mxCell id="622" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;DS Initiation&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class DataStr:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.head = None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.size = 9&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="622" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;DS Initiation&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class DataStr:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.head = None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.size = 9&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="6923" y="14327" width="1259" height="457" as="geometry"/>
                 </mxCell>
-                <mxCell id="626" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Queue Initiation&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Queue:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.front= None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.back= None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.size = 0&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="626" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Queue Initiation&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Queue:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.front= None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.back= None&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.size = 0&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="6939" y="15003" width="1279" height="525" as="geometry"/>
                 </mxCell>
-                <mxCell id="627" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.vertex_list = []&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="627" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.vertex_list = []&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="8813" y="13535" width="1311" height="605" as="geometry"/>
                 </mxCell>
-                <mxCell id="629" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.adj_list = []&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="629" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.adj_list = []&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="8797" y="14295.5" width="1311" height="605" as="geometry"/>
                 </mxCell>
-                <mxCell id="630" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.adj_matrix = []&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="630" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;A Graph Node&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;class Node:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;def __init__(self,val):&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.val = val&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;/span&gt;self.adj_matrix = []&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="8825" y="12808" width="1311" height="605" as="geometry"/>
                 </mxCell>
-                <mxCell id="636" style="edgeStyle=none;html=1;" edge="1" parent="1" source="633" target="635">
+                <mxCell id="636" style="edgeStyle=none;html=1;" parent="1" source="633" target="635" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="633" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How the DS is populated?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="633" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;How the DS is populated?&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="5847" y="15689" width="651" height="257" as="geometry"/>
                 </mxCell>
-                <mxCell id="635" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Populating DS&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;ds_inst = DataStr()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;some_data = 'thisisdata'&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;for ch in some_data:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;ds_inst.connect(ch)&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                <mxCell id="635" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Populating DS&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;ds_inst = DataStr()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;some_data = 'thisisdata'&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;for ch in some_data:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;ds_inst.connect(ch)&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="6903" y="15714" width="1287" height="705" as="geometry"/>
                 </mxCell>
-                <mxCell id="656" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="1" source="637" target="652">
+                <mxCell id="656" style="edgeStyle=none;html=1;fontSize=48;" parent="1" source="637" target="652" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="637" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;LinkedList&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="637" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;LinkedList&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="5732" y="17255" width="494" height="188" as="geometry"/>
                 </mxCell>
-                <mxCell id="657" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="657" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="5431.5" y="17683" width="1095" height="342" as="geometry"/>
                 </mxCell>
-                <mxCell id="652" value="" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="657">
+                <mxCell id="652" value="" style="whiteSpace=wrap;html=1;fontSize=48;" parent="657" vertex="1">
                     <mxGeometry width="1095" height="342" as="geometry"/>
                 </mxCell>
-                <mxCell id="647" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="657">
+                <mxCell id="647" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="657" vertex="1">
                     <mxGeometry x="127" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="648" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="657">
+                <mxCell id="648" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="657" vertex="1">
                     <mxGeometry x="432" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="649" value="" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="657" source="647" target="648">
+                <mxCell id="649" value="" style="edgeStyle=none;html=1;fontSize=48;" parent="657" source="647" target="648" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="650" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="657">
+                <mxCell id="650" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="657" vertex="1">
                     <mxGeometry x="737" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="651" value="" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="657" source="648" target="650">
+                <mxCell id="651" value="" style="edgeStyle=none;html=1;fontSize=48;" parent="657" source="648" target="650" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="655" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="657" source="654" target="647">
+                <mxCell id="655" style="edgeStyle=none;html=1;fontSize=48;" parent="657" source="654" target="647" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="654" value="head" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="657">
+                <mxCell id="654" value="head" style="whiteSpace=wrap;html=1;fontSize=48;" parent="657" vertex="1">
                     <mxGeometry x="89.5" y="23" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="659" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="659" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="6762" y="17678" width="1095" height="342" as="geometry"/>
                 </mxCell>
-                <mxCell id="660" value="" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="659">
+                <mxCell id="660" value="" style="whiteSpace=wrap;html=1;fontSize=48;" parent="659" vertex="1">
                     <mxGeometry width="1095" height="342" as="geometry"/>
                 </mxCell>
-                <mxCell id="661" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="659">
+                <mxCell id="661" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="659" vertex="1">
                     <mxGeometry x="127" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="662" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="659">
+                <mxCell id="662" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="659" vertex="1">
                     <mxGeometry x="432" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="663" value="" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="659" source="661" target="662">
+                <mxCell id="663" value="" style="edgeStyle=none;html=1;fontSize=48;" parent="659" source="661" target="662" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="664" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="659">
+                <mxCell id="664" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="659" vertex="1">
                     <mxGeometry x="737" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="665" value="" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="659" source="662" target="664">
+                <mxCell id="665" value="" style="edgeStyle=none;html=1;fontSize=48;" parent="659" source="662" target="664" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="666" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="659" source="667" target="661">
+                <mxCell id="666" style="edgeStyle=none;html=1;fontSize=48;" parent="659" source="667" target="661" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="667" value="front" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="659">
+                <mxCell id="667" value="front" style="whiteSpace=wrap;html=1;fontSize=48;" parent="659" vertex="1">
                     <mxGeometry x="89.5" y="23" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="669" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="659" source="668" target="664">
+                <mxCell id="669" style="edgeStyle=none;html=1;fontSize=48;" parent="659" source="668" target="664" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="668" value="back" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="659">
+                <mxCell id="668" value="back" style="whiteSpace=wrap;html=1;fontSize=48;" parent="659" vertex="1">
                     <mxGeometry x="924" y="23" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="672" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="1" source="671" target="660">
+                <mxCell id="672" style="edgeStyle=none;html=1;fontSize=48;" parent="1" source="671" target="660" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="671" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Queue&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="671" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Queue&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="7067" y="17240" width="494" height="188" as="geometry"/>
                 </mxCell>
-                <mxCell id="673" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="673" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="8212" y="17673" width="1095" height="342" as="geometry"/>
                 </mxCell>
-                <mxCell id="674" value="" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="673">
+                <mxCell id="674" value="" style="whiteSpace=wrap;html=1;fontSize=48;" parent="673" vertex="1">
                     <mxGeometry width="1095" height="342" as="geometry"/>
                 </mxCell>
-                <mxCell id="675" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="673">
+                <mxCell id="675" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="673" vertex="1">
                     <mxGeometry x="127" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="676" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="673">
+                <mxCell id="676" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="673" vertex="1">
                     <mxGeometry x="432" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="677" value="" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="673" source="675" target="676">
+                <mxCell id="677" value="" style="edgeStyle=none;html=1;fontSize=48;" parent="673" source="675" target="676" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="678" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="673">
+                <mxCell id="678" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="673" vertex="1">
                     <mxGeometry x="737" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="679" value="" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="673" source="676" target="678">
+                <mxCell id="679" value="" style="edgeStyle=none;html=1;fontSize=48;" parent="673" source="676" target="678" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="680" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="673" source="681" target="675">
+                <mxCell id="680" style="edgeStyle=none;html=1;fontSize=48;" parent="673" source="681" target="675" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="681" value="top" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="673">
+                <mxCell id="681" value="top" style="whiteSpace=wrap;html=1;fontSize=48;" parent="673" vertex="1">
                     <mxGeometry x="89.5" y="23" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="682" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="673" source="683" target="678">
+                <mxCell id="682" style="edgeStyle=none;html=1;fontSize=48;" parent="673" source="683" target="678" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="683" value="bottom" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="673">
+                <mxCell id="683" value="bottom" style="whiteSpace=wrap;html=1;fontSize=48;" parent="673" vertex="1">
                     <mxGeometry x="888" y="23" width="156" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="684" style="edgeStyle=none;html=1;fontSize=48;" edge="1" source="685" target="674" parent="1">
+                <mxCell id="684" style="edgeStyle=none;html=1;fontSize=48;" parent="1" source="685" target="674" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="685" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Stack&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="685" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Stack&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="8517" y="17235" width="494" height="188" as="geometry"/>
                 </mxCell>
-                <mxCell id="687" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="687" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="9734" y="17678" width="1095" height="380" as="geometry"/>
                 </mxCell>
-                <mxCell id="688" value="" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="687">
+                <mxCell id="688" value="" style="whiteSpace=wrap;html=1;fontSize=48;" parent="687" vertex="1">
                     <mxGeometry width="1095" height="380" as="geometry"/>
                 </mxCell>
-                <mxCell id="701" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="687" source="689" target="692">
+                <mxCell id="701" style="edgeStyle=none;html=1;fontSize=48;" parent="687" source="689" target="692" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="689" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="687">
+                <mxCell id="689" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;A&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="687" vertex="1">
                     <mxGeometry x="127" y="157" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="706" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=48;" edge="1" parent="687" source="690" target="702">
+                <mxCell id="706" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=48;" parent="687" source="690" target="702" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="707" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="687" source="690" target="703">
+                <mxCell id="707" style="edgeStyle=none;html=1;fontSize=48;" parent="687" source="690" target="703" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="690" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="687">
+                <mxCell id="690" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;C&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="687" vertex="1">
                     <mxGeometry x="432" y="48" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="691" value="" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="687" source="689" target="690">
+                <mxCell id="691" value="" style="edgeStyle=none;html=1;fontSize=48;" parent="687" source="689" target="690" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="708" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="687" source="692" target="704">
+                <mxCell id="708" style="edgeStyle=none;html=1;fontSize=48;" parent="687" source="692" target="704" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="709" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="687" source="692" target="705">
+                <mxCell id="709" style="edgeStyle=none;html=1;fontSize=48;" parent="687" source="692" target="705" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="692" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="687">
+                <mxCell id="692" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;K&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="687" vertex="1">
                     <mxGeometry x="435" y="217" width="225" height="118" as="geometry"/>
                 </mxCell>
-                <mxCell id="694" style="edgeStyle=none;html=1;fontSize=48;" edge="1" parent="687" source="695" target="689">
+                <mxCell id="694" style="edgeStyle=none;html=1;fontSize=48;" parent="687" source="695" target="689" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="695" value="head" style="whiteSpace=wrap;html=1;fontSize=48;" vertex="1" parent="687">
+                <mxCell id="695" value="head" style="whiteSpace=wrap;html=1;fontSize=48;" parent="687" vertex="1">
                     <mxGeometry x="89.5" y="23" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="702" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;e&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="687">
+                <mxCell id="702" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;e&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="687" vertex="1">
                     <mxGeometry x="732" y="15" width="165" height="78" as="geometry"/>
                 </mxCell>
-                <mxCell id="703" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;f&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="687">
+                <mxCell id="703" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;f&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="687" vertex="1">
                     <mxGeometry x="732" y="108" width="165" height="78" as="geometry"/>
                 </mxCell>
-                <mxCell id="704" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;g&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="687">
+                <mxCell id="704" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;g&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="687" vertex="1">
                     <mxGeometry x="736" y="195" width="165" height="78" as="geometry"/>
                 </mxCell>
-                <mxCell id="705" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;h&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="687">
+                <mxCell id="705" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;h&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="687" vertex="1">
                     <mxGeometry x="732" y="300" width="165" height="78" as="geometry"/>
                 </mxCell>
-                <mxCell id="698" style="edgeStyle=none;html=1;fontSize=48;" edge="1" source="699" target="688" parent="1">
+                <mxCell id="698" style="edgeStyle=none;html=1;fontSize=48;" parent="1" source="699" target="688" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="699" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Graph&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                <mxCell id="699" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Graph&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="10037" y="17231" width="494" height="188" as="geometry"/>
                 </mxCell>
             </root>
