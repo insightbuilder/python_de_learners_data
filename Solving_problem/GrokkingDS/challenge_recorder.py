@@ -3,19 +3,27 @@ def challenge_rec():
     import pathlib
     import json
     from datetime import datetime
- 
+
     folder = pathlib.Path(__file__).parent.resolve()
     file_json = folder / "errors_hints.json"
     try:
         with open(file_json, 'r') as chlng:
             data = json.load(chlng)
- 
-        for row in data:
+
+        for ind, row in enumerate(data):
             st.markdown(f""" #### Date: {row['date']}""")
             st.markdown(f"Day: {row['day']}")
             st.markdown("#### Challenges: ")
             for pt in row['points']:
                 st.write(pt)
+            remove_row = st.button(label='Remove Data',
+                                   key=ind)
+            if remove_row:
+                data.pop(ind)
+                with open(file_json, 'w') as updt:
+                    json.dump(data, updt)
+                    st.write("Data File updated.")
+                st.rerun()
     except Exception as e:
         st.write(f"Work on new file:  {e}")
 
@@ -53,6 +61,8 @@ def challenge_rec():
             with open(file_json, 'w') as updt:
                 json.dump(data, updt)
             print(e)
+        st.rerun()
+
     with open(file_json, 'r') as out:
         st.download_button(label="SaveProgress",
                            data=out,

@@ -1,6 +1,7 @@
 import streamlit as st
-from grokking_linklist import linkedlist
+# from grokking_linklist import linkedlist
 from challenge_recorder import challenge_rec
+from code_recorder import code_recorder
 
 st.set_page_config(layout='wide')
 
@@ -18,7 +19,7 @@ def overview():
 page_function = {
     "overview": overview,
     "challenge_register": challenge_rec,
-    "LinkedList": linkedlist,
+    "Implemented_Algo": code_recorder,
 }
 
 page_name = st.sidebar.selectbox(label="Whats Grinding?",
