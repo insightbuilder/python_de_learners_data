@@ -114,3 +114,26 @@ Quantising LLM & FTing
 49:00 Sharing Added Tricks
 52:00 Recap
 53:10 Outro
+
+Automating Training with SFTTrainer
+0:00 Overview Intro
+1:20 What is Reinforced Learning
+2:20 RL algorithms in LLMs Training
+3:05 Three Trainers
+3:31 How SFTT Works
+4:30 Intro of Code Environment
+5:20 Code Handson
+6:15 Starting with Basic SFTT
+12:45 Using formatting Function
+15:55 Objective of Video
+16:45 Instruction Resp Template
+17:45 How Model Training Works
+20:30 Setup chat format function
+22:50 How chat template works
+25:55 using data packing 
+27:25 finetuning with LoraConfig
+29:20 Using Flash Attention
+29:50 Model Creation Intro 
+30:30 Recap
+32:00 Outro
+
