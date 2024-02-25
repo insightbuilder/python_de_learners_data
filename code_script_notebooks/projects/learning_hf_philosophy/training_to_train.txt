@@ -88,4 +88,29 @@ chapters of (Steps to Master Fine Tuning LLMs To Ultimate AI Proficiency : A Def
 1:22:50 Recap
 1:23:35 Outro 
 
-
+Quantising LLM & FTing
+0:00 Intro
+0:52 Video Overview
+2:00 Intro To Jupyter Environment
+2:50 Imports Categories
+5:50 Introducing Model Trained
+7:20 Loading Raw Mistral Model
+8:25 Unloading Mistral Model from GPU
+11:40 Loading & Unloading BloomZ Model
+14:05 Why Quantisation & Configs
+17:25 Purpose of notes in Comments
+18:35 Quantising to 8-bit model
+21:15 Trying to Train Quantised Model
+23:50 Model Architectures Intro
+26:50 Interim Recap
+28:20 LoRa Intro & NLP resources
+32:00 LoRa Config Parameter
+35:10 PEFT Prompt Methods
+36:05 IA3 Method
+37:50 Quantising Model to 4-Bit
+42:10 Do Not Prep Model For Training
+46:30 Failed Trainer with 4-bit Model
+47:45 Modifying bf16 to True
+49:00 Sharing Added Tricks
+52:00 Recap
+53:10 Outro
