@@ -28,3 +28,64 @@ Steps to Train any model in Hugging Face: Reliably
     > Instantiate the metrics
     > Write post-processing function for evaluation
     > Run the evaluation and get the resuls
+
+- Reference data locations
+Transformers Universe:
+https://huggingface.co/spaces/Kamaljp/transformers_universe
+Inference Demo:
+https://github.com/insightbuilder/python_de_learners_data/blob/main/code_script_notebooks/projects/learning_hf_philosophy/inference_peft.ipynb
+FineTuningGPT:
+https://github.com/insightbuilder/python_de_learners_data/blob/main/code_script_notebooks/projects/learning_hf_philosophy/fine-tuning-definitive-guide.ipynb
+Dolly_DB_datasets: (Thanks to Databricks)
+https://github.com/insightbuilder/python_de_learners_data/blob/main/code_script_notebooks/projects/learning_hf_philosophy/databricks-dolly-15k.jsonl
+Testing Google Gemma:
+https://www.kaggle.com/code/kamaljp/testing-gemma/notebook
+Tokenizer Training:
+https://github.com/insightbuilder/python_de_learners_data/blob/main/code_script_notebooks/projects/learning_hf_philosophy/training-tf-tokenizers.ipynb
+Transformers Documentation Tutorials:
+https://huggingface.co/docs/transformers/en/notebooks#pytorch-nlp
+
+chapters of (Steps to Master Fine Tuning LLMs To Ultimate AI Proficiency : A Definitive Guide)
+0:00 Overview Intro
+0:30 Handson Overview
+2:25 GPU NVdia-smi Explanation 
+4:30 Inference with Gemma Model
+6:16 Preparing to Load Gemma Model
+11:20 Unloading model from Memory 
+12:45 Tokenizer Load & Intro
+15:10 Locating Model Files on HardDisk
+18:30 Tokeniser Config explanation
+19:40 Model Config explanation
+22:10 Loading model to GPU 
+23:40 Loading model to RAM
+24:50 Moving Model to GPU
+27:50 Explaining Inference Process
+29:00 Inferencing & VRAM Usage
+30:50 Inferencing Flow Chart Explanation
+32:40 PEFT Fine-tuned model Explanation 
+36:35 PEFT Model Loading & OOM 
+37:25 Quantising & Loading PEFT Model
+39:50 Inferencing PEFT Model
+41:00 Interim Recap
+44:00 Finetuning GPT2 Flow Chart Explanation
+46:30 Training process Explanation
+49:40 Loading GPT2 Tokenizer & Model
+52:30 Introducing Dolly Dataset
+54:00 What is Causal LM 
+56:00 Tokenizer Training Intro
+59:30 Data Exploration & Tokenising
+1:02:00 Padding Truncating with Tokeniser 
+1:03:50 Transformers Universe Space Intro
+1:04:50 Tokenizer Option Demo
+1:07:30 Input Ids, Attention Masks & Labels 
+1:11:50 Why Padding / Truncating Input
+1:13:10 Training Arguments Explained
+1:16:20 Datacollator & Trainer args
+1:17:00 Training & Memory usage
+1:18:10 Demo FTuned Model
+1:20:00 Why FTuned model is not Good
+1:21:40 Using Smaller Batch & Save VRAM
+1:22:50 Recap
+1:23:35 Outro 
+
+
