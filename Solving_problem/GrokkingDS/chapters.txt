@@ -1,0 +1,39 @@
+grokking ds
+
+0:00 intro
+0:25 Why grok?
+2:30 Relax & Take Time 
+4:20 Resource on Datastructure
+5:15 How to Grok? 
+9:10 What if I am New
+10:50 4 Datastructures
+11:50 Similarity & Difference
+13:10 Node & Graph Node
+17:10 Instantiate Datastructure
+18:50 How DS is Populated
+20:10 DS Visual Representation
+24:20 Challenge Register App 
+28:15 Implementation of 4 DS
+30:20 Adding Algorithms to App
+31:25 Follow up Activity
+33:00 Outro
+
+testing_ds with rgr
+0:00 Intro
+0:30 Video Overview
+3:53 Writing First Test
+6:00 First Red Phase
+6:50 First Green Phase
+7:30 Modifying the Tests
+10:30 Testing Next Node
+13:00 Testing Print Output
+19:10 Testing LinkedList Instantiating
+21:00 Testing List Head is None
+22:50 Testing Appending value
+25:30 Making Test Pass
+27:30 Testing along with the code
+29:10 Implenting LList Printing
+31:30 Debug Llist Methods
+35:05 Recap & Outro
+
+

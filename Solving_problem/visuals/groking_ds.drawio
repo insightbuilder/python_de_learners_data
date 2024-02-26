@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Sq-scTw5g7Prp9WMDyQx" name="Page-1">
-        <mxGraphModel dx="9853" dy="-2427" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="4487" dy="-5013" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -13,7 +13,7 @@
                 <mxCell id="606" value="" style="edgeStyle=none;html=1;" parent="1" source="577" target="605" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="577" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Grind This 4 DataStructures For Exceling in Problem Solving&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="577" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Grokking 4 DataStructures For Exceling in Problem Solving&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1396" y="8839" width="1391" height="269" as="geometry"/>
                 </mxCell>
                 <mxCell id="598" value="" style="edgeStyle=none;html=1;" parent="1" source="578" target="597" edge="1">
@@ -352,6 +352,27 @@
                 </mxCell>
                 <mxCell id="699" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Graph&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
                     <mxGeometry x="9797" y="12371" width="494" height="188" as="geometry"/>
+                </mxCell>
+                <mxCell id="712" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="710" target="711">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="710" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;RED GREEN REFACTOR YOUR WAY TO MASTERING LINKED LIST&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1391" y="13939" width="1391" height="269" as="geometry"/>
+                </mxCell>
+                <mxCell id="714" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="711" target="713">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="711" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;install pytest : pip install pytest&lt;/span&gt;&lt;/h1&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1396" y="14521" width="1391" height="269" as="geometry"/>
+                </mxCell>
+                <mxCell id="716" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="713" target="715">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="713" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;create 2 files&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;rgrlinked.py&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;test_rgrlinked.py&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1391" y="15110" width="1391" height="269" as="geometry"/>
+                </mxCell>
+                <mxCell id="715" value="&lt;h1&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;Start by most basic test&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 72px;&quot;&gt;To be able instantiate a Node&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1391" y="15699" width="1391" height="269" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
