@@ -4,6 +4,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.config
+client_secret_insight.json
 # C extensions
 *.so
 *.bin
