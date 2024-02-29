@@ -137,3 +137,27 @@ Automating Training with SFTTrainer
 30:30 Recap
 32:00 Outro
 
+Deep Dive into Reward Trainer:
+intro of Reward & PPO trainer 
+Demo of RTrainer
+How Dataset created
+What is Red-Teaming the Model
+Process Dataset for RTrainer
+Looking at RTrainer source
+TrainingArgs & Trainer Instantiate
+Trained model loading
+Touch the side quests 
+Recap & Outro 
+
+Deep Dive into PPO Trainer:
+Intro & Overview PPO technique
+Openai connection
+flow of PPO tech
+involving types of Rtrainers
+Rollout-eval-optimize loop 
+save and generate 
+outro
+
+
+
+
