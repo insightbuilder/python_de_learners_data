@@ -1,0 +1,28 @@
+0:00 Intro Ollama
+0:55 Why Ollama DSPy
+1:40 Researching Ollam Installation
+2:45 Ollama Model Library
+4:30 Starting Ollama Install 
+9:25 Installing Ollama-python
+10:40 Starting Ollama Service
+14:00 Installing Gemma-2B model
+15:05 Generating with Gemma Model
+15:55 Exploring Ollam Show Options 
+19:45 Rerunning Ollama  
+21:05 Troubleshooting ollama server
+31:50 Editing Ollama.service file
+26:30 Installing Ollama Python library
+27:40 Using Ollama in Python 
+29:10 Setting Ollama Client
+30:15 Chatting with Gemma Model in Ollama
+33:30 Using Generate Method in Ollama
+36:40 Recap
+38:25 Outro
+
+Serve LLM From Your Local Machines With Ollama : Inferencing Open Source Gemma Model on Ollama
+
+Ollama makes it super easy to load LLMs locally, run inference and even serve the model over the 
+RestAPI servers in single commands. Video introduces the Ollama app installation on Linux, following 
+that troubleshooting the app start in linux, downloading the gemma model, trouble shooting the server 
+interfaces. Following that, uses Ollama-python library to connect with the models in the server and 
+generate completions.
