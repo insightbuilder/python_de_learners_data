@@ -26,3 +26,44 @@ RestAPI servers in single commands. Video introduces the Ollama app installation
 that troubleshooting the app start in linux, downloading the gemma model, trouble shooting the server 
 interfaces. Following that, uses Ollama-python library to connect with the models in the server and 
 generate completions.
+
+Model quantising & Serving:
+- Complete preparing and serving huggingface models 
+    a) Get the Lllama cpp install (Working)
+        - git clone git@github.com:ollama/ollama.git ollama
+            cd ollama
+        - git submodule init
+            git submodule update llm/llama.cpp
+        - python3 -m venv llm/llama.cpp/.venv
+            source llm/llama.cpp/.venv/bin/activate
+            pip install -r llm/llama.cpp/requirements.txt
+        - make -C llm/llama.cpp quantize
+    a1) show the model download of starcoder in jupyter
+    b) Use the models that has been downloaded to cache folder
+        python llm/llama.cpp/convert.py /your/home/.cache/huggingface/hub/models--your_model/snapshots/ \
+         --outtype f16 --outfile model_converted.bin
+    c) Complete quantisation.
+        - try directly work on hf cache folder in the .cache (works)
+        llm/llama.cpp/quantize /your/home/.cache/huggingface/hub/models--your_model/model_converted.bin quantized.bin q4_0
+    d) Make and Serve the model
+        - Create the makeFile vim ../models--mistralai--your_model/yourModel
+        - ollama create model_q4 -f yourModel
+        - ollama run model_q4 "what is big bang theory"
+
+Serving custom model to Ollama
+0:00 Overview Intro
+2:30 Reviewing Steps Followed
+3:20 Downloading Starcoder 7B
+7:35 Installing llamacpp modules
+14:00 Locating Starcoder Model Path 
+16:00 Converting Starcoder Model
+18:00 Recovering From Errors
+19:10 Starcoder Conversion fails
+19:45 Converting Mistral Model
+22:30 Quantizing Mistral Model
+24:30 Creating Ollama ModelFile
+26:30 Loading Ollama NameSpace
+28:00 Using new_mistralq4 Ollama model
+30:50 Recap
+32:20 Linux Challenge & Objective
+33:00 Outro
