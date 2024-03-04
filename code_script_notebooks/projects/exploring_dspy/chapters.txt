@@ -1,0 +1,22 @@
+DSPy Intro
+0:00 Intro
+0:50 Video Overview
+2:00 DSPy Way
+3:10 What DSPy does 
+5:25 Modules in DSPy
+6:10 Tasks Done in DSPy
+6:50 Installing DSPy-AI
+7:50 Use Virtual Environment
+9:10 Minimal Example of DSPY
+10:10 Creating & Prompting LM object
+12:50 Creating Predict Object
+14:20 TypeError in Predict
+15:00 Prediction Object
+16:15 Reviewing LM Calls History
+16:40 Reviewing Prompt Signature
+17:35 Programming Prompts
+18:00 How Prompts are Programmed
+18:45 What is Next
+19:25 Why DSPy?
+20:30 Outro
+
