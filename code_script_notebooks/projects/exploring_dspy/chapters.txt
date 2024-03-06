@@ -20,3 +20,99 @@ DSPy Intro
 19:25 Why DSPy?
 20:30 Outro
 
+DSPy Open LMs
+0:00 Using Open Source Models & its Cost
+1:05 What We Will Learn
+1:55 Transformers Universe Streamlit App
+4:00 Why Configure Models in DSPy
+5:30 Code Walkthrough Classes Intro
+6:45 Connecting OpenAI Model
+7:45 Using DSPy Context
+9:15 Ollama Primer
+12:00 OllamaLocal Init Parameters
+13:40 Using Context with Ollama Mistral
+14:20 Gemma Model Inference with DSPy
+15:40 DSPy with HFModels
+17:10 Prompt in Predict Class
+18:00 Checking Gemma Model Prompting directly
+19:30 Requesting More Outputs From Models
+20:30 Recap
+21:10 Outro
+
+DSPy Signatures
+0:00 Intro 
+0:30 Why Signatures
+1:30 What are Signatures
+1:55 Two Types of Signatures
+2:45 How Signatures Help
+3:45 Code Walkthrough Imports
+4:45 Taking Notes as Python Data Structures
+6:25 NLP Tasks & its Signatures
+7:25 Inline Signature In Detail
+9:50 Inline Signature with ChainOfThought
+11:40 Class Based Signatures
+13:50 Creating Predict for ZeroShot Classification 
+14:40 Creating Signature for Getting JsonData
+17:20 Classifying With Signature Object
+18:50 Recap
+19:50 Try Working with Open Source Models
+21:30 Outro
+
+DSPy modules
+0:00 Pre-Requisites Intro
+2:00 Why Modules
+3:45 How Create Modules
+4:20 Brief Intro of All Modules
+8:10 Module Parameters
+10:30 Predict Class Code & Prompts
+12:45 Predict Module Usage
+15:25 ChainOfThought Code & Prompts
+16:25 COT code Execution
+18:15 Downside of manual prompting
+18:50 Inspecting COT Calls to OpenAI
+20:20 ChainOfThoughtWithHint Code & Prompts
+21:14 COTWithHint Execution
+22:20 MultiChainComparison Code & Prompts
+24:10 MultichainComparison Execution
+26:40 Inspecting MultiChainComparison Prompts
+28:55 ProgramOfThought Code & Prompts
+30:10 Executing ProgramOfThought
+31:00 Inspecting POT Prompts 
+33:50 Retrieve Module Usage 
+34:30 Connectiing Retrieve to ColBERT VectorStore
+35:10 Implementing Basic Rag in DSPY
+37:25 Inspecting the Retrieve Prompts
+39:10 Review ReAct & Majority Modules
+40:20 Recap
+40:50 Intro to Dspy Data & Metrics
+41:30 Outro
+
+Dspy Data & Metrics
+0:00 Intro to Data & Metrics
+1:00 What & Why of Data
+2:55 Data Related Code Walkthrough
+3:30 Example Object
+5:00 Assigning Inputs & Labels in Example
+6:30 Creating Datasets in DSPy
+8:45 Using HotPotQA in DSPy
+10:10 Using Examples in HotPotQA
+11:25 What & Why of Metrics
+12:20 Manual Prompt Optimisation
+13:04 Giving Eyes to Your Code
+13:45 Metrics Code Walkthrough
+14:30 Simple Metric
+15:45 Intermediate Metric
+17:45 Complex Metric Connected to LM
+18:40 Complex Metric Code Walkthrough
+22:10 Using Context inside Metric
+23:30 Metrics with Example Data
+25:40 Introducing Evaluate Class 
+26:50 Evaluating DevSet
+28:20 Evaluate Output Review
+30:00 Metrics With Vector Stores
+31:30 Evaluating RAG Output
+32:40 Recap
+33:30 Outro
+
+
+
