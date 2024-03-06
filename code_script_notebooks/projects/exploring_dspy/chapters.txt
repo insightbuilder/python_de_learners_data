@@ -114,5 +114,41 @@ Dspy Data & Metrics
 32:40 Recap
 33:30 Outro
 
+DSPy Optimizers
+0:00 Intro & Types of Optimizers
+1:10 What FewShots Optimizers Do
+1:50 What Signatures Optimizers Do
+2:22 What Bootstrap FineTune Do
+3:15 Why Called Teleprompter
+4:00 A Look at Documentation
+5:15 How We will Look at Optimizers
+5:45 Class Imports
+7:10 Datasets Import & Reviewing Examples
+8:30 Implementing CoT class 
+9:30 Introducing DSPy Program
+11:00 Inspecting Metrics Code
+12:40 Evaluation of CoT program
+14:10 Inspecting At Model Call History
+15:50 BootstrapFewshot Optimizer Intro
+17:10 Reviewing the baseline CoT config 
+18:50 Inspecting History After Compilation
+19:50 What is happening in Optimisation
+21:00 Reviewing Optimizers Code
+23:00 Reviewing Compiled Program Config
+24:10 Why Create New LangModel Object
+25:50 Labeled Fewshot Intro
+26:20 Compiling LabeledFewshot Optimizer
+27:50 Updating Number of Labels in Optimizers
+29:25 What if Optimisation Fails to Improve
+30:20 Inspection History
+31:30 Setup for Signature Optimizers
+33:50 Creating Signature Optimizers
+35:00 How Signatures are Updated
+36:50 Recap of Optimizers
+38:00 Overview of DSPy Notebook
+39:30 Outro
+
+
+
 
 

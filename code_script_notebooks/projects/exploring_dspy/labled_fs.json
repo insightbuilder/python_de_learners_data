@@ -1,0 +1,33 @@
+{
+  "prgm": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "question": "A third of the contestants at a singing competition are female, and the rest are male. If there are 18 contestants in total, how many of them are male?",
+        "gold_reasoning": "There are 18\/3 = <<18\/3=6>>6 female contestants. There are 18-6 = <<18-6=12>>12 male contestants.",
+        "answer": "12"
+      },
+      {
+        "question": "Amaya scored 20 marks fewer in Maths than she scored in Arts. She also got 10 marks more in Social Studies than she got in Music. If she scored 70 in Music and scored 1\/10 less in Maths, what's the total number of marks she scored in all the subjects?",
+        "gold_reasoning": "The total marks Amaya scored more in Music than in Maths is 1\/10 * 70 = <<1\/10*70=7>>7 marks. So the total marks she scored in Maths is 70 - 7 = <<70-7=63>>63 marks. If she scored 20 marks fewer in Maths than in Arts, then he scored 63 + 20 = <<63+20=83>>83 in Arts. If she scored 10 marks more in Social Studies than in Music, then she scored 70 + 10 = <<10+70=80>>80 marks in Social Studies. The total number of marks for all the subjects is 70 + 63 + 83 + 80 = <<70+63+83+80=296>>296 marks.",
+        "answer": "296"
+      },
+      {
+        "question": "The result from the 40-item Statistics exam Marion and Ella took already came out. Ella got 4 incorrect answers while Marion got 6 more than half the score of Ella. What is Marion's score?",
+        "gold_reasoning": "Ella's score is 40 items - 4 items = <<40-4=36>>36 items. Half of Ella's score is 36 items \/ 2 = <<36\/2=18>>18 items. So, Marion's score is 18 items + 6 items = <<18+6=24>>24 items.",
+        "answer": "24"
+      },
+      {
+        "question": "Bridget counted 14 shooting stars in the night sky.  Reginald counted two fewer shooting stars than did Bridget, but Sam counted four more shooting stars than did Reginald.  How many more shooting stars did Sam count in the night sky than was the average number of shooting stars observed for the three of them?",
+        "gold_reasoning": "Reginald counted two fewer shooting stars than did Bridget, or a total of 14-2=<<14-2=12>>12 shooting stars. Sam counted 4 more shooting stars than did Reginald, or a total of 12+4=16 shooting stars. The average number of shooting stars observed for the three of them was (14+12+16)\/3 = <<14=14>>14 shooting stars. Thus, Sam counted 16-14=2 more shooting stars than was the average number of shooting stars observed for the three of them.",
+        "answer": "2"
+      }
+    ],
+    "signature_instructions": "Given the fields `question`, produce the fields `answer`.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Given the fields `question`, produce the fields `answer`.",
+    "extended_signature_prefix": "Answer:"
+  }
+}

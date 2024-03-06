@@ -1,0 +1,63 @@
+{
+  "prgm": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "question": "A third of the contestants at a singing competition are female, and the rest are male. If there are 18 contestants in total, how many of them are male?",
+        "gold_reasoning": "There are 18\/3 = <<18\/3=6>>6 female contestants. There are 18-6 = <<18-6=12>>12 male contestants.",
+        "answer": "12"
+      },
+      {
+        "question": "Amaya scored 20 marks fewer in Maths than she scored in Arts. She also got 10 marks more in Social Studies than she got in Music. If she scored 70 in Music and scored 1\/10 less in Maths, what's the total number of marks she scored in all the subjects?",
+        "gold_reasoning": "The total marks Amaya scored more in Music than in Maths is 1\/10 * 70 = <<1\/10*70=7>>7 marks. So the total marks she scored in Maths is 70 - 7 = <<70-7=63>>63 marks. If she scored 20 marks fewer in Maths than in Arts, then he scored 63 + 20 = <<63+20=83>>83 in Arts. If she scored 10 marks more in Social Studies than in Music, then she scored 70 + 10 = <<10+70=80>>80 marks in Social Studies. The total number of marks for all the subjects is 70 + 63 + 83 + 80 = <<70+63+83+80=296>>296 marks.",
+        "answer": "296"
+      },
+      {
+        "question": "The result from the 40-item Statistics exam Marion and Ella took already came out. Ella got 4 incorrect answers while Marion got 6 more than half the score of Ella. What is Marion's score?",
+        "gold_reasoning": "Ella's score is 40 items - 4 items = <<40-4=36>>36 items. Half of Ella's score is 36 items \/ 2 = <<36\/2=18>>18 items. So, Marion's score is 18 items + 6 items = <<18+6=24>>24 items.",
+        "answer": "24"
+      },
+      {
+        "question": "Bridget counted 14 shooting stars in the night sky.  Reginald counted two fewer shooting stars than did Bridget, but Sam counted four more shooting stars than did Reginald.  How many more shooting stars did Sam count in the night sky than was the average number of shooting stars observed for the three of them?",
+        "gold_reasoning": "Reginald counted two fewer shooting stars than did Bridget, or a total of 14-2=<<14-2=12>>12 shooting stars. Sam counted 4 more shooting stars than did Reginald, or a total of 12+4=16 shooting stars. The average number of shooting stars observed for the three of them was (14+12+16)\/3 = <<14=14>>14 shooting stars. Thus, Sam counted 16-14=2 more shooting stars than was the average number of shooting stars observed for the three of them.",
+        "answer": "2"
+      },
+      {
+        "question": "Rookie police officers have to buy duty shoes at the full price of $85, but officers who have served at least a year get a 20% discount. Officers who have served at least three years get an additional 25% off the discounted price. How much does an officer who has served at least three years have to pay for shoes?",
+        "gold_reasoning": "Cops that served a year pay $85 * 0.2 = $<<85*0.2=17>>17 less. Cops that served a year pay $85 - $17 = $<<85-17=68>>68. Cops that served at least 3 years get a $68 * 0.25 = $<<68*0.25=17>>17 discount. Cops that served at least 3 years pay $68 - $17 = $<<68-17=51>>51 for shoes.",
+        "answer": "51"
+      },
+      {
+        "question": "Sarah buys 20 pencils on Monday. Then she buys 18 more pencils on Tuesday. On Wednesday she buys triple the number of pencils she did on Tuesday. How many pencils does she have?",
+        "gold_reasoning": "By adding together Monday and Tuesday, Saah has 20+18= <<20+18=38>>38 pencils On Wednesday, she buys 3 * 18= <<3*18=54>>54 pencils All together, Sarah has 38+54= <<38+54=92>>92 pencils",
+        "answer": "92"
+      },
+      {
+        "question": "The average score on last week's Spanish test was 90.  Marco scored 10% less than the average test score and Margaret received 5 more points than Marco.  What score did Margaret receive on her test?",
+        "gold_reasoning": "The average test score was 90 and Marco scored 10% less so 90*.10 = <<90*.10=9>>9 points lower The average test score was 90 and Marco scored 9 points less so his test score was 90-9 = <<90-9=81>>81 Margret received 5 more points than Marco whose test score was 81 so she made 5+81 = <<5+81=86>>86 on her test",
+        "answer": "86"
+      },
+      {
+        "question": "Stephen made 10 round trips up and down a 40,000 foot tall mountain. If he reached 3\/4 of the mountain's height on each of his trips, calculate the total distance he covered.",
+        "gold_reasoning": "Up a mountain, Stephen covered 3\/4*40000 = <<3\/4*40000=30000>>30000 feet. Coming down, Stephen covered another 30000 feet, making the total distance covered in one round to be 30000+30000 = <<30000+30000=60000>>60000. Since Stephen made 10 round trips up and down the mountain, he covered 10*60000 = <<10*60000=600000>>600000",
+        "answer": "600000"
+      },
+      {
+        "question": "Megan pays $16 for a shirt that costs $22 before sales. What is the amount of the discount?",
+        "gold_reasoning": "Let x be the amount of the discount. We have, 22 - x = $16 We change the writing of the equation: 22 - x + x = 16 + x So, 22 = 16 + x We then Remove 16 from both sides: 22 - 16 = 16 + x - 16 So, 22 - 16 = x So, the amount of the discount is x = $<<6=6>>6.",
+        "answer": "6"
+      },
+      {
+        "question": "Nancy bought a pie sliced it into 8 pieces. She gave 1\/2 to Joe and Darcy, and she gave 1\/4 to Carl. How many slices were left?",
+        "gold_reasoning": "The total number of slices she gave to Joe and Darcy is 1\/2 x 8 = <<1\/2*8=4>>4. The total slice she gave to Carl is 1\/4 x 8 = <<1\/4*8=2>>2. Therefore, the total slices left is 8 - 4 - 2 = <<8-4-2=2>>2.",
+        "answer": "2"
+      }
+    ],
+    "signature_instructions": "Given the fields `question`, produce the fields `answer`.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Given the fields `question`, produce the fields `answer`.",
+    "extended_signature_prefix": "Answer:"
+  }
+}

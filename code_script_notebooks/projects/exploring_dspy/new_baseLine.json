@@ -1,0 +1,12 @@
+{
+  "predictor": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature_instructions": "Answer the question and give the reasoning for the same.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Answer the question and give the reasoning for the same.",
+    "extended_signature_prefix": "Answer:"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "prgm": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "The result from the 40-item Statistics exam Marion and Ella took already came out. Ella got 4 incorrect answers while Marion got 6 more than half the score of Ella. What is Marion's score?",
+        "rationale": "produce the answer. We know that Ella got 4 incorrect answers, so she got 36 correct answers out of 40. Half of 36 is 18, and 6 more than that is 24. Therefore, Marion got 24 correct answers out of 40.",
+        "answer": "24"
+      },
+      {
+        "augmented": true,
+        "question": "Stephen made 10 round trips up and down a 40,000 foot tall mountain. If he reached 3\/4 of the mountain's height on each of his trips, calculate the total distance he covered.",
+        "rationale": "produce the answer. We know that Stephen made 10 round trips up and down the mountain, reaching 3\/4 of the mountain's height each time. This means he covered 3\/4 * 40,000 feet = 30,000 feet on each trip. Since he made 10 round trips, the total distance he covered is 30,000 feet * 10 trips * 2 (round trip) = 600,000 feet.",
+        "answer": "600,000 feet"
+      },
+      {
+        "augmented": true,
+        "question": "Bridget counted 14 shooting stars in the night sky.  Reginald counted two fewer shooting stars than did Bridget, but Sam counted four more shooting stars than did Reginald.  How many more shooting stars did Sam count in the night sky than was the average number of shooting stars observed for the three of them?",
+        "rationale": "produce the answer. We know that Reginald counted two fewer shooting stars than Bridget, so he counted 14 - 2 = 12 shooting stars. Sam counted four more shooting stars than Reginald, so he counted 12 + 4 = 16 shooting stars. The total number of shooting stars counted by the three of them is 14 + 12 + 16 = 42. The average number of shooting stars observed for the three of them is 42 \/ 3 = 14. Therefore, Sam counted 16 - 14 = 2 more shooting stars than the average number observed.",
+        "answer": "2"
+      },
+      {
+        "augmented": true,
+        "question": "Sarah buys 20 pencils on Monday. Then she buys 18 more pencils on Tuesday. On Wednesday she buys triple the number of pencils she did on Tuesday. How many pencils does she have?",
+        "rationale": "produce the answer. We first add the number of pencils she bought on Monday and Tuesday, which is 20 + 18 = 38 pencils. Then we triple the number of pencils she bought on Tuesday, which is 18 * 3 = 54 pencils. Finally, we add the total number of pencils she bought on Wednesday to the previous total, which is 38 + 54 = 92 pencils.",
+        "answer": "92"
+      },
+      {
+        "augmented": true,
+        "question": "Rookie police officers have to buy duty shoes at the full price of $85, but officers who have served at least a year get a 20% discount. Officers who have served at least three years get an additional 25% off the discounted price. How much does an officer who has served at least three years have to pay for shoes?",
+        "rationale": "produce the answer. We first calculate the 20% discount for serving at least a year, which is 0.20 * 85 = $17. Then we subtract this discount from the original price to get $85 - $17 = $68. Next, we calculate the additional 25% discount for serving at least three years, which is 0.25 * 68 = $17. Finally, we subtract this additional discount from the already discounted price to get $68 - $17 = $51.",
+        "answer": "$51"
+      },
+      {
+        "augmented": true,
+        "question": "The average score on last week's Spanish test was 90.  Marco scored 10% less than the average test score and Margaret received 5 more points than Marco.  What score did Margaret receive on her test?",
+        "rationale": "produce the answer. We know that Marco scored 10% less than the average score of 90, which is 81. Margaret then scored 5 more points than Marco, making her score 86.",
+        "answer": "86"
+      },
+      {
+        "augmented": true,
+        "question": "A third of the contestants at a singing competition are female, and the rest are male. If there are 18 contestants in total, how many of them are male?",
+        "rationale": "produce the answer. We know that a third of the contestants are female, which means 2\/3 are male. If there are 18 contestants in total, we can calculate that 2\/3 of 18 is 12. Therefore, there are 12 male contestants.",
+        "answer": "12"
+      },
+      {
+        "augmented": true,
+        "question": "Megan pays $16 for a shirt that costs $22 before sales. What is the amount of the discount?",
+        "rationale": "produce the answer. We can calculate the discount by subtracting the sale price from the original price.",
+        "answer": "$6"
+      }
+    ],
+    "signature_instructions": "Given the fields `question`, produce the fields `answer`.",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Given the fields `question`, produce the fields `answer`.",
+    "extended_signature_prefix": "Answer:"
+  }
+}
