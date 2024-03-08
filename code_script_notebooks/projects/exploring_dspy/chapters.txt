@@ -148,6 +148,38 @@ DSPy Optimizers
 38:00 Overview of DSPy Notebook
 39:30 Outro
 
+Asserts & Suggests
+0:00 Intro Objectives
+0:35 Install DSPy-AI
+6:25 What Suggests & Assert do
+8:15 Parameters of Assert & Suggest
+9:00 Behaviour of Assert Vs Suggest
+10:20 Test Driven Development & Python Assert
+12:30 Purpose of Python Assert
+13:35 Concept of Test Driven Development
+15:30 Using DSPy-AI Venv & Interim Recap 
+18:00 Importing Required Classes & Explanation
+20:20 Getting Basic Predict Response
+22:20 Writing Custom Signature For Required Response
+23:40 LLMs May Not Maintain Same Output 
+24:50 Function To Check Output of LLMs
+26:50 Introducing Suggest & Assert in Program
+29:35 Setting Up LM for Program Execution 
+32:10 Testing Assert & Suggest
+33:30 Inspecting Model Call History 
+35:00 Understanding Assertion Failure
+36:40 Replacing Assert With Suggest
+37:40 Including Trace in LM
+38:10 Understanding Suggest Error
+38:55 Setting Program with Assert Transform Module
+41:40 Activating Assertion Method
+42:50 Testing Program with Assert & Inspecting History
+44:30 Prompt Modified by DSPy Assert
+45:10 Testing Program with Suggest & Inspecting History
+47:00 Output modified With Help of Suggest
+48:00 Full Recap & Call to Make Application 
+50:20 Outro
+
 
 
 
