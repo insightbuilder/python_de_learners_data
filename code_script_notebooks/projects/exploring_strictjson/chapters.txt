@@ -1,0 +1,26 @@
+0:00 Intro
+0:25 JSON Background & Rules
+2:35 How JSON looks in Wild
+5:10 List of JSON Points
+6:15 Accessing Data in JSON
+7:50 Application of JSON 
+9:30 Getting JSON W/o StrictJson
+12:10 Controlling Key Values using StrictJson
+13:00 Loading JSON String using JSON module
+16:11 Comparing Str Json & Dictionary
+18:33 Code Walkthrough of StrictJson
+19:20 Strict_json Syntax & Output Explanation
+21:30 Output Types of StrictJson 
+24:30 When StrictJson Fails
+27:10 StrictJson Function Syntax Explanation
+28:20 Extracting Data from Text
+29:30 Breaking StrictJSON Output with Detailed Constraint
+32:15 Extracting parts of paragraph as JSON
+34:15 DSPy Intro
+35:05 DSPy Code Walkthrough
+35:30 JSON Output with Lesser Code
+36:30 Comparing DSPy & StrictJSON
+37:30 Testing Output in StrictJson
+38:25 Used DSPy & StrictJSON interchangeably
+39:15 Recap
+
