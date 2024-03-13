@@ -1,0 +1,6 @@
+objects, category_bit, bit_dec_number, collide_with, bits_collide, bits_collide_decnum
+RedB    , 00001      , 1             , [BlueB, OrnP] , 10101       , 21
+GreenB  , 00010      , 2             , [BlueB, OrnP] , 10110       , 21
+RedB    , 00100      , 4             , [OrnP,BlkP, GreenB, RedB] , 11111       , 31
+RedB    , 01000      , 8             , [] , 11111       , 31
+RedB    , 10000      , 16            , [] , 11111       , 31
