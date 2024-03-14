@@ -16,12 +16,12 @@ def convert_coordinates(point):
 
 # ball body and shape creation
 ball_rad = 40
-body = pymunk.Body()
-body.position = 400, 600
-shape = pymunk.Circle(body, ball_rad)
-shape.density = 1
+body = pymunk.Body()  # create body
+body.position = 400, 600  # give it position
+shape = pymunk.Circle(body, ball_rad)  # make shape
+shape.density = 1  # give prop to shape
 shape.elasticity = 1
-space.add(body, shape)
+space.add(body, shape)  # add shape and body to space for processing
 
 # line segment shape creation, and making it static
 seg_body = pymunk.Body(body_type=pymunk.Body.STATIC)
