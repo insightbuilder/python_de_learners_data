@@ -1,0 +1,44 @@
+{
+  "query": "Where is the moon located at the moment?",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": null,
+  "results": [
+    {
+      "title": "The Moon | TheSkyLive",
+      "url": "https://theskylive.com/moon-info",
+      "content": "Closest Approach of The Moon to Earth\nBetween 1 January 1600 and 30 December 2499,\nthe closest approach of\nThe Moon to Earth happens on\nWed Jan 13 2275 at a distance of\n0.002382 Astronomical Units, or\n356,377 kilometers:\nNOTE: values for the closest approach are computed\nwith a sampling interval of 1 day.\n The Moon Physical Data\nThe following shows the known values of the most important physical parameters of The Moon.\nSource: JPL Small-Body Database\nThe Moon 15 Days Ephemeris\n Support us\nThe Moon Ephemeris Calculator\nCompute the position of The Moon\t\t\t\t\tfor any date and time between 1 January 1600\nand 30 December 2499\nand display the results on an interactive star map.\n The Moon Position and Finder Charts\nBelow we provide\nThe Moon finder charts showing where the object is right now in the sky with respect to the brightest\nstars. The Moon Ephemeris Calculator\nCompute the position of The Moon\t\t\t\tfor any date and time between 1 January 1600\nand 30 December 2499\nand display the results on an interactive star map.",
+      "score": 0.96895,
+      "raw_content": null
+    },
+    {
+      "title": "Moon - See the current position of the Moon!",
+      "url": "https://www.moonposition.com/",
+      "content": "The moon right now, see how the moon looks today. Moonrise and moonset, moonphase - new moon, full moon, crescent and much more! MoonPosition.com . Moon phases. Calendars. Moon phase calendar; Full moon calendar; New moon calendar; Current moon phase. 13 Mar 2024, Time. 10.5% Visibility. Waxing crescent Phase. 364 145 km",
+      "score": 0.96719,
+      "raw_content": null
+    },
+    {
+      "title": "Today's Moon Phase | Current moon cycle for today and tonight - Moongiant",
+      "url": "https://www.moongiant.com/phase/today/",
+      "content": "Phase Details for - December 1\nUseful Moon Resources\nCheck the weather before a night of Moon gazing at weather.com\nFor a list of all the current meteor showers visit American Meteor Society\nWaning Gibbous Moonrise and Moonset It takes 29.53 days for the Moon to orbit the Earth and go through the lunar cycle of all 8 Moon phases.\n The average Moon rise for this phase is between 9pm and Midnight depending on the age of the phase. It lasts roughly 7 days with the Moon\u2019s illumination growing smaller each day until the Moon becomes a Last Quarter Moon with an illumination of 50%. Visit the\nDecember 2023 Moon Phases Calendar to see all the daily moon phase for this month.\n",
+      "score": 0.95326,
+      "raw_content": null
+    },
+    {
+      "title": "Moon Phases Visualized - Moon Location - timeanddate.com",
+      "url": "https://www.timeanddate.com/astronomy/moon/location.html",
+      "content": "Because of the Earth's axial tilt, the Sun's assumed location shifts up and down slightly over the course of the year in this animation, appearing on the same horizontal plane as the Earth solely during the March and September equinoxes.\n As the Moon's position varies from one revolution to the next, the arrow indicating the expected lunar path may not point exactly towards the Moon's current position.\n The circle shows the Moon's anticipated path in the upcoming weeks, including the next 3 or 4 Moon phases. See how far the planets are from the Sun or Earth, how bright they look, and their apparent size in the sky.\n The Moon phases visualization shows the positions of the Moon and Earth in real time.",
+      "score": 0.94525,
+      "raw_content": null
+    },
+    {
+      "title": "Moon Light World Map - timeanddate.com",
+      "url": "https://www.timeanddate.com/astronomy/moon/light.html",
+      "content": "View Day and Night Map\nFind the Moon at Another Time in a Location\nStart typing name of city\nMoon phase\nFraction of moon illuminated: 63%\nPosition of the Moon: Sublunar Point\nOn Sunday, December 3, 2023 at 20:36:00 UTC the Moon is at its zenith at Latitude: 16\u00b0\u00a047'\u00a0North, Longitude: 128\u00b0\u00a046'\u00a0East\n Jump to: -4\u00a0weeks | -1\u00a0day | -12\u00a0hours | -6\u00a0hours | -1\u00a0hour | -10\u00a0minutes | Now | +10\u00a0minutes | +1\u00a0hour | +6\u00a0hours | +12\u00a0hours | +1\u00a0day | +4\u00a0weeks\nMarch equinox | June solstice | September\u00a0equinox | December solstice\n= The Sun's position directly overhead (zenith) in relation to an observer.\n Astronomy News\nAstronomy Calculators\nMore Information\nRelated Time Zone Tools\n\u00a9 Time and Date AS 1995\u20132023\n\u00a9 Time and Date AS 1995\u20132023.\nPrivacy & Terms The table below shows position of the the Moon compared to the time and date above:\nLocations with the Moon near zenith\n Moon Light World Map\nThe map below shows where the Moon is visible from the Earth, depending on weather conditions and moon phases.\n",
+      "score": 0.90293,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.76
+}
