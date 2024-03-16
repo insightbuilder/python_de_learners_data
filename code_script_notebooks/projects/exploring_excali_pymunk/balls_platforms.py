@@ -21,7 +21,8 @@ class Ball:
         self.body.velocity = velocity 
         self.shape = pymunk.Circle(self.body, 15)
         self.shape.density = 1
-        self.shape.elasticity = 1
+        self.shape.elasticity = 1  
+        # adding elasticity will send the balls back
         # groups are way of ignoring collisions
         self.shape.filter = pymunk.ShapeFilter(group=group)
         space.add(self.body, self.shape)
@@ -37,14 +38,17 @@ class Platform:
         self.color = color
         self.y = y
         self.body = pymunk.Body(pymunk.Body.STATIC)
+        # STATIC doesn't constrain the body
         self.body.position = 0, y
         self.shape = pymunk.Segment(self.body, [0, 0], [600, 0], 10)
         self.shape.density = 1
         self.shape.elasticity = 1
         self.shape.filter = pymunk.ShapeFilter(group=group)
         space.add(self.body, self.shape)
-    
+ 
     def draw(self):
+        # The end-points of the platform will move differently 
+        # so the local_to_world method is required.
         a = convert_coords(self.body.local_to_world(self.shape.a))
         b = convert_coords(self.body.local_to_world(self.shape.b))
         pygame.draw.line(display, self.color, a, b, 10)
@@ -55,10 +59,11 @@ class Platform:
 # strange interactions happen, as keeping track what will 
 # occur is bit more challenging...
 
+
 def game():
-    bal1 = Ball(150, (255, 0, 0), 2, (100, 0))
+    bal1 = Ball(150, (255, 0, 0), 2, (0, -100))
     bal2 = Ball(250, (255, 255, 0), 2, (0, 0))
-    bal3 = Ball(450, (255, 0, 255), 4, (-200, 0))
+    bal3 = Ball(450, (255, 0, 255), 4, (0, -70))
     pl1 = Platform(300, (0, 0, 0,), 1)
     pl2 = Platform(100, (255, 150, 0,), 1)
     # After setting these to group 1, 

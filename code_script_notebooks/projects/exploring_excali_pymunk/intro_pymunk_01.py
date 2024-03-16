@@ -46,8 +46,9 @@ class Ball:
                 convert_cords(self.body.position),
                 15
             )
-    
+ 
     def change_to_blue(self, arbiter, space, data):
+        # collision data is recovered from a different route
         print("hit shot...")
         self.shape.collision_type = 2
 
