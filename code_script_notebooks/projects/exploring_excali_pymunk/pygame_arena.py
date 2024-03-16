@@ -12,6 +12,7 @@ FPS = 30
 stp = 1/30
 white = [255, 255, 255]
 black = [0, 0, 0]
+pygame.init()
 clk = pygame.time.Clock()
 
 def update_coords(point):
@@ -62,12 +63,15 @@ def game():
     b1 = RawBall(100, 50, 30, [0, 100], 1)
     b2 = RawBall(100, 350, 30, [0, -100], 2)
     # plat = Platform(y=70, color=black, col_type=3)
+    font = pygame.font.SysFont('couriernew', 20)
 
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
         display.fill(white)
+        img = font.render('Bounce Balls...', True, black)
+        display.blit(img, (150, 50))
         b1.draw()
         b2.draw()
         # plat.draw()

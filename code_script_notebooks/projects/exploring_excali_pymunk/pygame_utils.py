@@ -1,10 +1,13 @@
 import pygame
 import pymunk
 import random
+from typing import List, Any
+
 
 clock = pygame.time.Clock()
 FPS = 50
 space = pymunk.Space()
+display = pygame.display.set_mode([100, 100])
 
 
 def get_events_game():
@@ -86,3 +89,41 @@ class Ball:
                            (255, 0, 0),
                            convert_cords(self.body.position),
                            10)
+
+
+class Circ:
+    def __init__(self, val, x, y, thick, rad) -> None:
+        self.position = [x, y]
+        self.val = val
+        self.thick = thick
+        self.rad = rad
+    
+    def draw(self):
+        pygame.draw.circle(display,
+                           (255, 255, 255),
+                           self.position,
+                           self.rad,
+                           self.thick)
+
+
+class CircList:
+    def __init__(self, data: List[Any], x, y) -> None:
+        self.start_position = x, y
+        self.data = data
+        self.circles = [Circ(v, x + ind * 2 * 25, y, 3, 25) for ind,
+                        v in enumerate(self.data)]
+        # create the text and render it as images list
+        self.val_text = [font.render(str(val),
+                                     True,
+                                     blue) for val in self.data]
+
+    def draw(self):
+        [pygame.draw.circle(display,
+                            black,
+                            circle.position,
+                            circle.rad,
+                            circle.thick) for circle in self.circles]
+        x, y = self.start_position  # get the start position
+        # blit the text on to the center of the circles
+        [display.blit(img, (x + ind * 2 * 25, y)) for ind,
+         img in enumerate(self.val_text)]

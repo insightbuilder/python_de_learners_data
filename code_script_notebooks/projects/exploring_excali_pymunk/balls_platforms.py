@@ -66,8 +66,8 @@ def game():
     bal3 = Ball(450, (255, 0, 255), 4, (0, -70))
     pl1 = Platform(300, (0, 0, 0,), 1)
     pl2 = Platform(100, (255, 150, 0,), 1)
-    # After setting these to group 1, 
-    # the platforms & balls dont interact. 
+    # After setting these to group 1,
+    # the platforms & balls dont interact.
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -78,7 +78,7 @@ def game():
         bal3.draw()
         pl1.draw()
         pl2.draw()
- 
+
         pygame.display.update()
         clock.tick(89)
         space.step(1/FPS)
