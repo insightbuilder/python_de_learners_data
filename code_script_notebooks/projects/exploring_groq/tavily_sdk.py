@@ -8,7 +8,7 @@ load_dotenv("D:\\gitFolders\\python_de_learners_data\\.env")
 
 tavily = TavilyClient(api_key=os.environ['TAVILY_API_KEY'])
 
-question = input("Ask your question here...: ") 
+question = input("Ask your question here...: ")
 chose = input(f"Chose search/ context/ qna: ")
 
 # response = {'test':'tested'}

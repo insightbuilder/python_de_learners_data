@@ -18,3 +18,15 @@
 32:25 Recap of Concepts
 34:00 Outro
 
+0:00 Intro
+0:25 Idea of Giving LLMs Internet Access
+1:00 Tavily Data Access
+1:43 Tavily & Langchain
+2:15 Code Walkthrough Scraper
+4:55 Demo of TavilyClient Methods
+10:50 Should you use Tavily
+11:10 Demo of Langchain Tavily
+17:45 Pushing Search Results to Embedding DB 
+18:30 Purpose of Search Results Connecting To LLMs
+19:15 Recap
+20:10 Outro

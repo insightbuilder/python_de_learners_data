@@ -7,7 +7,7 @@ from langchain_community.tools.tavily_search import (
 )
 from langchain.utilities.tavily_search import TavilySearchAPIWrapper
 # https://docs.tavily.com/docs/tavily-api/langchain
-from langchain.retrievers import TavilySearchAPIRetriever  
+from langchain.retrievers import TavilySearchAPIRetriever 
 # This is present in https://python.langchain.com/docs/integrations/retrievers/tavily 
 from langchain.agents import initialize_agent, AgentType
 from langchain.chat_models import ChatOpenAI
@@ -40,11 +40,11 @@ tavily_just_search = TavilySearchResults()
 query = input(f"What you want to know? ")
 
 # result = agent_chain.run(query)
-# result = tavily_retriever.invoke(query)
-# print(result)
+result = tavily_retriever.invoke(query)
+print(result)
 
 # Document(page_content='Open the Google Pay app. Go into Send or request. Select the contact you want to send money to. Alternatively, you can create a group or select the option that reads Split with friends. Once you ...', metadata={'title': 'How to use Google Pay: A step by step guide - Android Authority', 'source': 'https://www.androidauthority.com/how-to-use-google-pay-890614/', 'score': 0.91538, 'images': None})
 
-search_res = tavily_just_search.invoke({"query": query})
-print(search_res)
+# search_res = tavily_just_search.invoke({"query": query})
+# print(search_res)
 # {'url': 'https://themunim.com/a-detailed-guide-for-rupay-card-better-things-to-know/', 'content': 'Some benefits of using a RuPay card include: Increased acceptance at merchant outlets and ATMs across India. Reduced foreign currency conversion charges for card transactions. Earn Reward Points on spending which can be redeemed for cash back, gift vouchers, and other benefits. 24×7 customer service support.'}
