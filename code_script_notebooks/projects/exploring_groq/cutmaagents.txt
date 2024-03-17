@@ -1,0 +1,20 @@
+0:00 Intro
+0:35 TLDR Prompts & Python
+1:20 Demo-Researching GPTResearcher with GPTResearcher
+4:35 Reviewing the MarkDown Report 
+6:45 Continuing Why Research GPT-Researcher
+9:10 How the Problem / Query solved
+10:30 GPT Researcher Code Walkthrough
+13:00 Install GPT-Researcher
+14:20 Multiple ways to Look @ GPTResearcher code
+16:05 GPTResearcher FlowChart Walkthrough
+19:30 Comparing code output & code execution 
+22:30 get_sub_queries in functions module
+25:30 Before writing the Research Report
+26:45 Where are the Prompts
+27:50 Auto_agent_instruction prompt
+29:55 Summarising Prompts based on Report Types 
+31:00 Walking Back to Generate_report Function
+32:25 Recap of Concepts
+34:00 Outro
+
