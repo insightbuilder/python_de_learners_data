@@ -30,3 +30,19 @@
 18:30 Purpose of Search Results Connecting To LLMs
 19:15 Recap
 20:10 Outro
+
+groq Intro
+0:00 Intro
+0:40 Why Groq Superfast Inference
+3:50 Examples in Groq Documentation
+5:35 Findera Fast Search Engine
+6:50 Models in GroqCloud
+9:15 Groq Python Libraries
+10:05 Code walkthrough Basics
+13:00 Self-Discovery App Mixtral Demo 
+14:55 Self-Discovery App Llama Demo 
+16:25 Recap of Benefits & Challenges
+18:05 Outro
+ 
+
+

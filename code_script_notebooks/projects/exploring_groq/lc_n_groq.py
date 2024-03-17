@@ -7,7 +7,7 @@ from langchain_groq import ChatGroq
 chat = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
 api_key = os.environ.get("GROQ_API_KEY")
 chat = ChatGroq(temperature=0,
-                groq_api_key=api_key, 
+                groq_api_key=api_key,
                 model_name="mixtral-8x7b-32768")
 
 system = "You are a helpful assistant."
