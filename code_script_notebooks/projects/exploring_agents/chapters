@@ -37,6 +37,26 @@ jinja Intro
 21:33 Recovering from Agent Failures
 22:30 Outro
 
+Solve Tasks
+0:00 Intro
+0:15 How Build Simple Agents
+1:11 Code Generation Agent Intro
+2:02 Code Walkthrough
+3:10 Agents are LLMs / AI models
+4:50 Introducing Tavily Search 
+5:50 Collecting Search Results in Lists
+6:45 Rendering Code Extraction Template
+9:10 System & User Prompt
+9:35 Calling LLM 
+10:15 Processing output
+10:45 Code Review
+11:00 Everything Done with Coding Logic
+12:30 Writing Code for Multiple Tasks
+13:50 LLMs will become hidden in Abstraction
+15:45 Jinja Template Role
+16:45 Lots of Python Involved
+17:40 Whats Our Role
+18:00 Outro
 
 
 
