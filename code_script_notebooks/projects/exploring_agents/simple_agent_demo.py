@@ -58,6 +58,8 @@ has a description of what needs to be implemented.
 task_sorting_expert = """You are expert in classifying a given task"""
 data_analysis_expert = """You are expert data analyst who can provide
 insightful answers from the context provided to you"""
+coding_expert = """You are expert programmer with knowledge of various
+datastructures, its algorithms and having access to many problem solving techniques"""
 
 env_template = Environment(
     loader=FileSystemLoader('jinja_prompt'),
@@ -126,7 +128,7 @@ aglog.debug(avbl_template)
 
 get_vars = get_required_vars(env_template, avbl_template[0])
 aglog.debug(get_vars)
-tasks = ["ask_tasks", "class_tasks", "analyse_data", "cancel"]
+tasks = ["ask_tasks", "class_tasks", "analyse_data", "generate_code", "cancel"]
 
 # Starting top-level while loop
 while True:
@@ -188,6 +190,34 @@ while True:
             os.remove(file_task_classified)
             # ensure the existing file is removed
         write_responses(file_task_classified, retrieved_data)
+        temp = tasks.pop(0)
+ 
+    if choose_task == "generate_code":
+        file_task_code = questionary.path("File name w/o extension for storing code: ").ask()  # create a new file
+        try:
+            retrieved_data = return_json_data(file_task_classified)  # read entire file from earlier step
+        except Exception as e:
+            aglog.info(e)
+            file_task_classified = questionary.path("Provide Task Classification file: ").ask()
+            retrieved_data = return_json_data(file_task_classified)
+
+        retrieved_tasks = retrieved_data['classified_tasks']  # get the tasks key
+        # create classification prompts for each task
+        for ind, task in enumerate(retrieved_tasks):
+            if "code generation" in task['task_class'] or 'problem solving' in task['task_class']:
+                aglog.info(f"Generating code for `{task['task']}`")
+                task_context = {"question": task['task']}
+                get_task_code = load_render_template(env_template,
+                                                     'simple_codegen.prompt',
+                                                     task_context)
+                code_task = llm_call_openai(coding_expert,
+                                            get_task_code,
+                                            model_used_eco)
+                cleaned_code = code_task['response'][9:-3]
+                # write the code to file
+                file_for_task = f"{file_task_code}_{ind}.py"
+                with open(file_for_task, 'w') as fws:
+                    fws.write(cleaned_code)
         temp = tasks.pop(0)
 
     if choose_task == "analyse_data":

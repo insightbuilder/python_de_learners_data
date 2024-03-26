@@ -1,1 +1,145 @@
-{"app_type": "soccer api", "name": "soccer note", "prompt": "Develop a backend API in django for serving the soccer data \nthat is present in a database. The data is present in the database, which needs to be \nexposed in the api. Implement the required routes in the API, for the CRUD operation\nof the database, and rendering the data on the frontend.", "classified_tasks": [{"task": "Develop a backend API in Django for serving soccer data that is present in a database. The data is present in the database, which needs to be exposed in the API. Implement the required routes in the API for the CRUD operation of the database and rendering the data on the frontend.", "task_class": "code generation"}, {"task": "1. As a user, I want to be able to retrieve a list of all soccer teams.", "task_class": "code executing"}, {"task": "2. As a user, I want to be able to retrieve details of a specific soccer team by providing its ID.", "task_class": "code executing"}, {"task": "3. As a user, I want to be able to add a new soccer team to the database.", "task_class": "planning"}, {"task": "4. As a user, I want to be able to update the details of an existing soccer team.", "task_class": "planning"}, {"task": "5. As a user, I want to be able to delete a soccer team from the database.", "task_class": "code executing"}, {"task": "6. As a user, I want to be able to retrieve a list of all players in a specific soccer team.", "task_class": "problem solving"}, {"task": "7. As a user, I want to be able to retrieve details of a specific player by providing their ID.", "task_class": "code executing"}, {"task": "8. As a user, I want to be able to add a new player to a soccer team.", "task_class": "planning"}, {"task": "9. As a user, I want to be able to update the details of an existing player.", "task_class": "planning"}, {"task": "10. As a user, I want to be able to delete a player from a soccer team.", "task_class": "code executing"}, {"task": "11. As a user, I want to be able to retrieve a list of all matches.", "task_class": "planning"}, {"task": "12. As a user, I want to be able to retrieve details of a specific match by providing its ID.", "task_class": "planning"}, {"task": "13. As a user, I want to be able to add a new match to the database.", "task_class": "planning"}, {"task": "14. As a user, I want to be able to update the details of an existing match.", "task_class": "clarification request"}, {"task": "15. As a user, I want to be able to delete a match from the database.", "task_class": "decision making"}, {"task": "16. As a user, I want to be able to retrieve a list of all upcoming matches.", "task_class": "code execution"}, {"task": "17. As a user, I want to be able to retrieve a list of all past matches.", "task_class": "code executing"}, {"task": "18. As a user, I want to be able to search for matches based on specific criteria (e.g., date, teams playing).", "task_class": "planning"}, {"task": "19. As a user, I want to be able to retrieve statistics for a specific player (e.g., goals scored, assists).", "task_class": "clarification request"}, {"task": "20. As a user, I want to be able to retrieve statistics for a specific team (e.g., total goals scored, matches won).", "task_class": "clarification request"}, {"task": "1. What kind of authentication and authorization mechanisms should be implemented for accessing the API?", "task_class": "decision making"}, {"task": "2. How should errors and exceptions be handled in the API responses?", "task_class": "decision making"}, {"task": "3. Should there be any rate limiting or throttling mechanisms in place for API requests?", "task_class": "decision making"}, {"task": "4. How should the API handle large amounts of data retrieval efficiently?", "task_class": "decision making"}, {"task": "5. Should there be any caching strategies implemented for improving API performance?", "task_class": "decision making  \nclarification request"}, {"task": "6. What format should the API responses be in (e.g., JSON, XML)?", "task_class": "clarification request"}, {"task": "7. Should there be any validation checks for the data being sent in API requests?", "task_class": "decision making  \nclarification request"}, {"task": "8. How should the API documentation be generated and maintained for developers using the API?", "task_class": "documentation maintenance"}, {"task": "9. Are there any specific security measures that need to be implemented for protecting the API and the data?", "task_class": "decision making"}, {"task": "10. How should the API handle concurrent requests and ensure data consistency in the database?", "task_class": "decision making"}], "task_analysis": [{"question": "How many planning tasks are there in the above list", "llm_reply": {"response": "There are a total of 7 planning tasks in the above list."}}, {"question": "How many code generation tasks are there in above list?", "llm_reply": {"response": "There is one code generation task in the above list, which is:\n\n1. Develop a backend API in Django for serving soccer data that is present in a database. The data is present in the database, which needs to be exposed in the API. Implement the required routes in the API for the CRUD operation of the database and rendering the data on the frontend."}}]}
+{
+  "app_type": "soccer api",
+  "name": "soccer note",
+  "prompt": "Develop a backend API in django for serving the soccer data \nthat is present in a database. The data is present in the database, which needs to be \nexposed in the api. Implement the required routes in the API, for the CRUD operation\nof the database, and rendering the data on the frontend.",
+  "classified_tasks": [
+    {
+      "task": "Develop a backend API in Django for serving soccer data that is present in a database. The data is present in the database, which needs to be exposed in the API. Implement the required routes in the API for the CRUD operation of the database and rendering the data on the frontend.",
+      "task_class": "code generation"
+    },
+    {
+      "task": "1. As a user, I want to be able to retrieve a list of all soccer teams.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "2. As a user, I want to be able to retrieve details of a specific soccer team by providing its ID.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "3. As a user, I want to be able to add a new soccer team to the database.",
+      "task_class": "planning"
+    },
+    {
+      "task": "4. As a user, I want to be able to update the details of an existing soccer team.",
+      "task_class": "planning"
+    },
+    {
+      "task": "5. As a user, I want to be able to delete a soccer team from the database.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "6. As a user, I want to be able to retrieve a list of all players in a specific soccer team.",
+      "task_class": "problem solving"
+    },
+    {
+      "task": "7. As a user, I want to be able to retrieve details of a specific player by providing their ID.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "8. As a user, I want to be able to add a new player to a soccer team.",
+      "task_class": "planning"
+    },
+    {
+      "task": "9. As a user, I want to be able to update the details of an existing player.",
+      "task_class": "planning"
+    },
+    {
+      "task": "10. As a user, I want to be able to delete a player from a soccer team.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "11. As a user, I want to be able to retrieve a list of all matches.",
+      "task_class": "planning"
+    },
+    {
+      "task": "12. As a user, I want to be able to retrieve details of a specific match by providing its ID.",
+      "task_class": "planning"
+    },
+    {
+      "task": "13. As a user, I want to be able to add a new match to the database.",
+      "task_class": "planning"
+    },
+    {
+      "task": "14. As a user, I want to be able to update the details of an existing match.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "15. As a user, I want to be able to delete a match from the database.",
+      "task_class": "decision making"
+    },
+    {
+      "task": "16. As a user, I want to be able to retrieve a list of all upcoming matches.",
+      "task_class": "code execution"
+    },
+    {
+      "task": "17. As a user, I want to be able to retrieve a list of all past matches.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "18. As a user, I want to be able to search for matches based on specific criteria (e.g., date, teams playing).",
+      "task_class": "planning"
+    },
+    {
+      "task": "19. As a user, I want to be able to retrieve statistics for a specific player (e.g., goals scored, assists).",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "20. As a user, I want to be able to retrieve statistics for a specific team (e.g., total goals scored, matches won).",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "1. What kind of authentication and authorization mechanisms should be implemented for accessing the API?",
+      "task_class": "decision making"
+    },
+    {
+      "task": "2. How should errors and exceptions be handled in the API responses?",
+      "task_class": "decision making"
+    },
+    {
+      "task": "3. Should there be any rate limiting or throttling mechanisms in place for API requests?",
+      "task_class": "decision making"
+    },
+    {
+      "task": "4. How should the API handle large amounts of data retrieval efficiently?",
+      "task_class": "decision making"
+    },
+    {
+      "task": "5. Should there be any caching strategies implemented for improving API performance?",
+      "task_class": "decision making  \nclarification request"
+    },
+    {
+      "task": "6. What format should the API responses be in (e.g., JSON, XML)?",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "7. Should there be any validation checks for the data being sent in API requests?",
+      "task_class": "decision making  \nclarification request"
+    },
+    {
+      "task": "8. How should the API documentation be generated and maintained for developers using the API?",
+      "task_class": "documentation maintenance"
+    },
+    {
+      "task": "9. Are there any specific security measures that need to be implemented for protecting the API and the data?",
+      "task_class": "decision making"
+    },
+    {
+      "task": "10. How should the API handle concurrent requests and ensure data consistency in the database?",
+      "task_class": "decision making"
+    }
+  ],
+  "task_analysis": [
+    {
+      "question": "How many planning tasks are there in the above list",
+      "llm_reply": {
+        "response": "There are a total of 7 planning tasks in the above list."
+      }
+    },
+    {
+      "question": "How many code generation tasks are there in above list?",
+      "llm_reply": {
+        "response": "There is one code generation task in the above list, which is:\n\n1. Develop a backend API in Django for serving soccer data that is present in a database. The data is present in the database, which needs to be exposed in the API. Implement the required routes in the API for the CRUD operation of the database and rendering the data on the frontend."
+      }
+    }
+  ]
+}

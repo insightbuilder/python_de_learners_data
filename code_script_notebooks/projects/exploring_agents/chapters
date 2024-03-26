@@ -58,5 +58,32 @@ Solve Tasks
 17:40 Whats Our Role
 18:00 Outro
 
+0:00 Intro
+0:50 Pre-Requisite Videos
+2:35 Demo of Agent with Explanation
+3:30 Agent Asks for Objective
+5:45 Reviewing the Created Tasks
+6:10 Agent Classifies Tasks
+6:55 Agent Analyses Data
+7:50 Agent Generate Code and completes
+8:45 Reviewing Generated Code
+9:50 Code Walkthrough of Agent
+10:50 Module Imports
+11:30 Setting System Prompts
+12:45 Jinja Templating Engine Started
+13:00 Explaining LLM helper functions
+14:00 Why Json Files
+15:15 Loading & explaining Prompt Templates 
+16:50 Explaining available Tasks
+17:10 Keeping the Agent Live with Loop
+18:00 Choosing Ask_tasks to get Objective
+21:55 Classifying sub-Tasks 
+23:30 Generating code for sub-tasks
+24:25 Analyse sub-Tasks 
+25:30 Exiting the Agent Loop
+26:15 Recap of Objective
+27:15 Recap on Agent Development
+28:50 Outro
+
 
 
