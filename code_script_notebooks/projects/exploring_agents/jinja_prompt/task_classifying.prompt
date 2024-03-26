@@ -1,0 +1,9 @@
+Classify the given {{ task }} into a planning, code generation, decision making, clarification request, code executing, problem solving, how-to, general discussion kinds of 
+tasks. Reply with only the type of task as single or max two words. No explanation is required. If the task is different from the types mentioned above then 
+respond simply as `other`. 
+
+For example:
+`Provide the steps required for making a api call` 
+`planning`
+`Its a wonderful day ahead`
+`other`

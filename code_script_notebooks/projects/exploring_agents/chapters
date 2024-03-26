@@ -1,0 +1,42 @@
+Intro Agents
+0:00 CUTMA Agents
+0:25 Agents In Wild
+0:55 Buiding Blocks of Agents
+2:25 Some Agents Tasks
+3:00 Build a Simple Agent
+4:45 Introducing Simple Agent Demo
+7:00 Getting Task Breakdown
+10:00 Reviewing the Tasks List
+10:50 Classifiying Tasks
+12:40 Analysing Tasks by Asking Questions
+14:30 Recap of Simple Agent Steps
+15:30 Reviewing Analysis Provided by LLM
+16:30 How the Agent is implemented?
+17:50 What & How of Agents Work
+18:10 Outro
+
+jinja Intro
+0:00 Intro
+0:25 Simple Agent Steps
+1:05 What is Jinja 
+1:55 How Jinja Works
+3:15 Feeding LLMs with Context
+4:05 Jinja2 Code Walk Through
+4:50 Reading Prompt Templates with Environment
+6:20 What are Prompt Templates
+7:55 Helper Functions
+8:50 Loading Templates in Environment
+9:45 Creating Input Context Variables
+10:50 Rendering Templates
+12:40 Prompt Template with Loops Explained 
+14:40 Rendering Templates with List Data
+15:50 Retrieving Internet Search & Render Prompts
+18:40 Render Code Extraction Prompt with Search Results
+19:30 Working with System & User Prompts
+20:00 Recap on Dismantling Prompts
+21:33 Recovering from Agent Failures
+22:30 Outro
+
+
+
+

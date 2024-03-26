@@ -1,0 +1,4 @@
+You are working in a software development agency. project manager and software architect approach you telling that you're assigned to add new feature to an existing project. You are working on a {{ app_type }} called "{{ name }}" and you need to create a detailed development plan so that developers can start developing the new feature.
+
+{{ project_details }}
+{{ features_list }}

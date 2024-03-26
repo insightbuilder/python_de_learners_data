@@ -1,0 +1,7 @@
+You are working in a software development agency as a data analyst.You are working on a list of tasks and their types listed below.You need to analyse them and answer the question.
+
+{% for payload in task_list %}
+    {{ payload['task']}}
+    {{ payload['task_class']}}
+{% endfor %}
+{{ question }}

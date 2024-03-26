@@ -1,0 +1,105 @@
+{
+  "app_type": "commandline text processor",
+  "name": "textgreper",
+  "prompt": "write a python script that will emulate the function of grep and sed in the commandline. The user will call the script along with the file that needs to be processed. ",
+  "classified_tasks": [
+    {
+      "task": "1. As a user, I want to be able to run the script from the command line.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "2. As a user, I want to provide the filename as an argument when running the script.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "3. As a user, I want to be able to search for a specific word in the file content.",
+      "task_class": "problem solving"
+    },
+    {
+      "task": "4. As a user, I want to be able to display lines containing the searched word.",
+      "task_class": "problem solving"
+    },
+    {
+      "task": "5. As a user, I want to be able to count the number of occurrences of the searched word in the file.",
+      "task_class": "problem solving"
+    },
+    {
+      "task": "6. As a user, I want to be able to replace a specific word with another word in the file content.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "7. As a user, I want to be able to save the modified content back to the original file or a new file.",
+      "task_class": "planning"
+    },
+    {
+      "task": "8. As a user, I want to be able to use regular expressions for searching and replacing.",
+      "task_class": "code generation"
+    },
+    {
+      "task": "9. As a user, I want to be able to specify options like case-insensitive search.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "10. As a user, I want to see help information on how to use the script.",
+      "task_class": "how-to"
+    },
+    {
+      "task": "11. As a user, I want to see version information of the script.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "12. As a user, I want to be able to search for multiple words simultaneously.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "13. As a user, I want to be able to display line numbers along with the matching lines.",
+      "task_class": "code generation"
+    },
+    {
+      "task": "14. As a user, I want to be able to preview the changes before saving them.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "15. As a user, I want to be able to undo the last change made using the script.",
+      "task_class": "code executing"
+    },
+    {
+      "task": "16. As a user, I want to be able to perform in-place editing of the file without creating a new file.",
+      "task_class": "code generation"
+    },
+    {
+      "task": "17. As a user, I want to be able to specify the output format (e.g., plain text, JSON).",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "18. As a user, I want to be able to search for words that start or end with a specific pattern.",
+      "task_class": "problem solving"
+    },
+    {
+      "task": "19. As a user, I want to be able to search for whole words only.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "20. As a user, I want to be able to search for lines that do not contain a specific word.",
+      "task_class": "clarification request"
+    },
+    {
+      "task": "These user stories cover various functionalities and options that users might expect from the \"textgreper\" commandline text processor script.",
+      "task_class": "planning  \ncode generation  \nclarification request  \nproblem solving  \nhow-to"
+    }
+  ],
+  "task_analysis": [
+    {
+      "question": "How many planning and code generation tasks are present in above list",
+      "llm_reply": {
+        "response": "There are 3 planning tasks and 3 code generation tasks present in the above list."
+      }
+    },
+    {
+      "question": "How many problem solving tasks are present above?",
+      "llm_reply": {
+        "response": "There are 5 problem-solving tasks present in the list of tasks provided above."
+      }
+    }
+  ]
+}

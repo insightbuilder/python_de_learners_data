@@ -1,0 +1,10 @@
+You are expert coder and researcher. You are approached by the program manager with the below question and requires you to write code
+{{ question }}
+
+You have searched about the question and found the below information. Using that write the code as requested by program manager 
+{% for cont in net_data %}
+{{ cont }}
+{% endfor %}
+
+Write the code by mentioning the programming language first.
+your_code:
