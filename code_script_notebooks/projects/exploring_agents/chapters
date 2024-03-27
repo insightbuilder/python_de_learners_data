@@ -85,5 +85,29 @@ Solve Tasks
 27:15 Recap on Agent Development
 28:50 Outro
 
+0:00 Intro
+0:25 Experiencing Json Agent
+1:25 Create New VEnv & Install Dependencies
+3:45 Instantiating the Json Agents
+4:45 Observation of Agent output
+7:10 Reviewing the create_json_agent code
+8:30 Dynamic Prompt of the create_json_agent
+10:20 Brief Intro on Agents
+11:50 Creating AgentExecutor
+12:10 Intro to TavilyTool
+13:35 Creating Agent from Prompt
+15:15 Locating the Prompt Create_json_chat_agent
+18:15 Reviewing the Tool Prompt
+19:30 Creating AgentExecutor to Call Tools
+21:20 Where are the Prompts
+23:10 Invoke Method of Chain
+24:10 Answering The Question on Agents
+25:10 Langchain Hub Intro
+26:20 Agent is LLM Chain with Python Logic
+28:10 Disassembling Tools
+29:25 Recap and outro
+
+
+
 
 
