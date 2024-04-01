@@ -41,6 +41,7 @@ fastapi==0.110.0
 filelock==3.13.3
 frozenlist==1.4.1
 fsspec==2024.2.0
+ftfy==6.0.3
 greenlet==3.0.3
 h11==0.14.0
 httpcore==1.0.5
@@ -90,6 +91,7 @@ pydantic==1.10.14
 pydantic_core==2.16.3
 Pygments==2.17.2
 PyJWT==2.8.0
+pyphen==0.14.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-jose==3.3.0
@@ -119,11 +121,13 @@ social-auth-core==4.5.3
 spacy==3.7.4
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
+spacy-lookups-data==1.0.5
 SQLAlchemy==2.0.29
 srsly==2.4.8
 stack-data==0.6.3
 starlette==0.36.3
 sympy==1.12
+textdescriptives==2.7.3
 thinc==8.2.3
 threadpoolctl==3.4.0
 tokenizers==0.15.2
