@@ -13,3 +13,32 @@ Argilla Why
 14:00 Loading HF Datasets & Annotate 
 15:45 Using Argilla to get Dataset Annotated 
 16:30 Outro
+
+Argilla Install
+0:00 Objective 
+0:30 Parts of Argilla 
+1:45 Argilla Python Client
+2:12 Server Credentials Intro
+2:55 Working with Workspaces
+4:00 Intro to HuggingFace Space
+4:50 Demo of Existing Server
+6:15 Argilla Installation Options
+7:10 Python Argilla Server Install
+7:35 Docker Argilla Server Install
+8:55 HuggingFace Space Intro
+10:45 Deploying HFSpaces Argilla Server
+12:30 Login into Your Argilla Server
+13:45 Constructing Argilla Server URL
+14:50 Installing Argilla Client in Venv
+16:45 Installing dependencies with Requirements.txt
+18:55 Building API_URL & Connecting Python Client
+20:50 Selecting Venv in VSCode
+21:55 Connecting with rg.init function
+23:45 Creating Workspace localgilla
+24:40 Creating User with Different User
+27:55 Creating & Pushing Feedback Dataset
+29:30 Exploring DS-1 dataset in UI
+30:25 Creating Records
+31:45 Re-Connecting to DS & Pushing records
+34:50 Recap
+35:40 Outro
