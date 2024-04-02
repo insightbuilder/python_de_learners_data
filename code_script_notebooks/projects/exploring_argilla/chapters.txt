@@ -42,3 +42,23 @@ Argilla Install
 31:45 Re-Connecting to DS & Pushing records
 34:50 Recap
 35:40 Outro
+
+Argilla Local Install
+0:00 Intro
+0:25 Parts of Argilla Server
+1:25 Docker Compose Installation
+4:35 Starting Argilla Server
+5:10 Checking Server is Up
+6:21 Populating Records in DS-1 datasets
+7:20 Connecting Python Client
+9:00 Connecting To DS-1 Datasets
+10:10 Creating & Adding records
+11:10 Interim Recap
+11:30 Reviewing Docker-Compose Services 
+13:45 Modifying User Configuration
+15:25 Demo of Argilla CLI Client
+17:25 Listing Workspaces & Datasets
+20:00 Recap
+20:30 Outro
+
+
