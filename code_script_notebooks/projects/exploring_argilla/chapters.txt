@@ -61,4 +61,42 @@ Argilla Local Install
 20:00 Recap
 20:30 Outro
 
+argilla,annotation,d4 data podcast argilla,argilla and data centric nlp,langchain python,argilla tutorial,datasets,argilla guide,llms fine tuning argilla,unstructured python,python extract pdf images,program of unstructured and unstructured data in numpy in python,dataset training,nlp tasks,nlp model,dataset curation,dataset creation,updating dataset,reinforced learning,human feedback,dpo,ppo,supervised finetuning,transformers,setfit,sentence transformers
+argilla,annotation,d4 data podcast argilla,argilla and data centric nlp,argilla tutorial,datasets,argilla guide,llms fine tuning argilla,dataset training,nlp tasks,nlp model,dataset curation,dataset creation,reinforced learning,human feedback,dpo,ppo,supervised finetuning,transformers,setfit,sentence transformers,text classification,token classification dataset,text2text dataset,argilla questions,argilla metadata,argilla RLHF,FeedbackDataset,argillafield
+
+Argilla Datasets Deepdive
+0:00 Intro
+0:20 What Challenges Datasets Solve
+3:10 Why Deep Dive Into Argilla
+5:25 Types of Datasets & Tasks
+7:20 How Datasets are Built
+7:35 Fields Args
+8:15 MetaData Types & Args
+8:55 Question Types & Args
+9:50 Recap & Overview
+10:50 Call to Try Out Argilla
+11:30 Outro
+
+Argilla TextClassification DS
+0:00 Intro
+0:15 Purpose textclassify DS & Model
+0:55 How Model is Trained
+1:45 Where TextClassification DS Sits
+2:15 Code Walkthrough and Setting Python Client
+4:05 Gen 1 TextClassification Dataset
+5:25 Settings & Configuration of TC Dataset
+6:45 Pushing TC Records To Dataset
+11:30 Multi Label Text Classification Settings 
+13:04 Pushing Multi Label Record to Argilla
+14:20 FeedBack Dataset Arguments & Templates
+15:30 Feedback Dataset Code Walkthrough
+18:50 Creating Feedback Record Dataset & pushing 
+22:10 Feedback Dataset UI in Argilla Server
+23:05 Comparing Gen1 and Gen2 DS
+24:15 Recap
+25:15 Outro
+
+
+
+
 
