@@ -96,7 +96,46 @@ Argilla TextClassification DS
 24:15 Recap
 25:15 Outro
 
+Argilla Token classification DS
+0:00 Intro
+0:10 Purpose of Token Classification DS
+1:15 Training Token Classification Model
+2:45 Connecting with Argilla Server from Jupyter Notebook
+4:15 Creating & Pushing TokenClassification Settings
+5:50 Creating & Pushing TokenClassification Record
+7:40 Annotating the Tokens in Argilla
+8:20 Locating indices of word & Annotating 
+10:00 Pushing Predictions Using Python
+11:30 Providing Annotation In 
+12:00 Creating Feedback Dataset For Token Classification
+13:00 Creating Span Question
+14:40 Reviewing UI for TokenClassification Dataset
+15:45 Creating & Pushing Feedback Record to Argilla
+16:45 Annotating TokenClassification Record in UI
+17:45 SpanQuestion Active Development Status
+18:25 Recap of TokenClassification
+19:07 Call to Action
+20:00 Outro
 
+Argilla Text2Text DS
+0:00 Intro
+0:20 Purpose of Text2Text DS
+0:45 Text2Text Tasks in NLP
+2:25 How Text Generation Model is Trained
+5:10 Connecting to Argilla Server
+5:50 Gen1 Text2Text Dataset
+6:40 Annotation with Gen1 Text2Text DS
+7:40 Annotating with JSON Output Text
+9:25 Intro to Feedback Dataset Templates 
+11:10 Recap of FeedBack Dataset Parts
+11:55 Intro Summarisation Template in FB Dataset 
+15:35 Annotating FB Dataset in Argilla Server
+17:45 Translation Task FB Dataset Instantiation 
+20:10 Annotating With Translation FB Dataset
+20:55 Question Answer Task FB Dataset Instantiation
+22:30 Annotating with QA feedback Dataset
+23:10 Recap
+24:50 Outro
 
 
 
