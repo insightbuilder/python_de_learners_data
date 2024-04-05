@@ -138,4 +138,35 @@ Argilla Text2Text DS
 24:50 Outro
 
 
+Argilla RatingTemp DS
+0:00 Intro
+0:35 Purpose of Feedback Templates
+1:35 Types of Templates
+4:30 Using Datasets After Annotation
+5:45 Introducing Sections on Jupyter NB
+6:45 Sentence_Similarity Template FB Dataset
+9:55 Sentence similarity Annotation Demo
+11:25 Natural Lang Inference Template
+13:05 NLI Dataset Annotation Demo
+13:50 RAG Template in FB Dataset
+15:45 Annotation Demo of RAG Dataset
+16:33 Recap of Templates Purpose
+17:25 Outro
+
+
+Argilla PrefTemp DS
+0:00 Intro
+0:15 Recap of Earlier Video
+0:55 Intro to Preference Based Templates
+2:15 Supervised Fine Tuning Template Intro
+3:45 Demo of SFT Template DS annotation
+5:30 Intro Preference Modeling Template
+8:25 Demo of Preference Modeling Annotation 
+9:30 Intro to PPO Template
+10:30 Demo of Annotation with PPO Template
+11:45 Intro to DPO Template
+12:30 Demo of DPO Annotation
+14:00 Recap of Templates covered
+15:00 Outro
+
 
