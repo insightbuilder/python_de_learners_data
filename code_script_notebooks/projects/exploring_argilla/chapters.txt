@@ -169,4 +169,17 @@ Argilla PrefTemp DS
 14:00 Recap of Templates covered
 15:00 Outro
 
+Argilla rmds
+0:00 Intro
+0:20 Two Routes To Delete Datasets
+1:10 Connecting & Creating Datasets
+2:55 Reviewing DS on Server
+3:25 Listing Datasets Using Workspace Object
+5:10 Listing FB Datasets using List Method
+6:05 Deleting Gen2 FB Datasets & Checking on Server
+6:50 Deleting Gen1 DS using Delete function
+7:30 Deleting workspace
+7:45 Recap
+8:00 Script for Deleting Datasets
+8:55 Outro
 
