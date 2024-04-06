@@ -183,3 +183,41 @@ Argilla rmds
 8:00 Script for Deleting Datasets
 8:55 Outro
 
+full FBDS with T2Sql
+0:00 Intro
+0:35 Explanation of Steps Covered
+2:30 Demo of Final Dataset
+4:22 Code Walkthrough: Connecting to Server
+5:10 Introducing Text2SQL Dataset
+6:12 Reviewing Text2SQL Dataset columns
+7:55 Deciding Columns to be Fields & Metadata
+11:10 Creating TextQuestion Object
+11:45 Configuring v1.0 Feedbackdataset Object
+14:00 Reviewing v1.0 DS Settings in Argilla UI
+15:30 Creating records for v1.0 FBDS
+17:30 Pushing 15 records to Argilla Server
+18:20 Reviewing the Datapoints on UI
+19:45 Creating Metadata Settings
+22:00 Creating & Reviewing v2.0 DS with Single Metadata
+23:15 Pushing records with Metadata to v2.0 DS
+25:35 Reviewing Metadata Filter in UI
+26:35 Creating & Reviewing V3.0 DS with Multi Metadata
+27:30 Pushing Data to v3.0 DS
+29:00 Discussing Benefits of Metadata
+29:30 Introducing Vector Settings
+30:00 Using SentenceTransformerExtractor Object to update vectors
+32:30 Reviewing Find Similar option in UI
+33:40 Reviewing the Vector Settings in UI
+34:30 Creating Vector Settings From Scratch
+35:30 Creating Sentence Transformer models 
+37:00 Pushing Records with Vectors to Argilla server
+37:30 Reviewing the FindSimilar in the UI
+38:33 Recap of various FB Datasets created
+39:33 Pushing final dataset to Hugging Face
+40:20 Reviewing the Pushed Datasets in HuggingFace
+42:00 Re-using HF datasets in Argilla 
+42:30 How to Drill Deeper into Argilla
+43:50 Outro
+
+
+
