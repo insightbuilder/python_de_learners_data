@@ -6,7 +6,7 @@ async def echo(websocket):  # async function, with websocket object
     # print(type(websocket))  # <class 'websockets.legacy.server.WebSocketServerProtocol'>
     # similar to the request recieved from webserver.. Here its a socket
     async for message in websocket:
-        print(message)
+        print(message) # This will be inside the server
         length = f"Message {message} is of {len(message)} char long"
         await websocket.send(length)
 
