@@ -1,12 +1,18 @@
-// create a listener on the window
 window.addEventListener("DOMContentLoaded", () => {
-    const client = new WebSocket("ws://localhost:8002/")
-    sendClicker()
-})
+    const websy = new WebSocket("ws://localhost:7555/")
 
+    document.querySelector("#clicker").addEventListener("click", () =>{
+        const textstr = document.querySelector("#payload").value
+        websy.send(JSON.stringify({payload: textstr}))
+    })
 
-function sendClicker() {
-    document.addEventListener('click', () =>{
-        
+    websy.onmessage = ({ data }) => {
+        const reply = JSON.parse(data)
+        if (reply.counts) {
+            document.querySelector("#cnt").textContent = data 
+        }
+        else {
+            document.querySelector("#out").textContent = data 
+        }
     }
-}
+})

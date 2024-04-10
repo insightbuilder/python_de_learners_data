@@ -1,12 +1,16 @@
-from websockets.sync.client import connect
+import asyncio
+from websockets import connect
+import json
+
+async def say_hi():
+    async with connect("ws://localhost:7555") as websy:
+        while True:
+            input_text = input('tell me: ')
+            payload_text = json.dumps({"payload": input_text})
+            await websy.send(payload_text)
+            reply_msg = await websy.recv()
+            print(reply_msg)
 
 
-with connect("ws://localhost:8002/") as websb:
-    print(dir(websb))
-    print('Established connect...')
-    while True:
-        data = input("What you wanna send? ")
-        req = websb.send(data)
-        print(req)  # as such the send method will return None
-        ret_resp = websb.recv()
-        print(ret_resp)
+if __name__ == "__main__":
+    asyncio.run(say_hi())

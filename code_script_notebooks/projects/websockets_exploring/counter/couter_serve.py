@@ -25,7 +25,7 @@ async def counter(websocket):
     global USERS, VALUE
 
     try:
-        USERS.add(websocket)
+        USERS.add(websocket)  # adding the connect socket
         websockets.broadcast(USERS, users_event())
 
         await websocket.send(value_event())
