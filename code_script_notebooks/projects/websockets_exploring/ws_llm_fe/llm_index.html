@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LLM on Sockets</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3>Mixin LLMs with WebSockets</h3>
+            <div class="d-flex flex-wrap">
+                <div class="w-75">
+                    <h4>Get the Prompts:</h4>
+                    <label for="syspt" class="mx-1">System Prompt</label>
+                    <input type="text" name="syspt" id="syspt" class="w-75">
+                    <label for="userpt" class="mx-1">User Prompt</label>
+                    <input type="text" name="userpt" id="userpt" class="w-75">
+                    <button class="btn btn-primary mx-3" id="reply">Get Reply</button>
+                </div>
+                <div class="w-25">
+                    <h4>Reply is Here:</h4>
+                    <textarea name="llm_reply" id="llm_reply" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn btn-secondary mx-3" id="dbin">Get History</button>
+                <p><h5>DB Data will fill up there...</h5></p>
+                <div class="w-100 mx-3 pt-2" id="dbout">
+                </div>
+            </div>
+        </div>
+       <script src="client.js"></script> 
+    </body>
+</html>
