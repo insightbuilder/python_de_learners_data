@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Websockets Rock</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Welcome to Websockets World</h2>
+            <input type="text" id="in">
+            <button class="btn btn-primary" id="click">Click Me</button>
+            <p>You will see the output here: <span id="out"></span></p>
+            <div>
+                <h3>Database of Ins & Outs</h3> 
+                <button class="btn btn-success" id="db">Get me Data</button>
+                <table class="table mt-2">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ins</th>
+                            <th scope="col">outs</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                        <tr>
+                            <td scope="col">Nice</td>
+                            <td scope="col">very</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="client.js"></script>
+    </body>
+</html>
