@@ -1,0 +1,12 @@
+.talkify-audio-control {
+  color: white;
+}
+
+.fa-2x {
+  font-size: 20px !important;
+}
+
+.talkify-control-center.attached .audio-loading {
+  height: 16px;
+  width: 16px;
+}

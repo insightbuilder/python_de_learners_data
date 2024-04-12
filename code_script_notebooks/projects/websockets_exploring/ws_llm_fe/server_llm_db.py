@@ -10,6 +10,7 @@ from ollama import Client
 import os
 import logging
 import json
+import random
 
 
 load_dotenv("D:\\gitFolders\\python_de_learners_data\\.env")
@@ -56,31 +57,45 @@ async def socket_llm(websocket):
             sys_prompt = in_data['sys_prompt']
         if user_prompt and sys_prompt:
             logging.info('above llm call...')
-            llm_reply = llm_call_openai(user_prompt,
-                                        sys_prompt,
-                                        'gpt-3.5-turbo')['response']
+            # llm_reply = llm_call_openai(user_prompt,
+                                        # sys_prompt,
+                                        # 'gpt-3.5-turbo')['response']
+            llm_reply = "This is a placeholder reply from llm."
             p_tbl = Promptdata.create(user_prompt=user_prompt,
                                       system_prompt=sys_prompt,
                                       llm_reply=llm_reply)
             p_tbl.save()
         else:
             llm_reply = "Prompts were missing"
-
-        ptbl_data = []
+        if 'del_table' in in_data:
+            send_data = {"ptdel": "Deleting Table"}
+            logging.info(send_data)
+            await websocket.send(json.dumps(send_data))
+            query = Promptdata.delete()
+            query.execute() 
+    
+        # ptbl_data = []
         if Promptdata.select():
             logging.info("Got SQL data...")
             for data in Promptdata.select():
-                ptbl_data.append(dict(user_prompt=data.user_prompt,
-                                      system_prompt=data.system_prompt,
-                                      llm_reply=data.llm_reply))
-        
-        out_data = {"output": llm_reply,
-                    "user_prompt": user_prompt,
-                    "system_prompt": sys_prompt,
-                    "ptbl": ptbl_data}
+                # ptbl_data.append(dict(user_prompt=data.user_prompt,
+                                      # system_prompt=data.system_prompt,
+                                      # llm_reply=data.llm_reply))
+                row = dict(user_prompt=data.user_prompt,
+                           system_prompt=data.system_prompt,
+                           llm_reply=data.llm_reply)
 
-        out_str = json.dumps(out_data)
-        await websocket.send(out_str)
+                out_data = {"output": llm_reply,
+                            "user_prompt": user_prompt,
+                            "system_prompt": sys_prompt,
+                            "ptbl": row}
+
+                out_str = json.dumps(out_data)
+                await websocket.send(out_str)
+                await asyncio.sleep(random.randint(0, 5) + 1)
+        else:
+            send_data = {"ptdel": "Table deleted"}
+            await websocket.send(json.dumps(send_data))
 
 
 async def main():
