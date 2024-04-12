@@ -1,0 +1,38 @@
+part1
+0:00 Intro
+0:20 What is WebSocket
+1:05 Why Websockets
+2:30 Where Websockets Used Applications
+3:45 How AI incorporated with WebSocket
+4:55 AI Shop Demo with WebSocket Streaming
+8:00 Incorporating Speech Using WebSocket
+9:00 Real-Time IOT Graph Dashboard
+10:30 Simple Websocket Send and Recieve
+11:20 Websocket Sending message continously
+12:05 Recap 
+12:50 Next Video plan
+13:11 Outro
+
+part 2
+0:00 Intro
+0:35 How Websockets Work Visually
+2:35 Introducing the WebSocket Object
+3:35 Websockets That stream automatically
+4:30 WebSockets triggered by Client Side
+5:10 Introducing Part of Websocket 
+6:45 Demo of simple Websocket with front-end 
+8:40 Code walkthrough: Tech Stack 
+9:31 Code walkthrough: Websocket Server
+11:45 Two Main parts of Websocket Server
+13:50 Websockets & Send method  
+16:20 Main Function Serves the Websocket Server
+18:10 Execution flow of Websocket Server
+19:35 JavaScript Client, Window & DOM Explained.
+22:35 Websocket.OnMessage attribute Explained
+23:55 HTML DOM Explained
+25:10 Recap of Websockets TechStack
+26:10 Discussion on Websockets Resources
+26:40 Outro
+
+
+

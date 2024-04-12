@@ -5,6 +5,7 @@ from websockets import (
 import json
 import random
 
+
 async def handler(websocket):
     msg_packet = {}
     ind = 0 
