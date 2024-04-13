@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Index{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h1 class="mx-3">Control Flow:</h1>
+            <div>
+                <button id="tap" class="mx-3 my-2 btn btn-success">Open Tap</button>
+                <button id="notap" class="mx-3 my-2 btn btn-danger">Close Tap</button>
+            </div>
+        </div>
+        <div>
+            <ol id="place" class="mx-3"></ol>
+        </div>
+        <script src="{% static '/client.js' %}"></script>
+    </div>
+{% endblock %}

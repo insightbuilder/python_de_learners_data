@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static '/bootstrap.min.css' %}">
+    </head>
+    <body>
+        <header class="blog-header">
+            <nav class="navbar navbar-expand-md bg-primary">
+                <h1>Simple Page </h1>
+                <a href="{% url 'index' %}" class="btn btn-info mb-2 mx-3">Home</a>
+            </nav>
+        </header>
+        {% block content %}
+        {% endblock %}
+        <footer>
+            <h5>This is a footer...</h5>
+        </footer>
+    </body>
+</html>
