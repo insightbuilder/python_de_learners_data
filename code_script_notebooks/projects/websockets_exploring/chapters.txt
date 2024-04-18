@@ -34,5 +34,35 @@ part 2
 26:10 Discussion on Websockets Resources
 26:40 Outro
 
+part 3:
+0:00 Intro
+0:20 Tech Stack Used
+0:50 AI Shop Overall Architecture
+3:00 Learning with Simple Architecture
+3:50 Demo Websocket inside Django Server
+6:10 How Simple Architecture is Implemented
+7:45 Changing the Output to Numbered List
+8:45 How HTML page is rendered by Django
+12:15 Why understand files location in File System.
+15:15 Where the files are located in Django Server.
+16:30 Maintain Manage.py as Reference
+18:40 Understanding Where Static Folder is Located
+21:20 Explaining Settings.py
+22:50 Where Templates Folders are Located
+23:40 If Staticfiles Dir is not Configured then
+28:25 Explaining Client.js & HTML DoM elements
+30:50 How Client Integrates with Socket Server
+32:55 Explaining Socket Server
+34:30 Explaining Handler Function & Websocket Object
+35:45 Logic of Handler Function & HTML DoM Update
+39:00 Using Websocket.recv to get Message
+41:45 Recap of concepts
+42:55 HTML DoM is a Data Structure
+43:25 Reviewing Socket Server
+44:00 Recaping of Files Location
+45:00 Reviewing Pit Falls in Socket Server
+47:00 Git Repo Code Base 
+47:50 Outro
+
 
 
