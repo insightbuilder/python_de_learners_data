@@ -15,7 +15,7 @@ chat_completion = client.chat.completions.create(
             "content": "Explain the importance of low latency LLMs",
         }
     ],
-    model="mixtral-8x7b-32768",
+    model="llama3-8b-8192",
 )
 
 print(chat_completion.choices[0].message.content)
