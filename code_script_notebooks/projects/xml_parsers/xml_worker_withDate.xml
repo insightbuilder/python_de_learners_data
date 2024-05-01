@@ -1,0 +1,54 @@
+<workers>
+    <worker>
+        <id>W1-NewYork</id>
+        <name>John Doe</name>
+        <position>Manager</position>
+        <department>HR</department>
+        <city>New_York</city>
+        <salary>62000</salary>
+        <experience>8</experience>
+        <date>2023-08-08</date>
+    </worker>
+    <worker>
+        <id>W2-SanFrancisco</id>
+        <name>Jane Smith</name>
+        <position>Developer</position>
+        <department>IT</department>
+        <city>San_Francisco</city>
+        <salary>55000</salary>
+        <experience>5</experience>
+        <date>2023-08-08</date>
+    </worker>
+    <worker>
+        <id>W3-Chicago</id>
+        <name>Michael Johnson</name>
+        <position>Designer</position>
+        <department>Design</department>
+        <city>Chicago</city>
+        <salary>48000</salary>
+        <experience>3</experience>
+        <date>2023-08-08</date>
+    </worker>
+    <worker>
+        <id>W4-SanFrancisco</id>
+        <name>Amy Lee</name>
+        <position>Developer</position>
+        <department>IT</department>
+        <city>San_Francisco</city>
+        <salary>60000</salary>
+        <experience>6</experience>
+        <date>2023-08-08</date>
+    </worker>
+    <worker>
+        <id>W5-NewYork</id>
+        <name>Robert Brown</name>
+        <position>Manager</position>
+        <department>HR</department>
+        <city>New_York</city>
+        <salary>67000</salary>
+        <experience>9</experience>
+        <date>2023-08-08</date>
+    </worker>
+    <!-- ... more worker entries ... -->
+</workers>
+

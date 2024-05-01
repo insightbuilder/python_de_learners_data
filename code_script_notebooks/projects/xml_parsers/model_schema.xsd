@@ -1,0 +1,25 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="KeyboardEvent" type="KeyboardEventType"/>
+    <xsd:complexType name="KeyboardEventType">
+        <xsd:sequence>
+            <xsd:element type="xsd:string" name="Type"/>
+            <xsd:element type="xsd:float" name="Timestamp"/>
+            <xsd:element type="KeyType" name="Key"/>
+            <xsd:element type="ModifiersType" name="Modifiers"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="KeyType">
+        <xsd:sequence>
+            <xsd:element type="xsd:string" name="Code"/>
+            <xsd:element type="xsd:string" name="Unicode"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ModifiersType">
+        <xsd:sequence>
+            <xsd:element type="xsd:string" name="Alt"/>
+            <xsd:element type="xsd:string" name="Ctrl"/>
+            <xsd:element type="xsd:string" name="Shift"/>
+            <xsd:element type="xsd:string" name="Meta"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
