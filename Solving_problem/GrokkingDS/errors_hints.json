@@ -1,1 +1,51 @@
-[{"date": "12-02-24", "day": "Monday", "points": ["- Nodes are appended to Linked List ", "- In LL traversal, while condition itself is checking whether next node is not None.", "- Nodes in queue, stack and Linked list are same, have a value, and reference to next node as attributes ", "- QUeue has front, back and size attr, while stack works with top and size attr alone.", "- Nodes in graphs have val, left and right nodes, or use vertex list, adj list or matrix"]}, {"date": "13-02-24", "day": "Tuesday", "points": ["-  Issue with input not stripped lead to wasting around 20 minutes, and unwanted frustration. As the first thing we question is our logic ", "- Queue printing starts with front node, checks if it is same as back node, then resorts to using curr.next to traverse", "- Queue dequeue checks if it is empty, else proceeds to remove front node by reassigning the front to front.next and reducing length ", "- Enqueue operation is performed by self.back.next = node assignment. Point to remember is that self.back is a Node object, which can have next attribute"]}, {"date": "14-02-24", "day": "Wednesday", "points": ["- Method of pushing new nodes into the stack is directly on the top. There is no need to traverse the stack", "- When traversing to print the curr node is checked for continuing the while loop.  ", "- When griding keeping the logic, and understanding at what is being typed is important. What a if/ while does in a context can change the output.", "- Tiredness or body pain can distract from thinking about the logic.", "- When thinking about the implementation, weird fear used to develop, which is slowly reducing.", "- Graph DFS and BFS traversal with while loop involving stack / queue is straightforward. "]}, {"date": "15-02-24", "day": "Thursday", "points": ["- In stack the size is checked if it is 0, and else the top node is pushed as next node of new node."]}, {"date": "16-02-24", "day": "Friday", "points": ["- Used len function to check the output store, same as the input string. Took a moment there is a space between chars in store,  while the input is not having space.", "- assigning next function to self.next", "- Using if instead of while in traverse loop"]}]
+[
+  {
+    "date": "12-02-24",
+    "day": "Monday",
+    "points": [
+      "- Nodes are appended to Linked List ",
+      "- In LL traversal, while condition itself is checking whether next node is not None.",
+      "- Nodes in queue, stack and Linked list are same, have a value, and reference to next node as attributes ",
+      "- QUeue has front, back and size attr, while stack works with top and size attr alone.",
+      "- Nodes in graphs have val, left and right nodes, or use vertex list, adj list or matrix"
+    ]
+  },
+  {
+    "date": "13-02-24",
+    "day": "Tuesday",
+    "points": [
+      "-  Issue with input not stripped lead to wasting around 20 minutes, and unwanted frustration. As the first thing we question is our logic ",
+      "- Queue printing starts with front node, checks if it is same as back node, then resorts to using curr.next to traverse",
+      "- Queue dequeue checks if it is empty, else proceeds to remove front node by reassigning the front to front.next and reducing length ",
+      "- Enqueue operation is performed by self.back.next = node assignment. Point to remember is that self.back is a Node object, which can have next attribute"
+    ]
+  },
+  {
+    "date": "14-02-24",
+    "day": "Wednesday",
+    "points": [
+      "- Method of pushing new nodes into the stack is directly on the top. There is no need to traverse the stack",
+      "- When traversing to print the curr node is checked for continuing the while loop.  ",
+      "- When griding keeping the logic, and understanding at what is being typed is important. What a if/ while does in a context can change the output.",
+      "- Tiredness or body pain can distract from thinking about the logic.",
+      "- When thinking about the implementation, weird fear used to develop, which is slowly reducing.",
+      "- Graph DFS and BFS traversal with while loop involving stack / queue is straightforward. "
+    ]
+  },
+  {
+    "date": "15-02-24",
+    "day": "Thursday",
+    "points": [
+      "- In stack the size is checked if it is 0, and else the top node is pushed as next node of new node."
+    ]
+  },
+  {
+    "date": "16-02-24",
+    "day": "Friday",
+    "points": [
+      "- Used len function to check the output store, same as the input string. Took a moment there is a space between chars in store,  while the input is not having space.",
+      "- assigning next function to self.next",
+      "- Using if instead of while in traverse loop"
+    ]
+  }
+]

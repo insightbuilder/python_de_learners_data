@@ -7,6 +7,9 @@ import logging
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as XET
 from io import StringIO
+import json
+from dict2xml import dict2xml
+import pandas as pd
 
 logging.basicConfig(format="%(message)s|%(levelname)s",
                     level=logging.INFO)
@@ -44,6 +47,14 @@ def pretty_xet(xml_str):
     element = XET.XML(xml_str)
     XET.indent(element)
     return XET.tostring(element, encoding='unicode')
+
+
+def remove_col_space(cols_list):
+    new_cols = []
+    for cols in cols_list:
+        new_cols.append(cols.replace(" ", ""))
+    print(new_cols)
+    return new_cols
 
 
 def transform_xml(xml_file, xslt_file):
@@ -120,3 +131,30 @@ if parse:
         newdom = transform_xml(xml_data_worker,
                                city_workers_xslt)
         st.code(newdom)
+
+json_file = left.file_uploader(label="Json_file")
+
+jsontoxml = left.button("Parse_json")
+
+if jsontoxml and json_file:
+    json_data = json_file.getvalue().decode('utf-8')
+    dict_data = json.loads(json_data)
+    left.write("Json Data:")
+    left.write(dict_data)
+    xml_data = dict2xml(dict_data)
+    left.write("XML Parsed:")
+    left.code(xml_data)
+
+csv_file = right.file_uploader(label="csv_file")
+
+csvtoxml = right.button("Parse_csv")
+
+if csvtoxml and csv_file:
+    dataf = pd.read_csv(csv_file)
+    right.write("CSV Data:")
+    new_cols = remove_col_space(dataf.columns)
+    dataf.columns = new_cols
+    right.dataframe(dataf)
+    xml_csv_data = dataf.to_xml()
+    right.write("XML Parsed:")
+    right.code(xml_csv_data)
