@@ -6,6 +6,7 @@ from pathlib import Path
 import logging
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as XET
+from io import StringIO
 
 logging.basicConfig(format="%(message)s|%(levelname)s",
                     level=logging.INFO)
@@ -90,21 +91,32 @@ else:
         right.code(pretty_xsl)
 
 xml_text = left.text_area(label="Paste XML Here")
-xsl_text = right.text_area(label="Paste XSL Here")
+xsl_text = right.text_area(label="Paste XSL Here", height=100)
 
 parse = st.button("Parse XML")
 
 if parse:
     if xml_file and xslt_file:
+        st.write("Using the file data.")
         xml_file = file_path / xml_file.name
         xslt_file = file_path / xslt_file.name
-
         newdom = transform_xml(xml_file,
                                xslt_file)
         st.code(newdom)
     elif xml_text and xsl_text:
+        # st.code(xml_text)
+        st.write("Using the text data.")
+        try:
+            parsed_xml = ET.parse(StringIO(xml_text))
+            parsed_xsl = ET.parse(StringIO(xsl_text))
+            transform = ET.XSLT(parsed_xsl)
+            newdom = transform(parsed_xml)
+            st.code(newdom)
+        except Exception as e:
+            st.write(f'There is issue with the text data..., {e}')
 
     else:
+        st.write("Using the inbuilt files")
         newdom = transform_xml(xml_data_worker,
                                city_workers_xslt)
         st.code(newdom)
