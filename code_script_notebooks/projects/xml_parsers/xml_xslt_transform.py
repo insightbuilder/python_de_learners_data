@@ -89,13 +89,21 @@ else:
         right.code("Sample xslt")
         right.code(pretty_xsl)
 
+xml_text = left.text_area(label="Paste XML Here")
+xsl_text = right.text_area(label="Paste XSL Here")
+
 parse = st.button("Parse XML")
 
 if parse:
     if xml_file and xslt_file:
-        newdom = transform_xml(xml_file.name,
-                               xslt_file.name)
+        xml_file = file_path / xml_file.name
+        xslt_file = file_path / xslt_file.name
+
+        newdom = transform_xml(xml_file,
+                               xslt_file)
         st.code(newdom)
+    elif xml_text and xsl_text:
+
     else:
         newdom = transform_xml(xml_data_worker,
                                city_workers_xslt)
