@@ -22,6 +22,29 @@ st.header('Python XML/XSLT Transformer')
 file_path = Path(__file__).parent.resolve()
 
 
+def extract_field_names(obj):
+    """Extracts all field names from a nested JSON object.
+    Args:
+        obj: A JSON object.
+    Returns:
+        A list of all field names in the JSON object.
+    """
+
+    field_names = []
+
+    def _extract_field_names(obj, field_names):
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                field_names.append(key)
+                _extract_field_names(value, field_names)
+        elif isinstance(obj, list):
+            for item in obj:
+                _extract_field_names(item, field_names)
+
+    _extract_field_names(obj, field_names)
+    return field_names
+
+
 # Define the function to pretty print XML
 def pretty_print_xml(xml_str):
     """Pretty prints XML."""
@@ -70,6 +93,7 @@ left, right = st.columns(2)
 
 xml_data_worker = file_path / 'xml_data_worker.xml'
 city_workers_xslt = file_path / 'city_workers.xslt'
+
 logging.info(city_workers_xslt)
 
 xml_file = left.file_uploader(label='Your XML',)
@@ -134,7 +158,8 @@ if parse:
 
 json_file = left.file_uploader(label="Json_file")
 
-jsontoxml = left.button("Parse_json")
+jsontoxml = left.button("Json => Xml")
+jsonfields = left.button("Json => DF")
 
 if jsontoxml and json_file:
     json_data = json_file.getvalue().decode('utf-8')
@@ -144,6 +169,15 @@ if jsontoxml and json_file:
     xml_data = dict2xml(dict_data)
     left.write("XML Parsed:")
     left.code(xml_data)
+
+if jsonfields and json_file:
+    json_data = json_file.getvalue().decode('utf-8')
+    dict_data = json.loads(json_data)
+    # field_names = extract_field_names(dict_data)
+    df = pd.json_normalize(dict_data)
+    left.dataframe(df)
+    cols_data = df.columns
+    left.write(cols_data)
 
 csv_file = right.file_uploader(label="csv_file")
 
