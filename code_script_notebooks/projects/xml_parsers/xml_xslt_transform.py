@@ -10,6 +10,7 @@ from io import StringIO
 import json
 from dict2xml import dict2xml
 import pandas as pd
+import csv
 
 logging.basicConfig(format="%(message)s|%(levelname)s",
                     level=logging.INFO)
@@ -20,6 +21,49 @@ st.set_page_config(layout="wide",
 st.header('Python XML/XSLT Transformer')
 
 file_path = Path(__file__).parent.resolve()
+
+
+def parse_xml(xml_file, csv_file):
+    """Recursively parses an XML file and writes the data to a CSV file.
+
+    Args:
+    xml_file: The path to the XML file.
+    csv_file: The path to the CSV file.
+    """
+
+    tree = ET.parse(xml_file)
+    root = tree.getroot()
+
+    # Create a CSV writer object.
+    with open(csv_file, "w") as csv_writer:
+        writer = csv.writer(csv_writer)
+
+        # Write the header row.
+        writer.writerow(root.tag.split(":")[-1])
+
+        # Recursively parse the XML tree.
+        for child in root:
+            parse_xml_element(child, writer)
+
+
+def parse_xml_element(element, writer):
+    """Recursively parses an XML element and writes the data to a CSV file.
+
+    Args:
+    element: The XML element to parse.
+    writer: The CSV writer object.
+    """
+
+    # Write the element tag.
+    writer.writerow([element.tag.split(":")[-1]])
+
+    # Write the element attributes.
+    for attribute in element.attrib:
+        writer.writerow([attribute, element.attrib[attribute]])
+
+    # Recursively parse the element's children.
+    for child in element:
+        parse_xml_element(child, writer)
 
 
 def extract_field_names(obj):
@@ -192,3 +236,17 @@ if csvtoxml and csv_file:
     xml_csv_data = dataf.to_xml()
     right.write("XML Parsed:")
     right.code(xml_csv_data)
+
+xml_file = right.file_uploader(label="xml_file")
+
+xmltocsv = right.button("xml => csv")
+# Using pandas read_xml fails in parsing the xml
+# https://stackoverflow.com/questions/39576683/convert-deeply-nested-xml-to-csv-in-python
+# The above post requests to use the xslt for parsing the xml to xslt
+# Another options seems to xmlstarlet
+# https://stackoverflow.com/questions/51988726/recursive-loop-xml-to-csv-with-xmlstarlet
+if xmltocsv and xml_file:
+    csv_file = 'example.csv'
+    parse_xml(xml_file, csv_file)
+    output_df = pd.read_csv(csv_file)
+    right.dataframe(output_df)
