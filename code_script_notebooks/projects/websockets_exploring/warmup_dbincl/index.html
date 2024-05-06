@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Websocket Warmup</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Notes Machine</h1>
+        <div>
+            <label for="head">Notes Heading: </label>
+            <input type="text" id="head">
+            <label for="notes">Content: </label>
+            <input type="text" id="notes">
+            <button class="btn btn-primary" id="submit">Send</button>
+        </div>
+        <div>
+            <h4>Status: </h4>
+            <p id="stat"></p>
+        </div>
+        <div><button class='btn btn-info' id="list">Get Notes</button></div>
+        <div>
+            <ul id="dblist"></ul>
+        </div>
+    </div>
+    <script>
+        const wbsy = new WebSocket('ws://localhost:6655/');
+        document.querySelector("#list").addEventListener("click", () => {
+            console.log("sent request")
+            wbsy.send(JSON.stringify({payload:'list'}))
+        }) 
+        document.querySelector("#submit").addEventListener("click", () => {
+            console.log("push notes")
+            let head = document.querySelector("#head").value
+            let cont = document.querySelector("#notes").value
+            let notes = {
+                heading: head,
+                content: cont 
+            }
+            console.log(notes)
+            wbsy.send(JSON.stringify({payload: notes}))
+        })
+        // below is the location for server replies
+        wbsy.onmessage = ({ data }) => {
+            const serverdata = JSON.parse(data) 
+            
+            if ('db_data' in serverdata) {
+                db_str = ""
+                serverdata['db_data'].forEach(element => {
+                   db_str += `
+                        <li>Heading: ${element.heading}</li>
+                        <li>Content: ${element.content}</li>
+                        `
+                }); 
+                console.log("Got DB Data to Frontside")
+                document.querySelector("#dblist").innerHTML = db_str
+            }
+            if ('reply' in serverdata) {
+                document.querySelector("#stat").innerHTML = serverdata['reply']
+            }
+        }
+    </script>
+</body>
