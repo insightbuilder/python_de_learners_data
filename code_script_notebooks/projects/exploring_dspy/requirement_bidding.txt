@@ -1,0 +1,5 @@
+chromadb
+python-dotenv
+dspy-ai
+BeautifulSoup4
+langchain
