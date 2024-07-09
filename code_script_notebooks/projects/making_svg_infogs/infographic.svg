@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="800" height="1000" viewBox="-400.0 -500.0 800 1000" displayInline="False">
+<defs>
+</defs>
+<circle cx="-200" cy="400" r="50" fill="white" stroke="black" stroke-width="2" />
+<image x="-240" y="360" width="80" height="80" xlink:href="path/to/image1.png" />
+<text x="-200" y="340" font-size="12" text-anchor="middle" dominant-baseline="central">YURI ISMAYLOV</text>
+<text x="-200" y="325" font-size="10" fill="gray" text-anchor="middle" dominant-baseline="central">Herald</text>
+<circle cx="-100" cy="400" r="50" fill="white" stroke="black" stroke-width="2" />
+<image x="-140" y="360" width="80" height="80" xlink:href="path/to/image2.png" />
+<text x="-100" y="340" font-size="12" text-anchor="middle" dominant-baseline="central">VECNA</text>
+<text x="-100" y="325" font-size="10" fill="gray" text-anchor="middle" dominant-baseline="central">Shadow</text>
+</svg>

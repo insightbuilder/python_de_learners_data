@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <script>
+        var data = [25, 41, 11, 67];
+        var labels = ["Lions", "Zebras", "Debas", "Deer"];
+        var width = 500;
+        var height = 300;
+        var svg = d3.select("body").append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+        svg.selectAll("rect")
+           .data(data)
+           .enter()
+           .append("rect")
+           .attr("x", function(d, i) { return i * 100 + 30; })
+           .attr("y", function(d) { return height - d * 5; })
+           .attr("width", 50)
+           .attr("height", function(d) { return d * 5; })
+           .attr("fill", "teal");
+
+        svg.selectAll("text")
+           .data(labels)
+           .enter()
+           .append("text")
+           .text(function(d) { return d; })
+           .attr("x", function(d, i) { return i * 100 + 55; })
+           .attr("y", height - 10)
+           .attr("text-anchor", "middle");
+    </script>
+</body>
+</html>
